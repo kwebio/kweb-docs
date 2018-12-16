@@ -7,6 +7,7 @@ Kweb: The Contrarian Web Framework
 ===================================
 
 Create fast, beautiful, efficient, powerful websites in Kotlin.
+
 .. toctree::
    
    intro
