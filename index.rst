@@ -3,19 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Kweb - The Contrarian Web Framework
+Kweb: The Contrarian Web Framework
 ===================================
 
-Table of Contents
------------------
-
+Create fast, beautiful, efficient, powerful websites in Kotlin.
 .. toctree::
    
    intro
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
