@@ -8,7 +8,7 @@ Kweb: The Contrarian Web Framework
 
 Create fast, beautiful, efficient, powerful websites in Kotlin.
 
-This documentation is a work-in-progress, all feedback is welcome, please `submit an issue <https://github.com/kwebio/docs/issues>`_, or create a `pull request <https://github.com/kwebio/docs/pulls>`_.  
+This documentation is a work-in-progress, feedback is very welcome.  Please `submit an issue <https://github.com/kwebio/docs/issues>`_, or create a `pull request <https://github.com/kwebio/docs/pulls>`_.  
 
 The main Kweb website is http://kweb.io/.
 
