@@ -27,7 +27,8 @@ if it was running on a single computer.  Kweb does this by moving as much of the
 as possible, leaving a simple but powerful interface to the web browser.
 
 It's written in `Kotlin <https://kotlinlang.org/>`_, a
-powerful programming language that is rapidly growing in popularity.
+powerful programming language that is rapidly growing in popularity, now being promoted by Google as a replacement
+for Java in `Android development <https://developer.android.com/kotlin/>`_.  Kotlin is here to stay.
 
 How does it work?
 -----------------
@@ -46,8 +47,9 @@ than Node.js.
 
 Features
 --------
+
 * A single unified codebase for your webapp
 * Code in Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 * Bind DOM values directly to a value in your database and have them update in realtime
 * Makes efficient use of WebSockets and "preloading" of instructions to the browser
-* A smooth upgrade path to WebAssembly once its ready
+* A smooth upgrade path to WebAssembly
