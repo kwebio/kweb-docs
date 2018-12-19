@@ -41,7 +41,7 @@ To minimize latency, Kweb can "preload" instructions to the browser to modify th
 events, perhaps to disable a button or temporarily display a "spinner".
 
 Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
-Kweb runs on the JVM, which is 5-10 times [faster](https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html)
+Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
 than Node.js.
 
 Features
