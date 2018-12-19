@@ -17,4 +17,5 @@ The main Kweb website is http://kweb.io/.
 .. toctree::
    intro
    gettingstarted
+   concepts
    faq

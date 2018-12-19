@@ -22,9 +22,8 @@ Most websites are two pieces of tightly coupled software, *client* and *server*.
 The first runs on the web server, the second runs in the web browser.  Coders work hard to try to make the website
 appear like a single piece of software to the website visitor, but this requires a lot of hidden complexity.
 
-Kweb allows you to write your entire app as a single piece of software, as
-if it was running on a single computer.  Kweb does this by moving as much of the business logic to the server
-as possible, leaving a simple but powerful interface to the web browser.
+Kweb allows you to write your entire app as a single piece of software.  Kweb does this by moving as much of the
+business logic to the server as possible, leaving a simple but powerful interface to the web browser.
 
 It's written in `Kotlin <https://kotlinlang.org/>`_, a
 powerful programming language that is rapidly growing in popularity, now being promoted by Google as a replacement
