@@ -49,7 +49,7 @@ Will print:
 
 Note how counterDoubled updates automatically.
 
-Reversible mappings
+Reversible KVar mappings
 -------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.  The difference is
