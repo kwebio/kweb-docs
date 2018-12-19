@@ -37,6 +37,13 @@ a HTTP request it responds with a small HTML file including instructions for bui
 client which connects back to the web server via a WebSocket.  The client then waits and listens for instructions
 from the server.
 
+To minimize latency, Kweb can "preload" instructions to the browser to modify the DOM instantly in response to browser
+events, perhaps to disable a button or temporarily display a "spinner".
+
+Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
+Kweb runs on the JVM, which is 5-10 times [faster](https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html)
+than Node.js.
+
 Features
 --------
 * A single unified codebase for your webapp
