@@ -2,7 +2,7 @@
 State Management
 ========
 
-The Building Blocks: *KVar*s and *KVal*s
+The Building Blocks: KVars and KVals
 ---------------
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the *KVar* class.
