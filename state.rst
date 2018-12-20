@@ -5,7 +5,8 @@ State Management
 The Building Blocks: KVars and KVals
 ---------------
 
-Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the *KVar* class.
+Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
+`KVar <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/index.html>`_ class.
 A KVar can contain a value of any type, which can change over time.  For example:
 
 .. code-block:: kotlin
@@ -69,14 +70,17 @@ Reversible KVar mappings
 ------------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.  The difference is
-that *KVal*'s values may not be modified directly, so this won't be permitted:
+that `KVal <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-val/index.html>`_'s values may
+not be modified directly, so this won't be permitted:
 
 .. code-block:: kotlin
 
     counterDoubled.value = 20 // <--- This won't compile
 
-The *KVar* class has a second *.map()* function that takes a *ReversableFunction* implementation which will produce
-a KVar which can be modified, and these modifications will propagate back to the original KVar.
+The *KVar* class has a second
+`map() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/map.html>`_ function that takes
+a *ReversableFunction* implementation which will produce a KVar which can be modified, and these modifications will
+propagate back to the original KVar.
 
 You shouldn't need this very often, but here is an example:
 
