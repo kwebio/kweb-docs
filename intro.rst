@@ -27,7 +27,7 @@ business logic to the server as possible, leaving a simple but powerful interfac
 
 It's written in `Kotlin <https://kotlinlang.org/>`_, a
 powerful programming language that is rapidly growing in popularity, now being promoted by Google as a replacement
-for Java in `Android development <https://developer.android.com/kotlin/>`_.  Kotlin is here to stay.
+for Java in `Android development <https://developer.android.com/kotlin/>`_.
 
 How does it work?
 -----------------
