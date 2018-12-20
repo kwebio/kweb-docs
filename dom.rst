@@ -61,11 +61,11 @@ Notice that *clickMe.getValue() doesn't return a String, it returns a *Completab
 This is because retrieving something from the DOM requires some communication with the browser and
 will take some time - and we don't want to block while we wait.
 
-This example is a little pointless since we're just setting the value and then immediately reading it, but it becomes
-a lot more useful once you know how to attach event listeners to DOM elements.
-
 This allows us to take advantage of Kotlin's `coroutines <https://kotlinlang.org/docs/reference/coroutines/basics.html>`_
 functionality to make this fairly seamless to the programmer (using *GlobalScope.launch* and *await()*).
+
+Yes, this example is a little pointless since we're just setting the value and then immediately reading it, more
+realistic use cases will follow.
 
 Listening for events
 --------------------
