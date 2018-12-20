@@ -33,7 +33,7 @@ How does it work?
 -----------------
 
 Kweb is a self-contained Kotlin library that can be added easily to new or existing projects.  When Kweb receives
-a HTTP request it responds with a small HTML file including instructions for building the page, and a
+a HTTP request it responds with a small HTML file including optimized instructions for building the page, and a
 client which connects back to the web server via a WebSocket.  The client then waits and listens for instructions
 from the server.
 
@@ -42,7 +42,11 @@ events, perhaps to disable a button or temporarily display a "spinner".
 
 Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
 Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
-than Node.js.
+than Node.js. m
+
+Kweb also takes and end-to-end approach to state.  You can bind the value of a DOM element to a field in your
+database, and have it update in realtime *automatically*.  This is handled by `Shoebox <https://github.com/kwebio/shoebox>`_,
+which currently provides both in-memory and persistent backends.
 
 Features
 --------
