@@ -19,7 +19,7 @@ Most websites are two pieces of tightly coupled software, *client* and *server*.
     * May be written in a wide variety of languages
     * Trusted execution environment
 
-The first runs on the web server, the second runs in the web browser.  Coders work hard to try to make the website
+The first runs in the web browser, the second runs on the web server.  Coders work hard to try to make the website
 appear like a single piece of software to the website visitor, but this requires a lot of hidden complexity.
 
 Kweb allows you to write your entire app as a single piece of software.  Kweb does this by moving as much of the
