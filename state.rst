@@ -59,6 +59,12 @@ KVars, meet Persistent Storage
 
 TODO: Explain how KVars integrate with `Shoebox <https://github.com/kwebio/shoebox>`_.
 
+DOM, meet Persistent Storage
+----------------------------
+
+TODO: Explain how the previous two things tie together into being able to synchronize state in realtime between
+      your visitor's web browsers and your back-end database, all with very little effort.
+
 Reversible KVar mappings
 ------------------------
 
