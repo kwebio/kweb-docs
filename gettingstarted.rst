@@ -65,8 +65,7 @@ This simple example already illustrates some important features of Kweb:
 Hello world²
 ------------
 
-This isn't some templating language, we have the full power of Kotlin at our disposal.  Witness the power of the
-'for' loop:
+We have the full expressiveness of Kotlin at our disposal.  Witness the power of the 'for' loop:
 
 .. code-block:: kotlin
 
