@@ -49,11 +49,11 @@ You can read values from the DOM too:
 
     doc.body.new {
         val label = h1().text("What is your name?")
-        val clickMe = input(type = text, placeholder = "Enter your name")
-        clickMe.on.blur {
-            GlobalScope.launch {
-                label.text(clickMe.getValue().await())
-            }
+        val clickMe = input(type = text)
+        clickMe.setValue("Foo Bar")
+        GlobalScope.launch {
+            val v : String = clickMe.getValue().await()
+            label.text("Value: $v")
         }
     }
 
@@ -61,8 +61,11 @@ Notice that *clickMe.getValue() doesn't return a String, it returns a *Completab
 This is because retrieving something from the DOM requires some communication with the browser and
 will take some time - and we don't want to block while we wait.
 
+This example is a little pointless since we're just setting the value and then immediately reading it, but it becomes
+a lot more useful once you know how to attach event listeners to DOM elements.
+
 This allows us to take advantage of Kotlin's `coroutines <https://kotlinlang.org/docs/reference/coroutines/basics.html>`_
-functionality to make this fairly seamless to the programmer (using *GlobalScope.launch* and *await()*.
+functionality to make this fairly seamless to the programmer (using *GlobalScope.launch* and *await()*).
 
 Listening for events
 --------------------
