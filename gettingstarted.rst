@@ -75,8 +75,10 @@ We have the full expressiveness of Kotlin at our disposal.  Witness the power of
    fun main() {
      Kweb(port = 8091) {
        doc.body.new {
-         for (x in 1..5) {
-            h1().text("Hello World $x!")
+         ul().new {
+             for (x in 1..5) {
+                li().text("Hello World $x!")
+             }
          }
        }
     }
@@ -87,9 +89,11 @@ To produce...
 .. code-block:: html
 
   <body>
-    <h1>Hello World 1!</h1>
-    <h1>Hello World 2!</h1>
-    <h1>Hello World 3!</h1>
-    <h1>Hello World 4!</h1>
-    <h1>Hello World 5!</h1>
+    <ul>
+        <li>Hello World 1!</li>
+        <li>Hello World 2!</li>
+        <li>Hello World 3!</li>
+        <li>Hello World 4!</li>
+        <li>Hello World 5!</li>
+    <ul>
   </body>
