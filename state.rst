@@ -52,7 +52,7 @@ Note how counterDoubled updates automatically.
 KVars, meet the DOM
 -------------------
 
-TODO: Explain how KVars can be tied to DOM values such that they update automatically and in realtime.
+(TODO) Explain how KVars can be tied to DOM values such that they update automatically and in realtime.
 
 KVars, meet Persistent Storage
 ------------------------------
