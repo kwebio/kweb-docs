@@ -11,13 +11,13 @@ Most websites are two pieces of tightly coupled software, *client* and *server*.
     * Runs in the browser
     * Responsible for user interaction
     * Typically written in JavaScript
-    * Runs in an untrusted  environment
+    * Untrusted execution environment
 
  * Server
     * Runs in a datacenter
     * Responsible for business logic
     * May be written in a wide variety of languages
-    * Runs in a trusted environment
+    * Trusted execution environment
 
 The first runs on the web server, the second runs in the web browser.  Coders work hard to try to make the website
 appear like a single piece of software to the website visitor, but this requires a lot of hidden complexity.

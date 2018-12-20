@@ -1,9 +1,9 @@
 ========
-Concepts
+State Management
 ========
 
-State Management: KVars and KVals
----------------------------------
+KVars and KVals
+---------------
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the *KVar* class.
 A KVar can contain a value of any type, which can change over time.  For example:
