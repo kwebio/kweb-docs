@@ -43,7 +43,7 @@ affecting some of Kweb's philosophical ancestors, Wicket and Vaadin (which share
 
 Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
 Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
-than Node.js. m
+than Node.js.
 
 Kweb also takes and end-to-end approach to state.  You can bind the value of a DOM element to a field in your
 database, and have it update in realtime *automatically*.  This is handled by `Shoebox <https://github.com/kwebio/shoebox>`_,
