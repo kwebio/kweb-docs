@@ -49,8 +49,18 @@ Will print:
 
 Note how counterDoubled updates automatically.
 
-Reversible KVar mappings
+KVars, meet the DOM
 -------------------
+
+TODO: Explain how KVars can be tied to DOM values such that they update automatically and in realtime.
+
+KVars, meet Persistent Storage
+------------------------------
+
+TODO: Explain how KVars integrate with `Shoebox <https://github.com/kwebio/shoebox>`_.
+
+Reversible KVar mappings
+------------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.  The difference is
 that *KVal*'s values may not be modified directly, so this won't be permitted:
