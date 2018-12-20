@@ -7,13 +7,13 @@ A new paradigm for website architecture
 
 Most websites are two pieces of tightly coupled software, *client* and *server*.
 
- * Client
+* Client
     * Runs in the browser
     * Responsible for user interaction
     * Typically written in JavaScript
     * Untrusted execution environment
 
- * Server
+* Server
     * Runs in a datacenter
     * Responsible for business logic
     * May be written in a wide variety of languages
