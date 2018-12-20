@@ -19,6 +19,7 @@ The main Kweb website is http://kweb.io/.
    gettingstarted
    dom
    state
+   aesthetics
    faq
 
 You can also see the Kweb API documentation `here <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/>`_.
