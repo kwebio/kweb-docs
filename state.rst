@@ -53,7 +53,48 @@ Note how counterDoubled updates automatically.
 KVars, meet the DOM
 -------------------
 
+You can use a KVar (or KVal) to set the text of a DOM element:
 
+.. code-block:: kotlin
+
+    val name = KVar("John")
+    li().text(name)
+
+The neat part is that if the value of *name* changes, the DOM element text will update automatically.  Numerous
+other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/index.html>`_
+support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
+and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
+
+But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
+a whole tree of elements?  This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
+function comes in.  This is a *core building block* of Kweb.
+
+.. code-block:: kotlin
+
+    val list = KVar(listOf("one", "two", "three"))
+
+    Kweb(port = 1234) {
+        doc.body.new {
+            render(list) { rList ->
+                ul().new {
+                    for (item in rList) {
+                        li().text(item)
+                    }
+                }
+            }
+        }
+    }
+
+Here, if we were to change the list:
+
+.. code-block:: kotlin
+
+    list.value = listOf("four", "five", "six")
+
+Then the relevant part of the DOM will be redrawn instantly.
+
+The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it is possible
+to be much more selective about what parts of the DOM must be modified.
 
 KVars, meet Persistent Storage
 ------------------------------
