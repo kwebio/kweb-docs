@@ -70,7 +70,7 @@ Rendering DOM fragments
 
 But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
 a whole tree of elements?  This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
-function comes in.  This is a *core building block* of Kweb.
+function comes in.
 
 .. code-block:: kotlin
 
@@ -96,8 +96,8 @@ Here, if we were to change the list:
 
 Then the relevant part of the DOM will be redrawn instantly.
 
-The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it is possible
-to be much more selective about what parts of the DOM must be modified.
+The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's possible
+to be very selective about what parts of the DOM must be modified in response to changes in state.
 
 KVars, meet Persistent Storage
 ------------------------------
