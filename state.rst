@@ -65,6 +65,9 @@ other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.14/j
 support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
 and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
 
+Rendering DOM fragments
+-----------------------
+
 But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
 a whole tree of elements?  This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
 function comes in.  This is a *core building block* of Kweb.
