@@ -70,7 +70,7 @@ realistic use cases will follow.
 Listening for events
 --------------------
 
-You can attach event listeners to DOM elements:
+You can attach event handlers to DOM elements:
 
 .. code-block:: kotlin
 
@@ -82,9 +82,39 @@ You can attach event listeners to DOM elements:
         }
     }
 
+Most if not all JavaScript event types are supported, and you can read event data like which key was pressed:
 
+.. code-block:: kotlin
+
+    doc.body.new {
+        val input = input(type = text)
+        input.on.keypress { keypressEvent ->
+            println("Key Pressed: ${keypressEvent.key}")
+        }
+    }
 
 Immediate events
 ----------------
 
-(TODO) Explain how to respond to DOM events without a server round trip
+Since the code to respond to events runs on the server, there will be a delay between the event occurring
+and any modifications to the DOM caused by the event.
+
+Fortunately Kweb has a solution, but it must be used with caution:
+
+.. code-block:: kotlin
+
+    doc.body.new {
+        val label = h1()
+        label.text("Click Me")
+        label.onImmediate.click {
+            label.text("Clicked!")
+        }
+    }
+
+This is virtually identical to the first event listener example, except instead of using *on* we're using
+*onImmediate*.
+
+When Kweb encounters this, it immediately runs the event handler and records the changes it makes to the DOM
+(in this case changing the *text* value of *label*).  Kweb then "pre-loads" these instructions to the browser
+such that they are executed immediately when the event occurs without any server round-trip.
+
