@@ -70,7 +70,19 @@ realistic use cases will follow.
 Listening for events
 --------------------
 
-(TODO) Explain how to attach DOM listeners and handle them.
+You can attach event listeners to DOM elements:
+
+.. code-block:: kotlin
+
+    doc.body.new {
+        val label = h1()
+        label.text("Click Me")
+        label.on.click {
+            label.text("Clicked!")
+        }
+    }
+
+
 
 Immediate events
 ----------------
