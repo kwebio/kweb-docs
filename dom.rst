@@ -118,3 +118,9 @@ When Kweb encounters this, it immediately runs the event handler and records the
 (in this case changing the *text* value of *label*).  Kweb then "pre-loads" these instructions to the browser
 such that they are executed immediately when the event occurs without any server round-trip.
 
+Combined event handlers
+-----------------------
+
+A common pattern is to use both types of event handler on a DOM element.  The immediate handler might disable
+a clicked button, or temporarily display some form of `spinner <https://loading.io/css/>`_.  The normal handler
+would then do what it needs on the server, and then perhaps re-enable the button and remove the spinner.
