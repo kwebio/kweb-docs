@@ -102,13 +102,18 @@ to be very selective about what parts of the DOM must be modified in response to
 KVars, meet Persistent Storage
 ------------------------------
 
-(TODO) Explain how KVars integrate with `Shoebox <https://github.com/kwebio/shoebox>`_.
+While you don't have to use it, Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value
+store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
+can be added quite easily.  We'll assume you've taken a few minutes to review Shoebox and get the general idea of how
+it is used.
+
+
 
 DOM, meet Persistent Storage
 ----------------------------
 
-(TODO) Explain how the previous two things tie together into being able to synchronize state in realtime between
-your visitor's web browsers and your back-end database, all with very little effort.
+This section will explain how the previous two things tie together into being able to synchronize state in realtime
+between your visitor's web browsers and your back-end database, all with very little effort.
 
 Reversible KVar mappings
 ------------------------
