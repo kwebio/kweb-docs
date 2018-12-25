@@ -38,7 +38,7 @@ client which connects back to the web server via a WebSocket.  The client then w
 from the server.
 
 To minimize latency, Kweb can `preload <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
-the browser to modify the DOM instantly in response to browserevents, perhaps to disable a button or temporarily
+the browser to modify the DOM instantly in response to browser events, perhaps to disable a button or temporarily
 display a "spinner".  This solves one of the most serious problems affecting some of Kweb's philosophical ancestors,
 Wicket and Vaadin (which shared Kweb's "server driven" approach).
 
