@@ -136,9 +136,8 @@ While you don't have to use it, Kweb integrates nicely with `Shoebox <https://gi
 store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
 can be added quite easily.
 
-We'll assume you've taken a few minutes to review Shoebox and get the general idea of how it's used.
-
-
+We'll assume you've taken a few minutes to review Shoebox and get the general idea of how it's used.  This example
+shows how *toVar* can be used to convert a value in a Shoebox to a KVar, and use it with the DOM as previously described:
 
 .. code-block:: kotlin
 
