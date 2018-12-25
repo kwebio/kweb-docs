@@ -23,8 +23,7 @@ supported by all Element types):
 
 .. code-block:: kotlin
 
-        val body : BodyElement = doc.body
-        body.new {
+        doc.body.new {
             val clickMe = button().text("Click Me!")
         }
 
