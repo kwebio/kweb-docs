@@ -5,7 +5,8 @@ Frequently Asked Questions
 Won't Kweb be slow relative to client-side web frameworks?
 ----------------------------------------------------------
 
-No.
+No, Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ allow you to avoid
+any server communication delay by responding immediately to DOM-modifying events.
 
 What's the difference between Kweb and Elm?
 -------------------------------------------
