@@ -47,8 +47,7 @@ Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.p
 than Node.js.
 
 Kweb also takes and end-to-end approach to state.  You can bind the value of a DOM element to a field in your
-database, and have it update in realtime *automatically*.  This is handled by `Shoebox <https://github.com/kwebio/shoebox>`_,
-which currently provides both in-memory and persistent backends.
+database, and have it update in realtime `automatically <https://docs.kweb.io/en/latest/state.html>`_.
 
 Features
 --------
