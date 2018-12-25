@@ -99,6 +99,33 @@ Then the relevant part of the DOM will be redrawn instantly.
 The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's possible
 to be very selective about what parts of the DOM must be modified in response to changes in state.
 
+Routing with KVars
+------------------
+
+You can obtain *and modify* the URL of the current page using *url(simpleUrlParser)*.  This returns a KVar<`URL <http://galimatias.mola.io/>`_ >,
+which you can then use with *render* to handle however you wish.
+
+Note in particular that you can modify this KVar<URL> and the browser URL bar and DOM will update accordingly, but
+*without* a page refresh.
+
+**Note:** While this is extremely powerful as a routing mechanism, we should probably recommend an approach.
+If you have any ideas or suggestions, please `submit an issue <https://github.com/kwebio/docs/issues>`_.
+
+.. code-block:: kotlin
+
+    Kweb(port = 1234) {
+        doc.body.new {
+            val url: KVar<URL> = url(simpleUrlParser)
+            render(url.path) { path ->
+                ul().new {
+                    for (p in path) {
+                        li().text(p)
+                    }
+                }
+            }
+        }
+    }
+
 KVars, meet Persistent Storage
 ------------------------------
 
@@ -106,8 +133,6 @@ While you don't have to use it, Kweb integrates nicely with `Shoebox <https://gi
 store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
 can be added quite easily.  We'll assume you've taken a few minutes to review Shoebox and get the general idea of how
 it is used.
-
-
 
 DOM, meet Persistent Storage
 ----------------------------
