@@ -7,14 +7,14 @@ The Building Blocks: KVars and KVals
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
 `KVar <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/index.html>`_ class.
+
 A KVar can contain a value of any type, which can change over time.  For example:
 
 .. code-block:: kotlin
 
-   val counter : KVar<Int> = KVar(0)
+   val counter = KVar(0)
 
-We create a counter KVar initialized with the value 0.  I've specified the type of *counter* for explanatory reasons
-but this can also be inferred by Kotlin.
+We create a counter of type *KVar<Int>* initialized with the value 0.
 
 We can read and modify the value of a KVar:
 
@@ -60,8 +60,9 @@ You can use a KVar (or KVal) to set the text of a DOM element:
     val name = KVar("John")
     li().text(name)
 
-The neat part is that if the value of *name* changes, the DOM element text will update automatically.  Numerous
-other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/index.html>`_
+The neat part is that if the value of *name* changes, the DOM element text will update automatically.
+
+Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/index.html>`_
 support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
 and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
 
@@ -69,8 +70,10 @@ Rendering DOM fragments
 -----------------------
 
 But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
-a whole tree of elements?  This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
-function comes in.
+a whole tree of elements?
+
+This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
+function comes in:
 
 .. code-block:: kotlin
 
@@ -131,8 +134,30 @@ KVars and Persistent Storage
 
 While you don't have to use it, Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value
 store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
-can be added quite easily.  We'll assume you've taken a few minutes to review Shoebox and get the general idea of how
-it is used.
+can be added quite easily.
+
+We'll assume you've taken a few minutes to review Shoebox and get the general idea of how it's used.
+
+
+
+.. code-block:: kotlin
+
+    fun main() {
+        data class User(val name : String, val email : String)
+        val users = Shoebox<User>()
+        users["aaa"] = User("Ian", "ian@ian.ian")
+
+        Kweb(port = 1234) {
+            doc.body.new {
+                val user = toVar(users, "aaa")
+                ul().new {
+                    li().text(user.map {"Name: ${it.name}"})
+                    li().text(user.map {"Email: ${it.email}"})
+
+                }
+            }
+        }
+    }
 
 Reversible KVar mappings
 ------------------------
