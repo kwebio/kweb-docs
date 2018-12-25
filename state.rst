@@ -50,7 +50,7 @@ Will print:
 
 Note how counterDoubled updates automatically.
 
-KVars, meet the DOM
+KVars and the DOM
 -------------------
 
 You can use a KVar (or KVal) to set the text of a DOM element:
@@ -126,19 +126,13 @@ Note in particular that you can modify this KVar<URL> and the browser URL bar an
 And that's pretty-much all you need to know to handle URL routing in your app, although we will make more specific
 recommendations later.
 
-KVars, meet Persistent Storage
-------------------------------
+KVars and Persistent Storage
+----------------------------
 
 While you don't have to use it, Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value
 store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
 can be added quite easily.  We'll assume you've taken a few minutes to review Shoebox and get the general idea of how
 it is used.
-
-DOM, meet Persistent Storage
-----------------------------
-
-This section will explain how the previous two things tie together into being able to synchronize state in realtime
-between your visitor's web browsers and your back-end database, all with very little effort.
 
 Reversible KVar mappings
 ------------------------
