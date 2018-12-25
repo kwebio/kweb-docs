@@ -108,9 +108,6 @@ which you can then use with *render* to handle however you wish.
 Note in particular that you can modify this KVar<URL> and the browser URL bar and DOM will update accordingly, but
 *without* a page refresh.
 
-**Note:** While this is extremely powerful as a routing mechanism, we should probably recommend an approach.
-If you have any ideas or suggestions, please `submit an issue <https://github.com/kwebio/docs/issues>`_.
-
 .. code-block:: kotlin
 
     Kweb(port = 1234) {
@@ -125,6 +122,9 @@ If you have any ideas or suggestions, please `submit an issue <https://github.co
             }
         }
     }
+
+And that's pretty-much all you need to know to handle URL routing in your app, although we will make more specific
+recommendations later.
 
 KVars, meet Persistent Storage
 ------------------------------
