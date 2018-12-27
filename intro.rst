@@ -2,8 +2,8 @@
 Introduction
 ============
 
-A new paradigm for website architecture
----------------------------------------
+The Kweb paradigm
+-----------------
 
 Most websites are two pieces of tightly coupled software, *client* and *server*.
 
