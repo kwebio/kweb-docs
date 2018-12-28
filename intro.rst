@@ -5,7 +5,8 @@ Introduction
 The Kweb paradigm
 -----------------
 
-Most websites are two pieces of tightly coupled software, *client* and *server*.
+Most websites are two pieces of tightly coupled software, one of which runs in the browser, the client, and the
+other runs on one or more web servers.
 
 * Client
     * Runs in the browser
@@ -19,8 +20,8 @@ Most websites are two pieces of tightly coupled software, *client* and *server*.
     * May be written in a wide variety of languages
     * Trusted execution environment
 
-The first runs in the web browser, the second runs on the web server.  Coders work hard to try to make the website
-appear like a single piece of software to the website visitor, but this requires a lot of hidden complexity.
+Coders work hard to try to make the website appear like a single piece of software to the website visitor, but this
+requires a lot of hidden complexity.
 
 Kweb allows you to write your entire app as a single piece of software.  It does this by moving as much of the
 business logic to the server as possible, leaving a simple but powerful interface to the web browser.

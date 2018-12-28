@@ -39,6 +39,29 @@ Or delete it:
 
     clickMe.delete()
 
+Supported HTML tags
+-------------------
+
+Kweb supports a significant subset of HTML tags like *button()*, *p()*, *a()*, *table()*, and so on.  You can find a
+more complete list in the `API documentation <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element.creation.tags/index.html>`_
+(scroll down to the *Functions* section).
+
+If an tag doesn't have explicit support in Kweb that's not a problem.  For example, here is how you might use the
+famous <blink> tag:
+
+.. code-block:: kotlin
+
+    doc.body.new {
+        val blink = element("blink").text("I am annoying!")
+    }
+
+Extending Kweb to support new HTML tags
+---------------------------------------
+
+Adding support for new tags to Kweb is fairly simple.  You can see how the existing functions are `implemented <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt>`_.
+Feel free to submit a pull request `via Github <https://github.com/kwebio/core>`_, or just `submit an issue <https://github.com/kwebio/core/issues>`_
+and we'll do our best to add support.
+
 Reading the DOM
 ---------------
 
