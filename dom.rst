@@ -118,10 +118,11 @@ Most if not all JavaScript event types are supported, and you can read event dat
 Immediate events
 ----------------
 
-Since the code to respond to events runs on the server, there will be a delay between the event occurring
-and any modifications to the DOM caused by the event.
+Since the code to respond to events runs on the server, there may be a short lag between the action causing the
+event and any changes to the DOM caused by the event handler.  This was a common complaint about server-driven
+web frameworks like Vaadin, inhibiting their adoption.
 
-Fortunately Kweb has a solution, but it must be used with caution:
+Fortunately Kweb has a solution - `onImmediate <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element.events/on-immediate.html>`_:
 
 .. code-block:: kotlin
 

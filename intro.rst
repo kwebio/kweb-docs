@@ -2,8 +2,8 @@
 Introduction
 ============
 
-The Kweb paradigm
------------------
+Motivation
+----------
 
 Most websites are two pieces of tightly coupled software, one of which runs in the browser, the client, and the
 other runs on one or more web servers.
