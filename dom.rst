@@ -122,7 +122,7 @@ Since the code to respond to events runs on the server, there may be a short lag
 event and any changes to the DOM caused by the event handler.  This was a common complaint about server-driven
 web frameworks like Vaadin, inhibiting their adoption.
 
-Fortunately Kweb has a solution - `onImmediate <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element.events/on-immediate.html>`_:
+Kweb has a solution - `onImmediate <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element.events/on-immediate.html>`_:
 
 .. code-block:: kotlin
 
@@ -134,18 +134,16 @@ Fortunately Kweb has a solution - `onImmediate <https://jitpack.io/com/github/kw
         }
     }
 
-This is virtually identical to the first event listener example, except instead of using *on* we're using
-*onImmediate*.
+This is identical to the first event listener example, except *on* has been replaced by *onImmediate*.
 
-When Kweb encounters this, it immediately runs the event handler and records the changes it makes to the DOM
-(in this case changing the *text* value of *label*).  Kweb then "pre-loads" these instructions to the browser
-such that they are executed immediately when the event occurs without any server round-trip.
+Kweb executes this event handler *on page render* and records the changes it makes to the DOM.  It then "pre-loads"
+these instructions to the browser such that they are executed immediately when the event occurs without any server
+round-trip.
 
 **Caution**
 
-Due to this pre-loading mechanism, the event handler for an *onImmediate* should limit itself to DOM
-changes.  If it attempts to read or modify any server state then this will occur once on page render which almost
-certainly isn't what you want.
+Due to this pre-loading mechanism, the event handler for an *onImmediate* must limit itself to simple DOM
+modifications.  Kweb includes some runtime safeguards against this but they can't catch every problem.
 
 **Combining on and onImmediate**
 
