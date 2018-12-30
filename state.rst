@@ -1,9 +1,9 @@
-========
+================
 State Management
-========
+================
 
 The Building Blocks: KVars and KVals
----------------
+------------------------------------
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
 `KVar <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/index.html>`_ class.
@@ -51,7 +51,7 @@ Will print:
 Note how counterDoubled updates automatically.
 
 KVars and the DOM
--------------------
+-----------------
 
 You can use a KVar (or KVal) to set the text of a DOM element:
 
