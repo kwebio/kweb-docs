@@ -84,7 +84,7 @@ This is because retrieving something from the DOM requires some communication wi
 will take some time - and we don't want to block while we wait.
 
 This allows us to take advantage of Kotlin's `coroutines <https://kotlinlang.org/docs/reference/coroutines/basics.html>`_
-functionality to make this fairly seamless to the programmer (using *GlobalScope.launch* and *await()*).
+functionality to make this fairly seamless to the programmer (using `GlobalScope.launch and await <https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/basics.md>`_).
 
 Yes, this example is a little pointless since we're just setting the value and then immediately reading it, more
 realistic use cases will follow.
