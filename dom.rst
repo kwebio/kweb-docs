@@ -79,7 +79,7 @@ You can read values from the DOM too:
         }
     }
 
-Notice that *clickMe.getValue() doesn't return a String, it returns a *CompletableFuture<String>.
+Notice that *clickMe.getValue() doesn't return a String, it returns a `CompletableFuture\<String\> <https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html>`_.
 This is because retrieving something from the DOM requires some communication with the browser and
 will take some time - and we don't want to block while we wait.
 
