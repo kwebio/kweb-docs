@@ -25,7 +25,7 @@ requires a lot of hidden complexity.
 
 Kweb allows you to write your entire app as a single piece of software.  It does this by moving as much of the
 business logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
-you to build beautiful responsive
+you to build beautiful responsive website much more quickly.
 
 It's written in `Kotlin <https://kotlinlang.org/>`_, a modern powerful programming language that is rapidly growing
 in popularity.  For example, Kotlin is now being promoted by Google as a replacement for Java in `Android development <https://developer.android.com/kotlin/>`_.
@@ -53,10 +53,14 @@ database, and have it update in realtime `automatically <https://docs.kweb.io/en
 Features
 --------
 
-* A single unified codebase for your webapp
+* A unified codebase for your webapp, from database to DOM
 
 * End-to-end Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
 * Bind DOM values directly to a value in your database and have them update in realtime
 
+* A statically typed HTML DSL allowing your IDE to catch bugs that would otherwise only be caught at runtime
+
 * Efficient server-side rendering, DOM caching, and instruction preloading
+
+* Can plugin to numerous back-end key/value stores and pub/sub platforms to facilitate unlimited scalability
