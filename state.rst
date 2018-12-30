@@ -193,4 +193,3 @@ Will print:
 
     counter: 5, doubled: 10
     counter: 6, doubled: 12
-

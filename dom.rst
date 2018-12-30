@@ -79,7 +79,7 @@ You can read values from the DOM too:
         }
     }
 
-Notice that *clickMe.getValue() doesn't return a String, it returns a `CompletableFuture\<String\> <https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html>`_.
+Notice that *clickMe.getValue()* doesn't return a String, it returns a `CompletableFuture\<String\> <https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html>`_.
 This is because retrieving something from the DOM requires some communication with the browser and
 will take some time - and we don't want to block while we wait.
 
@@ -140,14 +140,11 @@ Kweb executes this event handler *on page render* and records the changes it mak
 these instructions to the browser such that they are executed immediately when the event occurs without any server
 round-trip.
 
-**Caution**
+.. warning:: Due to this pre-loading mechanism, the event handler for an *onImmediate* must limit itself to simple DOM modifications.  Kweb includes some runtime safeguards against this but they can't catch every problem so please use with caution.
 
-Due to this pre-loading mechanism, the event handler for an *onImmediate* must limit itself to simple DOM
-modifications.  Kweb includes some runtime safeguards against this but they can't catch every problem so please
-use with caution.
+Combination event handlers
+--------------------------
 
-**Combining on and onImmediate**
-
-A common pattern is to use both types of event handler on a DOM element.  The immediate handler might disable
-a clicked button, or temporarily display some form of `spinner <https://loading.io/css/>`_.  The normal handler
-would then do what it needs on the server, and then perhaps re-enable the button and remove the spinner.
+A common pattern is to use both types of event handler on a DOM element.  The immediate handler might disable a clicked
+button, or temporarily display some form of `spinner <https://loading.io/css/>`_.  The normal handler would then do
+what it needs on the server, and then perhaps re-enable the button and remove the spinner.
