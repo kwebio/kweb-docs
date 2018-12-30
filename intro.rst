@@ -54,7 +54,9 @@ Features
 --------
 
 * A single unified codebase for your webapp
-* Code in Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
+
+* End-to-end Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
+
 * Bind DOM values directly to a value in your database and have them update in realtime
-* Makes efficient use of WebSockets and "preloading" of instructions to the browser
-* A smooth upgrade path to WebAssembly
+
+* Efficient server-side rendering, DOM caching, and instruction preloading
