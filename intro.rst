@@ -24,11 +24,11 @@ Coders work hard to try to make the website appear like a single piece of softwa
 requires a lot of hidden complexity.
 
 Kweb allows you to write your entire app as a single piece of software.  It does this by moving as much of the
-business logic to the server as possible, leaving a simple but powerful interface to the web browser.
+business logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
+you to build beautiful responsive
 
-It's written in `Kotlin <https://kotlinlang.org/>`_, a
-powerful programming language that is rapidly growing in popularity, now being promoted by Google as a replacement
-for Java in `Android development <https://developer.android.com/kotlin/>`_.
+It's written in `Kotlin <https://kotlinlang.org/>`_, a modern powerful programming language that is rapidly growing
+in popularity.  For example, Kotlin is now being promoted by Google as a replacement for Java in `Android development <https://developer.android.com/kotlin/>`_.
 
 How does it work?
 -----------------
