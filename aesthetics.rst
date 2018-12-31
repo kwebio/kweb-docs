@@ -49,3 +49,12 @@ We can translate this to Kweb fairly directly:
 
 Note that the plugin will add the Semantic UI CSS and JavaScript code to your website automatically, so you can
 go ahead and start using the Semantic UI classes with your HTML elements as described in the Semantic UI `manual <https://semantic-ui.com/introduction/getting-started.html>`_.
+
+Other UI Frameworks
+-------------------
+
+It's easy to create Kweb plugins for many JavaScript tools and frameworks, taking full advantage of Kotlin's DSL
+capabilities.
+
+The `Semantic UI plugin implementation <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/plugins/semanticUI>`_
+itself can serve as an example.
