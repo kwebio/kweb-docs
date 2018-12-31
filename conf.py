@@ -158,7 +158,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'Kweb', u'Kweb Documentation',
-     author, 'Kweb', 'One line description of project.',
+     author, 'Kweb', 'The Contrarian Web Framework',
      'Miscellaneous'),
 ]
 
@@ -179,3 +179,8 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+# -- Hotjar
+
+def setup(app):
+    app.add_javascript('js/hotjar.js')
