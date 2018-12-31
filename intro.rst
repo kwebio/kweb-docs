@@ -5,8 +5,8 @@ Introduction
 Motivation
 ----------
 
-Most websites are two pieces of tightly coupled software, one of which runs in the browser, the client, and the
-other runs on one or more web servers.
+Most websites are at least two pieces of tightly coupled software.  One runs in the browser, and the other runs on a
+web server.
 
 * Client
     * Runs in the browser
@@ -23,8 +23,8 @@ other runs on one or more web servers.
 Coders work hard to try to make the website appear like a single piece of software to the website visitor, but this
 requires a lot of hidden complexity.
 
-Kweb allows you to write your entire app as a single piece of software.  It does this by moving as much of the
-business logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
+Kweb let's you write your entire app as a single piece of software.  It does this by moving as much of the
+logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
 you to build beautiful responsive website much more quickly.
 
 It's written in `Kotlin <https://kotlinlang.org/>`_, a modern powerful programming language that is rapidly growing
@@ -58,6 +58,8 @@ Features
 * End-to-end Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
 * Bind DOM values directly to a value in your database and have them update in realtime
+
+* Server-side Rendering
 
 * Statically typed HTML DSL - let your IDE catch bugs so you don't have to
 
