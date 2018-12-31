@@ -22,4 +22,4 @@ The main Kweb website is http://kweb.io/.
    aesthetics
    faq
 
-You can also see the Kweb API documentation `here <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/>`_.
+You can also see the Kweb API documentation `here <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/>`_.

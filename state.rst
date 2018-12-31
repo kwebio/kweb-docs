@@ -6,7 +6,7 @@ The Building Blocks: KVars and KVals
 ------------------------------------
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
-`KVar <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/index.html>`_ class.
+`KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class.
 
 A KVar can contain a value of any type, which can change over time.  For example:
 
@@ -62,9 +62,9 @@ You can use a KVar (or KVal) to set the text of a DOM element:
 
 The neat part is that if the value of *name* changes, the DOM element text will update automatically.
 
-Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/index.html>`_
-support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
-and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
+Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/index.html>`_
+support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
+and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
 
 Rendering DOM fragments
 -----------------------
@@ -72,7 +72,7 @@ Rendering DOM fragments
 But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
 a whole tree of elements?
 
-This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state.persistent/render.html>`_
+This is where the `render <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state.persistent/render.html>`_
 function comes in:
 
 .. code-block:: kotlin
@@ -164,7 +164,7 @@ Reversible mappings
 -------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.
-`KVal <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-val/index.html>`_'s values may not be
+`KVal <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/index.html>`_'s values may not be
 modified directly, so this won't be permitted:
 
 .. code-block:: kotlin
@@ -172,7 +172,7 @@ modified directly, so this won't be permitted:
     counterDoubled.value = 20 // <--- This won't compile
 
 The *KVar* class has a second
-`map() <https://jitpack.io/com/github/kwebio/core/0.3.14/javadoc/io.kweb.state/-k-var/map.html>`_ function which takes
+`map() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/map.html>`_ function which takes
 a *ReversableFunction* implementation.  This version of *map* will produce a KVar which can be modified, as follows:
 
 .. code-block:: kotlin

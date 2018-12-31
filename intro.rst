@@ -59,8 +59,8 @@ Features
 
 * Bind DOM values directly to a value in your database and have them update in realtime
 
-* A statically typed HTML DSL allowing your IDE to immediately catch bugs that might otherwise only be caught at runtime
+* Statically typed HTML DSL - let your IDE catch bugs so you don't have to
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
-* Can plugin to numerous back-end key/value stores and pub/sub platforms to facilitate unlimited scalability
+* Connect to almost any back-end key/value store and pub/sub service to facilitate unlimited scalability

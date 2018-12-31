@@ -1,12 +1,47 @@
-==============================
-You said it would be beautiful
-==============================
+==========
+Aesthetics
+==========
 
-Semantic UI
------------
+Kweb has out-of-the-box support for the excellent `Semantic UI <https://semantic-ui.com/>`_
+framework, which helps create beautiful, responsive layouts using human-friendly HTML.
 
-TODO: This section will describe Kweb's integration with the excellent `Semantic UI <https://semantic-ui.com/>`_
-framework, for creating beautiful web-based user interfaces.
+Kweb's Semantic UI plugin provides a convenient DSL to use Semantic UI.
 
-Proper documentation will come soon.  In the meantime, here is an example of Kweb's Semantic UI support
-`in action <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/demos/todo/todoApp.kt>`_.
+Getting started
+---------------
+
+First tell Kweb to use the Semantic UI plugin:
+
+.. code-block:: kotlin
+
+    import io.kweb.plugins.semanticUI.semanticUIPlugin
+
+    fun main() {
+        Kweb(port = 4736, plugins = listOf(semanticUIPlugin)) {
+            // ...
+        }
+    }
+
+Now, let's look at one of the simple examples from the `Semantic UI <https://semantic-ui.com/elements/input.html>`_
+documentation:
+
+.. code-block:: html
+
+    <div class="ui icon input">
+      <input type="text" placeholder="Search...">
+      <i class="search icon"></i>
+    </div>
+
+We can translate this to Kweb fairly directly:
+
+.. code-block:: kotlin
+
+    import io.kweb.plugins.semanticUI.semantic
+
+    fun main() {
+        div(semantic.ui.icon.input).new {
+            input(type = text, placeholder = "Search...")
+            i(semantic.search.icon)
+        }
+    }
+
