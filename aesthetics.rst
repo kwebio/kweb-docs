@@ -14,7 +14,7 @@ First tell Kweb to use the Semantic UI plugin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.semanticUI.semanticUIPlugin
+    import io.kweb.plugins.semanticUI.*
 
     fun main() {
         Kweb(port = 4736, plugins = listOf(semanticUIPlugin)) {
@@ -36,12 +36,16 @@ We can translate this to Kweb fairly directly:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.semanticUI.semantic
+    import io.kweb.plugins.semanticUI.*
 
     fun main() {
-        div(semantic.ui.icon.input).new {
-            input(type = text, placeholder = "Search...")
-            i(semantic.search.icon)
+        Kweb(port = 4736, plugins = listOf(semanticUIPlugin)) {
+            div(semantic.ui.icon.input).new {
+                input(type = text, placeholder = "Search...")
+                i(semantic.search.icon)
+            }
         }
     }
 
+Note that the plugin will add the Semantic UI CSS and JavaScript code to your website automatically, so you can
+go ahead and start using the Semantic UI classes with your HTML elements as described in the Semantic UI `manual <https://semantic-ui.com/introduction/getting-started.html>`_.
