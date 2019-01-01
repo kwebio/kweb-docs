@@ -59,8 +59,6 @@ Features
 
 * Bind DOM values directly to a value in your database and have them update in realtime
 
-* Server-side Rendering
-
 * Statically typed HTML DSL - let your IDE catch bugs so you don't have to
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
