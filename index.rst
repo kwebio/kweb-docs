@@ -18,6 +18,7 @@ The main Kweb website is http://kweb.io/.
    intro
    gettingstarted
    dom
+   events
    state
    aesthetics
    faq
