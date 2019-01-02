@@ -66,8 +66,8 @@ Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core
 support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
 and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
 
-Rendering DOM fragments
------------------------
+Rendering state to a DOM fragment
+---------------------------------
 
 But what if you want to do more than just modify a single element based on a KVar, what if you want to modify
 a whole tree of elements?
@@ -101,6 +101,8 @@ Then the relevant part of the DOM will be redrawn instantly.
 
 The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's possible
 to be very selective about what parts of the DOM must be modified in response to changes in state.
+
+.. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes
 
 Routing with KVars
 ------------------
