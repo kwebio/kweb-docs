@@ -44,7 +44,8 @@ Supported HTML tags
 
 Kweb supports a significant subset of HTML tags like *button()*, *p()*, *a()*, *table()*, and so on.  You can find a
 more complete list in the `API documentation <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element.creation.tags/index.html>`_
-(scroll down to the *Functions* section).
+(scroll down to the *Functions* section).  This provides a nice statically-typed HTML DSL, fully integrated
+with the Kotlin language.
 
 If an tag doesn't have explicit support in Kweb that's not a problem.  For example, here is how you might use the
 famous <blink> tag:
