@@ -47,7 +47,7 @@ Kweb is designed to be efficient.  All operations are handled asynchronously, th
 Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
 than Node.js.
 
-Kweb also takes and end-to-end approach to state.  You can bind the value of a DOM element to a field in your
+Kweb also takes an end-to-end approach to state.  You can bind the value of a DOM element to a field in your
 database, and have it update in realtime `automatically <https://docs.kweb.io/en/latest/state.html>`_.
 
 Features
