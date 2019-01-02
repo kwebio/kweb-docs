@@ -1,6 +1,6 @@
-====================
-Working with the DOM
-====================
+==========
+DOM Basics
+==========
 
 Modifying the DOM
 -----------------
@@ -88,3 +88,9 @@ functionality to make this fairly seamless to the programmer (using `GlobalScope
 
 Yes, this example is a little pointless since we're just setting the value and then immediately reading it, more
 realistic use cases will follow.
+
+Next steps
+----------
+
+Kweb really comes into its own when the above is combined with Kweb's approach to
+`State Management <https://docs.kweb.io/en/latest/state.html#>`_, particularly the `render {} function <https://docs.kweb.io/en/latest/state.html#rendering-dom-fragments>`_.
