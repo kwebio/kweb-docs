@@ -60,7 +60,7 @@ This simple example already illustrates some important features of Kweb:
 
 * Getting a kwebsite up and running is a breeze, no messing around with servlets, or third party webservers
 
-* Your Kweb code will loosely mirror the structure of your page HTML
+* Your Kweb code will loosely mirror the structure of your page HTML, which you can modularize however you prefer
 
 Hello world²
 ------------
