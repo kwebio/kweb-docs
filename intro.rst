@@ -13,12 +13,14 @@ web server.
     * Responsible for user interaction
     * Typically written in JavaScript
     * Untrusted execution environment
+    * Unreliable persistent local state
 
 * Server
     * Runs in a datacenter
     * Responsible for business logic
     * May be written in a wide variety of languages
     * Trusted execution environment
+    * Reliable persistent global state
 
 Coders work hard to try to make the website appear like a single piece of software to the website visitor, but this
 requires a lot of hidden complexity.
