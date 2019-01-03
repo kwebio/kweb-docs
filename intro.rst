@@ -5,7 +5,7 @@ Introduction
 Motivation
 ----------
 
-Most websites are at least two pieces of tightly coupled components.  One runs in the browser, and the other runs on a
+Most websites consist of at least two tightly coupled components.  One runs in the browser, and the other runs on a
 web server.
 
 * Client
