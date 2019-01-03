@@ -57,7 +57,7 @@ Features
 
 * A unified codebase for your webapp, from database to DOM
 
-* End-to-end Kotlin (`Why? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
+* End-to-end Kotlin (`Why Kotlin? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
 * Bind DOM values directly to a value in your database and have them update in realtime
 
