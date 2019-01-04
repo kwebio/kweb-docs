@@ -67,4 +67,4 @@ Features
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
-* Connect to almost any back-end key/value store and pub/sub service to facilitate unlimited scalability
+* Connect to almost any back-end key/value store and pub/sub service for unlimited scalability
