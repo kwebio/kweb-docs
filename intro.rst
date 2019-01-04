@@ -55,6 +55,8 @@ database, and have it update in realtime `automatically <https://docs.kweb.io/en
 Features
 --------
 
+* Free as in speech, licenced under `LGPL v3.0 <https://opensource.org/licenses/lgpl-3.0.html>`_
+
 * A unified codebase for your webapp, from database to DOM
 
 * End-to-end Kotlin (`Why Kotlin? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
