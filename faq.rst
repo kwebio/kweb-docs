@@ -9,11 +9,6 @@ No, Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-
 any server communication delay by responding immediately to DOM-modifying events.  This should address the majority
 of scenarios where a server-driven approach might otherwise be sluggish.
 
-What's the difference between Kweb and Elm?
--------------------------------------------
-
-Kweb is a library, Elm is a religion.
-
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
