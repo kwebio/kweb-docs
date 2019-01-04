@@ -6,7 +6,7 @@ What you'll need
 ----------------
 
 Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is familiarity with
-`Gradle <https://kotlinlang.org/>`_.  You should also have some familiarity with HTML.
+`Gradle <https://gradle.org/>`_.  You should also have some familiarity with HTML.
 
 Adding Kweb to your project
 ---------------------------
