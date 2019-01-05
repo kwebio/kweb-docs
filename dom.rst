@@ -23,21 +23,21 @@ supported by all Element types):
 
 .. code-block:: kotlin
 
-        doc.body.new {
-            val clickMe = button().text("Click Me!")
-        }
+    doc.body.new {
+        val button = button().text("Click Me!")
+    }
 
 As you can see, it's easy to set the text of an element, you can also modify its attributes:
 
 .. code-block:: kotlin
 
-            clickMe.setAttribute("class", "bigbutton")
+    button.setAttribute("class", "bigbutton")
 
 Or delete it:
 
 .. code-block:: kotlin
 
-    clickMe.delete()
+    button.delete()
 
 Supported HTML tags
 -------------------
