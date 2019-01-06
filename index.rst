@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Kweb: The Easier Way to Website
-===================================
+===============================
 
 Create beautiful, efficient, and powerful websites in Kotlin, quickly.
 
