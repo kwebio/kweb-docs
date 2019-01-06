@@ -136,7 +136,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Kweb.tex', u'Kweb: The Contrarian Web Framework',
+    (master_doc, 'Kweb.tex', u'Kweb: The Easier Way to Website',
      u'Ian Clarke', 'manual'),
 ]
 
@@ -146,7 +146,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'kweb', u'The Contrarian Web Framework',
+    (master_doc, 'kweb', u'The Easier Way to Website',
      [author], 1)
 ]
 
@@ -157,8 +157,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Kweb', u'The Contrarian Web Framework',
-     author, 'Kweb', 'The Contrarian Web Framework',
+    (master_doc, 'Kweb', u'The Easier Way to Website',
+     author, 'Kweb', 'The Easier Way to Website',
      'Miscellaneous'),
 ]
 

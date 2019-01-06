@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Kweb: The Contrarian Web Framework
+Kweb: The Easier Way to Website
 ===================================
 
 Create beautiful, efficient, and powerful websites in Kotlin.
