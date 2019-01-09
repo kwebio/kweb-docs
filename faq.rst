@@ -16,3 +16,9 @@ Vaadin comes with it's own set of UI widgets which you have to use, whereas with
 favorite JavaScript UI framework (`Semantic UI <https://semantic-ui.com/>`_ is supported out of the box).
 Also, being designed for Kotlin rather than Java allows Kweb to take full advantage of Kotlin's numerous
 benefits, including a much more ergonomic API.
+
+Is there a larger working example?
+----------------------------------
+
+Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
+implementation which demonstrates many of Kweb's features.
