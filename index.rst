@@ -12,10 +12,10 @@ This documentation is early and a work-in-progress, feedback is very welcome.  P
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
-Website: http://kweb.io/
-Source code: https://github.com/kwebio/core
-Feedback: https://github.com/kwebio/core/issues
-Help: https://gitter.im/kwebio/Lobby
+* Website: http://kweb.io/
+* Source code: https://github.com/kwebio/core
+* Feedback: https://github.com/kwebio/core/issues
+* Help: https://gitter.im/kwebio/Lobby
 
 .. toctree::
    intro
