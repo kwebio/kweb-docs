@@ -15,6 +15,7 @@ a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 The main Kweb website is http://kweb.io/
 
 Source code: https://github.com/kwebio/core
+Issues: https://github.com/kwebio/core/issues
 
 .. toctree::
    intro
