@@ -12,10 +12,8 @@ This documentation is early and a work-in-progress, feedback is very welcome.  P
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
-* Website: http://kweb.io/
-* Source code: https://github.com/kwebio/core
-* Feedback: https://github.com/kwebio/core/issues
-* Help: https://gitter.im/kwebio/Lobby
+Table of Contents
+-----------------
 
 .. toctree::
    intro
@@ -26,4 +24,12 @@ a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
    aesthetics
    faq
 
-You can also see the Kweb API documentation `here <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/>`_.
+
+Useful Links
+------------
+
+* Website: http://kweb.io/
+* Source code: https://github.com/kwebio/core
+* Feedback: https://github.com/kwebio/core/issues
+* Help: https://gitter.im/kwebio/Lobby
+* API Docs: https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/
