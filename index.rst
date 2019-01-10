@@ -12,7 +12,9 @@ This documentation is early and a work-in-progress, feedback is very welcome.  P
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
-The main Kweb website is http://kweb.io/.
+The main Kweb website is http://kweb.io/
+
+Source code: https://github.com/kwebio/core
 
 .. toctree::
    intro
