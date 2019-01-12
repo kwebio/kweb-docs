@@ -12,9 +12,6 @@ This documentation is early and a work-in-progress, feedback is very welcome.  P
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
-Table of Contents
------------------
-
 .. toctree::
    intro
    gettingstarted
@@ -23,10 +20,6 @@ Table of Contents
    state
    aesthetics
    faq
-
-
-Useful Links
-------------
 
 * Website: http://kweb.io/
 * Source code: https://github.com/kwebio/core

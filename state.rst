@@ -2,8 +2,8 @@
 State Management
 ================
 
-The Building Blocks: KVars and KVals
-------------------------------------
+Building Blocks
+---------------
 
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
 `KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class.
@@ -14,9 +14,9 @@ A KVar can contain a value of any type, which can change over time.  For example
 
    val counter = KVar(0)
 
-We create a counter of type *KVar<Int>* initialized with the value 0.
+Here we create a counter of type *KVar<Int>* initialized with the value 0.
 
-We can read and modify the value of a KVar:
+We can also read and modify the value of a KVar:
 
 .. code-block:: kotlin
 
