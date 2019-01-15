@@ -110,8 +110,7 @@ Routing with KVars
 You can obtain *and modify* the URL of the current page using *url(simpleUrlParser)*.  This returns a KVar<`URL <http://galimatias.mola.io/>`_ >,
 which you can then use with *render* to handle however you wish.
 
-Note in particular that you can modify this KVar<URL> and the browser URL bar and DOM will update accordingly, but
-*without* a page refresh.
+.. note:: You can modify this KVar<URL> and the browser URL bar and DOM will update accordingly, but *without* a page refresh.
 
 .. code-block:: kotlin
 
