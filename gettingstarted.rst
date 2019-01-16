@@ -32,7 +32,7 @@ You can find the LATEST_VERSION of Kweb on `JitPack <https://jitpack.io/#kwebio/
 Hello world
 -----------
 
-Type this and run it:
+Create a new Kotlin file and type this:
 
 .. code-block:: kotlin
 
