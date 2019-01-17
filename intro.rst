@@ -25,7 +25,7 @@ web server.
 Coders work hard to try to make the website appear like a single piece of software to the website visitor, but this
 requires a lot of hidden complexity.
 
-Kweb let's you write your entire app as a single piece of software.  It does this by moving as much of the
+Kweb lets you write your entire app as a single piece of software.  It does this by moving as much of the
 logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
 you to build beautiful responsive website much more quickly.
 
