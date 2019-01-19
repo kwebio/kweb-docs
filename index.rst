@@ -8,7 +8,7 @@ Kweb: The Easier Way to Website
 
 Create beautiful, efficient, and powerful websites in Kotlin, quickly.
 
-This documentation is early and a work-in-progress, feedback is very welcome.  Please
+This documentation is a work-in-progress, feedback is very welcome.  Please
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
