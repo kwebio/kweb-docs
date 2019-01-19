@@ -12,6 +12,9 @@ This documentation is early and a work-in-progress, feedback is very welcome.  P
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve, and create
 a pull request <https://github.com/kwebio/docs>`_ to contribute directly.
 
+And please join us to discuss all-things Kweb in our `Gitter channel <https://gitter.im/kwebio/Lobby>`_, where we'll
+be happy to help if you have questions.
+
 .. toctree::
    intro
    gettingstarted
