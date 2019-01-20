@@ -23,8 +23,15 @@ supported by all Element types):
 
 .. code-block:: kotlin
 
-    doc.body.new {
-        val button = button().text("Click Me!")
+   import io.kweb.*
+   import io.kweb.dom.element.*
+
+   fun main() {
+     Kweb(port = 8091) {
+        doc.body.new {
+            val button = button().text("Click Me!")
+        }
+      }
     }
 
 As you can see, it's easy to set the text of an element, you can also modify its attributes:
