@@ -55,7 +55,7 @@ more complete list in the `API documentation <https://jitpack.io/com/github/kweb
 with the Kotlin language.
 
 If an tag doesn't have explicit support in Kweb that's not a problem.  For example, here is how you might use the
-famous <blink> tag:
+infamous <blink> tag:
 
 .. code-block:: kotlin
 
