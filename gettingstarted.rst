@@ -47,7 +47,7 @@ Create a new Kotlin file and type this:
     }
    }
 
-Visit http://localhost:8091/ in your web browser and you should see the traditional greeting, translating to the
+Run it, and then visit http://localhost:8091/ in your web browser to see the traditional greeting, translating to the
 following HTML body:
 
 .. code-block:: html
