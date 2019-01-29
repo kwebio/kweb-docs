@@ -8,7 +8,7 @@ Building Blocks
 Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
 `KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class.
 
-A KVar can contain a value of any type, which can change over time, for example:
+A KVar contains a single typed object, which can change over time.  For example:
 
 .. code-block:: kotlin
 
@@ -48,7 +48,10 @@ Will print:
     counter: 5, doubled: 10
     counter: 6, doubled: 12
 
-Note how counterDoubled updates automatically.
+Note that counterDoubled updates automatically.
+
+.. note:: KVars should only be used to store values that are themselves immutable, such as an Int, String, or
+    a Kotlin `data class <https://kotlinlang.org/docs/reference/data-classes.html>`_ with immutable parameters.
 
 KVars and the DOM
 -----------------
