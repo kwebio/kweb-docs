@@ -69,3 +69,16 @@ Features
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
 * Connect to almost any back-end key/value store and pub/sub service for unlimited scalability
+
+Relevant Links
+--------------
+
+* Website: http://kweb.io/
+
+* Source code: https://github.com/kwebio/core
+
+* Feedback: https://github.com/kwebio/core/issues
+
+* Help: https://gitter.im/kwebio/Lobby
+
+* API Docs: https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/
