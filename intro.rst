@@ -29,8 +29,8 @@ Kweb lets you write your entire app as a single piece of software.  It does this
 logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
 you to build beautiful responsive website much more quickly.
 
-It's written in `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing
-in popularity.  For example, Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_.
+Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing
+in popularity (eg. since 2018, Kotlin is Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_).
 
 How does it work?
 -----------------
