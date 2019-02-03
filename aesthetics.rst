@@ -34,7 +34,7 @@ documentation:
       <i class="search icon"></i>
     </div>
 
-We can translate this to Kweb fairly directly:
+We can translate this to Kotlin fairly directly thanks to Kweb's HTML `DSL <https://en.wikipedia.org/wiki/Domain-specific_language>`_:
 
 .. code-block:: kotlin
 

@@ -22,3 +22,11 @@ Is there a larger working example?
 
 Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
 implementation which demonstrates many of Kweb's features.
+
+I have a question not answered here
+-----------------------------------
+
+Please join us in our `Gitter chat room <https://gitter.im/kwebio/Lobby>`_ where we'll do our best to answer
+any questions you might have.
+
+You can also email the author at
