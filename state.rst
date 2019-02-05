@@ -136,11 +136,15 @@ recommendations later.
 KVars and Persistent Storage
 ----------------------------
 
-While you don't have to use it, Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value
-store that supports the observer pattern.  Shoebox has both in-memory and persistent (on disk) engines, and new engines
-can be added quite easily.
+Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value
+store that supports the observer pattern, and a sister project to Kweb.  Shoebox has both in-memory and persistent
+(on disk) engines.
 
-We'll assume you've taken a few minutes to review Shoebox and get the general idea of how it's used.
+In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_
+and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.
+
+We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
+general idea of how it's used.
 
 This example shows how *toVar* can be used to convert a value in a Shoebox to a KVar, and use it with the DOM as
 previously described:
