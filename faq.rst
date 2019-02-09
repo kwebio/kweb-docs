@@ -28,5 +28,3 @@ I have a question not answered here
 
 Please join us in our `Gitter chat room <https://gitter.im/kwebio/Lobby>`_ where we'll do our best to answer
 any questions you might have.
-
-You can also email the author at
