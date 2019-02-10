@@ -17,7 +17,7 @@ First tell Kweb to use the Semantic UI plugin:
     import io.kweb.plugins.semanticUI.*
 
     fun main() {
-        Kweb(port = 4736, plugins = listOf(semanticUIPlugin)) {
+        Kweb(port = 16097, plugins = listOf(semanticUIPlugin)) {
             // ...
         }
     }
@@ -41,7 +41,7 @@ We can translate this to Kotlin fairly directly thanks to Kweb's HTML `DSL <http
     import io.kweb.plugins.semanticUI.*
 
     fun main() {
-        Kweb(port = 4736, plugins = listOf(semanticUIPlugin)) {
+        Kweb(port = 16097, plugins = listOf(semanticUIPlugin)) {
             div(semantic.ui.icon.input).new {
                 input(type = text, placeholder = "Search...")
                 i(semantic.search.icon)

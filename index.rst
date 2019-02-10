@@ -21,5 +21,6 @@ be happy to help if you have questions.
    dom
    events
    state
+   routing
    aesthetics
    faq

@@ -40,14 +40,14 @@ Create a new Kotlin file and type this:
    import io.kweb.dom.element.*
 
    fun main() {
-     Kweb(port = 8091) {
+     Kweb(port = 16097) {
        doc.body.new {
          h1().text("Hello World!")
        }
     }
    }
 
-Run it, and then visit http://localhost:8091/ in your web browser to see the traditional greeting, translating to the
+Run it, and then visit http://localhost:16097/ in your web browser to see the traditional greeting, translating to the
 following HTML body:
 
 .. code-block:: html
@@ -73,7 +73,7 @@ We have the full expressiveness of Kotlin at our disposal.  Witness the power of
    import io.kweb.dom.element.*
 
    fun main() {
-     Kweb(port = 8091) {
+     Kweb(port = 16097) {
        doc.body.new {
          ul().new {
              for (x in 1..5) {

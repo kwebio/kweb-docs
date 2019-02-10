@@ -82,7 +82,7 @@ function comes in:
 
     val list = KVar(listOf("one", "two", "three"))
 
-    Kweb(port = 1234) {
+    Kweb(port = 16097) {
         doc.body.new {
             render(list) { rList ->
                 ul().new {
@@ -107,32 +107,6 @@ to be very selective about what parts of the DOM must be modified in response to
 
 .. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes
 
-Routing with KVars
-------------------
-
-You can obtain *and modify* the URL of the current page using *url(simpleUrlParser)*.  This returns a KVar<`URL <http://galimatias.mola.io/>`_ >,
-which you can then use with *render* to handle however you wish.
-
-.. note:: You can modify this KVar<URL> and the browser URL bar and DOM will update accordingly, but *without* a page refresh.
-
-.. code-block:: kotlin
-
-    Kweb(port = 1234) {
-        doc.body.new {
-            val url: KVar<URL> = url(simpleUrlParser)
-            render(url.path) { path ->
-                ul().new {
-                    for (p in path) {
-                        li().text(p)
-                    }
-                }
-            }
-        }
-    }
-
-And that's pretty-much all you need to know to handle URL routing in your app, although we will make more specific
-recommendations later.
-
 KVars and Persistent Storage
 ----------------------------
 
@@ -156,7 +130,7 @@ previously described:
         val users = Shoebox<User>()
         users["aaa"] = User("Ian", "ian@ian.ian")
 
-        Kweb(port = 1234) {
+        Kweb(port = 16097) {
             doc.body.new {
                 val user = toVar(users, "aaa")
                 ul().new {

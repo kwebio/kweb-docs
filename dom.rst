@@ -13,7 +13,7 @@ The DOM is built starting with an element, typically the BodyElement which is ob
    import io.kweb.dom.element.*
 
    fun main() {
-     Kweb(port = 8091) {
+     Kweb(port = 16097) {
         val body : BodyElement = doc.body
     }
    }
@@ -27,7 +27,7 @@ supported by all Element types):
    import io.kweb.dom.element.*
 
    fun main() {
-     Kweb(port = 8091) {
+     Kweb(port = 16097) {
         doc.body.new {
             val button = button().text("Click Me!")
         }
