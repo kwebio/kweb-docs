@@ -10,7 +10,7 @@ a prominent feature in every single web browser, and have several main functions
 * Navigation - URLs are used to drive the web browser’s back/forward functions.
 
 Traditionally, visiting a different URL would cause the page to be refreshed, but in modern web applications
-this often isn't necessary.
+this often isn't necessary, and Kweb handles this for you automatically.
 
 A simple example
 ----------------
