@@ -91,7 +91,7 @@ page URL:
 
 If you visit http://localhost:16097/ the URL will immediately update to http://localhost:16097/number/1
 without a page refresh, and you'll see a hyperlink with text "Number 1".  If you click on this link
-you'll see that the number increments (both in the URL and in the link text).
+you'll see that the number increments (both in the URL and in the link text), also without a page refresh.
 
 An even more elegant approach that would also work would be to replace:
 
