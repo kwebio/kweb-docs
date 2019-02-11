@@ -31,7 +31,7 @@ you to build beautiful responsive website much more quickly.
 
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
-while also being popular for backend architectures (where its often used as a drop-in replacement for Java).
+while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).
 
 How does it work?
 -----------------
