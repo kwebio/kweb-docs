@@ -62,7 +62,8 @@ Modifying the URL
 The *routing* and *path* DSL illustrated above is built on a
 
 You can obtain *and modify* the URL of the current page using *url(simpleUrlParser)* within the Kweb {block}.
-This returns a KVar<`URL <http://galimatias.mola.io/>`_ >, which you can use to
+This returns a KVar<`URL <http://galimatias.mola.io/>`_ > which you can use to read and *modify* the
+page URL:
 
 .. code-block:: kotlin
 
