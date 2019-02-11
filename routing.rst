@@ -100,7 +100,7 @@ An even more elegant approach that would also work would be to replace:
 
 .. code-block:: kotlin
 
-    path.value = ..." line with:
+    path.value = "/number/${num.value + 1}"
 
 ...with...
 
