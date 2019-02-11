@@ -3,7 +3,7 @@ URL Routing
 ===========
 
 In a web application, routing is the process of using URLs to drive the user interface (UI). URLs are
-a prominent feature in every single web browser, and have several main functions:
+a prominent feature in every web browser, and have several main functions:
 
 * Bookmarking - Users can bookmark URLs in their web browser to save content they want to come back to later.
 * Sharing - Users can share content with others by sending a link to a certain page.
