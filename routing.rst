@@ -46,10 +46,10 @@ Now, if you visit http://localhost:16097/users/997, you will see:
 
     <h1>User id: 997</h1>
 
-You can have as many *path()*s as you need, each with it's own path definition, which can contain zero
-or more parameters wrapped in {braces}.
+You can have as many path()s as you need, each with it's own path definition.  The definition can
+contain parameters wrapped in {braces}.
 
-The value of any parameters can then be retrieved from the *params* map, but note that the values are
+The value of these parameters can then be retrieved from the *params* map, but note that the values are
 wrapped in a *KVal<String>* object.  This means that you can use all of Kweb's `state management <https://docs.kweb.io/en/latest/state.html>`_
 features to render parts of the DOM using this value.
 
