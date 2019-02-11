@@ -43,8 +43,7 @@ from the server.
 
 To minimize latency, Kweb can `preload <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
 the browser to modify the DOM instantly in response to browser events, perhaps to disable a button or temporarily
-display a "spinner".  This solves one of the most serious problems affecting some of Kweb's philosophical ancestors,
-Wicket and Vaadin (which shared Kweb's "server driven" approach).
+display a "spinner".  This allows Kweb to respond instantly to user behavior without a server round-trip.
 
 Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
 Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_

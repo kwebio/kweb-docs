@@ -63,7 +63,8 @@ You can use a KVar (or KVal) to set the text of a DOM element:
     val name = KVar("John")
     li().text(name)
 
-The neat part is that if the value of *name* changes, the DOM element text will update automatically.
+The neat part is that if the value of *name* changes, the DOM element text will update automatically.  It may
+help to think of this as a way of "unwrapping" a KVar.
 
 Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/index.html>`_
 support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
@@ -102,10 +103,11 @@ Here, if we were to change the list:
 
 Then the relevant part of the DOM will be redrawn instantly.
 
-The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's possible
-to be very selective about what parts of the DOM must be modified in response to changes in state.
+The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's
+possible to be very selective about what parts of the DOM must be modified in response to changes in state.
 
-.. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes
+.. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes.  Because of this
+    it is most efficient to avoid "unwrapping" KVars with a *render()* or *.text()* call before you need to.
 
 KVars and Persistent Storage
 ----------------------------
