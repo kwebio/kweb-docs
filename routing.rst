@@ -107,3 +107,6 @@ An even more elegant approach that would also work would be to replace:
 .. code-block:: kotlin
 
     num.value++
+
+This works because the KVar returned for the parameter works bidirectionally, it can be used both to
+read and modify part of the page URL.
