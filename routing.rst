@@ -50,7 +50,7 @@ You can have as many path()s as you need, each with it's own path definition.  T
 contain parameters wrapped in {braces}.
 
 The value of these parameters can then be retrieved from the *params* map, but note that the values are
-wrapped in a *KVal<String>* object.  This means that you can use all of Kweb's `state management <https://docs.kweb.io/en/latest/state.html>`_
+wrapped in a *KVar<String>* object.  This means that you can use all of Kweb's `state management <https://docs.kweb.io/en/latest/state.html>`_
 features to render parts of the DOM using this value.
 
 The key advantage here is that if the URL changes the page can be updated without a full page refresh, but
