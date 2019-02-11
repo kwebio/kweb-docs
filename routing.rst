@@ -108,5 +108,5 @@ An even more elegant approach that would also work would be to replace:
 
     num.value++
 
-This works because the KVar returned for the parameter works bidirectionally, it can be used both to
-read and modify that part of the page URL.
+This works because the KVars always work bidirectionally, so can be used both to read and modify that
+part of the page URL, resulting in an automatic re-render of the necessary DOM elements.
