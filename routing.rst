@@ -18,7 +18,6 @@ A simple example
 .. code-block:: kotlin
 
     import io.kweb.Kweb
-    import io.kweb.dom.element.creation.tags.a
     import io.kweb.dom.element.new
     import io.kweb.routing.route
     import io.kweb.state.*
