@@ -12,10 +12,15 @@ of scenarios where a server-driven approach might otherwise be sluggish.
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
-Vaadin comes with it's own set of UI widgets, whereas with Kweb you can use your
-favorite JavaScript UI framework (`Semantic UI <https://semantic-ui.com/>`_ is supported out of the box).
-Also, being designed for Kotlin rather than Java allows Kweb to take full advantage of Kotlin's numerous
-benefits, including a much more ergonomic API.
+Kweb is *far* more lightweight than Vaadin.  At the time of writing, Kweb is about 4,351 lines of code, while
+vaadin/framework is currently 502,398 lines of code, almost a 100:1 ratio.
+
+Vaadin doesn't have anything like Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
+which address the primary shortcoming of "server driven" web frameworks which was the lag from unnecessary server
+round-trips.
+
+Lastly, Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
+the flexible DSL-like syntax.
 
 Is there a larger working example?
 ----------------------------------
