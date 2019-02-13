@@ -67,7 +67,7 @@ Features
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
-* Connect to almost any back-end key/value store and pub/sub service for unlimited scalability
+* Ridiculously lightweight, Kweb is less than 5,000 lines of code
 
 Relevant Links
 --------------
