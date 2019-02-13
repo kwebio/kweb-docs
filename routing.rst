@@ -9,8 +9,8 @@ a prominent feature in every web browser, and have several main functions:
 * Sharing - Users can share content with others by sending a link to a certain page.
 * Navigation - URLs are used to drive the web browser’s back/forward functions.
 
-Traditionally, visiting a different URL would cause the page to be refreshed, but in modern web applications
-this often isn't necessary, and Kweb handles this for you automatically.
+Traditionally, visiting a different URL would cause a new page to be downloaded from the server, but in modern web
+applications this often isn't necessary, and Kweb handles this for you automatically.
 
 A simple example
 ----------------
