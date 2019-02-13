@@ -12,8 +12,9 @@ of scenarios where a server-driven approach might otherwise be sluggish.
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
-Kweb is *far* more lightweight than Vaadin.  At the time of writing, `kwebio/core <https://github.com/kwebio/core>`_ is about 4,351 lines of code, while
-`vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines of code, almost a 100:1 ratio.
+Kweb is *far* more lightweight than Vaadin.  At the time of writing, `kwebio/core <https://github.com/kwebio/core>`_ is
+about 4,351 lines of code, while `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines
+of code, almost a 100:1 ratio!
 
 Vaadin doesn't have anything like Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
 which address the primary shortcoming of "server driven" web frameworks which was the lag from unnecessary server
