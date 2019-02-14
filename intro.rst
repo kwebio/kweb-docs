@@ -29,14 +29,12 @@ Kweb lets you write your entire app as a single piece of software.  It does this
 logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
 you to build beautiful responsive website much more quickly.
 
-One way to think of Kweb is as a `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
+Kweb includes a powerful typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
 while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).
-
-Kotlin also has excellent support for building typesafe DSLs within the language, which Kweb uses to full effect.
 
 How does it work?
 -----------------
