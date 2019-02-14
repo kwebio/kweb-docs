@@ -107,7 +107,9 @@ The simplicity of this mechanism may disguise how powerful it is, since render {
 possible to be very selective about what parts of the DOM must be modified in response to changes in state.
 
 .. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes.  Because of this
-    it is most efficient to avoid "unwrapping" KVars with a *render()* or *.text()* call before you need to.
+    it is most efficient to avoid "unwrapping" KVars with a *render()* or *.text()* call before you need to.  The
+    ` KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
+    function is a great way to manipulate KVals and KVars without unwrapping them.
 
 KVars and Persistent Storage
 ----------------------------
