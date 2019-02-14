@@ -34,8 +34,9 @@ for building and manipulating a DOM in a remote web browser.
 
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
-while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).  Kotlin
-also has excellent support for building typesafe DSLs within the language, which Kweb uses to full effect.
+while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).
+
+Kotlin also has excellent support for building typesafe DSLs within the language, which Kweb uses to full effect.
 
 How does it work?
 -----------------
