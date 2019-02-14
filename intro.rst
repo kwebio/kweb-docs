@@ -30,7 +30,7 @@ logic to the server as possible, leaving a simple but powerful interface to the 
 you to build beautiful responsive website much more quickly.
 
 One way to think of Kweb is as a `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
-for building and manipulating a DOM in a remote web browser.
+for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a powerful modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
