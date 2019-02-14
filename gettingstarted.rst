@@ -65,11 +65,11 @@ This simple example already illustrates some important features of Kweb:
 Hello world²
 ------------
 
-You can think of Kweb as a `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_ for
+You can think of Kweb as a `domain-specific language (DSL) <https://en.wikipedia.org/wiki/Domain-specific_language>`_ for
 building and manipulating a `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
-One of the great things about Kotlin is that the domain-specific language is embedded in Kotlin, so you can use
-all of Kotlin's `control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features, among other things.
+One of the great things about Kotlin is its ability to embed DSLs, so you can use the full power of Kotlin, including
+`control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for loops*:
 
 Here is a simple example using a *for* loop:
 
