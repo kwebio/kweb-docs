@@ -12,6 +12,9 @@ of scenarios where a server-driven approach might otherwise be sluggish.
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
+Of all web frameworks we're aware of, Vaadin is the closest in design and philosophy to Kweb, in many ways Kweb is a
+philosophical descendant of Vaadin.  That said, there are also big differences.
+
 Kweb is *far* more lightweight than Vaadin.  At the time of writing, `kwebio/core <https://github.com/kwebio/core>`_ is
 about 4,351 lines of code, while `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines
 of code, almost a 100:1 ratio!
@@ -26,7 +29,8 @@ between server logic and the user's browser, leveraging existing tools from the 
 Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
 the flexible DSL-like syntax.  Because of this Kweb code can be a lot more concise, without sacrificing readability.
 
-That said, in its favor Vaadin is extremely mature and has a vast developer ecosystem, while Kweb is still pre-1.0.0.
+In Vaadin's favor, it has been a commercial product now since 2006, it is extremely mature and has a vast
+developer ecosystem, while Kweb is at the opposite end of the software lifecycle.
 
 Is there a larger working example?
 ----------------------------------
