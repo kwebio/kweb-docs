@@ -32,7 +32,7 @@ tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/e
 Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
 the flexible DSL-like syntax.  Because of this Kweb code can be a lot more concise, without sacrificing readability.
 
-In Vaadin's favor, it has been a commercial product now since 2006, it is extremely mature and has a vast
+In Vaadin's favor, it has been a commercial product since 2006, it is extremely mature and has a vast
 developer ecosystem, while Kweb is still pre-1.0.
 
 Is there a larger working example?
