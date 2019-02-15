@@ -32,7 +32,7 @@ Kweb was built natively for Kotlin, and takes advantage of all of its language f
 the flexible DSL-like syntax.  Because of this Kweb code can be a lot more concise, without sacrificing readability.
 
 In Vaadin's favor, it has been a commercial product now since 2006, it is extremely mature and has a vast
-developer ecosystem, while Kweb is at the opposite end of the software lifecycle.
+developer ecosystem, while Kweb is still pre-1.0.
 
 Is there a larger working example?
 ----------------------------------
