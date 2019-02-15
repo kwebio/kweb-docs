@@ -22,8 +22,9 @@ web server.
     * Trusted execution environment
     * Reliable persistent global state
 
-Coders work hard to try to make the website appear like a single piece of software to the website visitor, but this
-requires a lot of hidden complexity.
+The fact that these two tightly coupled components are often written in different languages and must communicate
+with each other over a HTTP connection adds significant complexity to the overall system, and yet many of us
+accept it as a fact of life.  Fortunately, it isn't.
 
 Kweb lets you write your entire app as a single piece of software.  It does this by moving as much of the
 logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
