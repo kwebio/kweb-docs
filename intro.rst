@@ -24,16 +24,17 @@ web server.
 
 The fact that these two tightly coupled components are often written in different languages and must communicate
 with each other over a HTTP connection adds significant complexity to the overall system, and yet many of us
-accept it as a fact of life.  Fortunately, it isn't.
+accept it as a fact of life.
 
-Kweb lets you write your entire app as a single piece of software.  It does this by moving as much of the
-logic to the server as possible, leaving a simple but powerful interface to the web browser.  This allows
-you to build beautiful responsive website much more quickly.
+This is the problem Kweb was designed to solve.
+
+It does by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web
+browser where server-browser communications are handled by Kweb.
 
 Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
-Kweb runs on `Kotlin <https://kotlinlang.org/>`_, a modern programming language that is rapidly growing in
+Kweb runs on `Kotlin <https://kotlinlang.org/>`_, an excellent modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
 while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).
 
