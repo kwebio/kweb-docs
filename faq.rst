@@ -24,7 +24,7 @@ Vaadin doesn't have any equivalent feature to Kweb's `immediate events <https://
 which has led to frequent `complaints <https://stackoverflow.com/a/22848521/16050>`_ of sluggishness from Vaadin users.
 
 Vaadin brought a more desktop-style of user interface to the web browser, but since then we've realized that
-users generally like their websites to look like websites.
+users generally prefer their websites to look like websites.
 
 This is why Kweb's philosophy is to be a thin interface between server logic and the user's browser, leveraging existing tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/aesthetics.html>`_.
 
