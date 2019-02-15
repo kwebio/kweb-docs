@@ -29,7 +29,7 @@ accept it as a fact of life.
 This is the problem Kweb was designed to solve.
 
 It does by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web
-browser where server-browser communications are handled by Kweb.
+browser where server-browser communications are handled automatically by Kweb.
 
 Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
