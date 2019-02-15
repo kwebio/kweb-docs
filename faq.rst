@@ -16,9 +16,12 @@ Kweb is *far* more lightweight than Vaadin.  At the time of writing, `kwebio/cor
 about 4,351 lines of code, while `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines
 of code, almost a 100:1 ratio!
 
-So far as we know, Vaadin doesn't have any equivolent feature to Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
-which address the primary shortcoming of "server driven" web frameworks which was the lag from unnecessary server
-round-trips.
+Vaadin doesn't have any equivalent feature to Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
+which has led to frequent `complaints <https://stackoverflow.com/a/22848521/16050>`_ of sluggishness from Vaadin users.
+
+More generally, Vaadin brought a more desktop-style of user interface to the web browser, and history has shown that
+users generally like their websites to look like websites.  This is why Kweb's philosophy is to be a thin interface
+between server logic and the user's browser, leveraging existing tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/aesthetics.html>`_.
 
 Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
 the flexible DSL-like syntax.  Because of this Kweb code can be a lot more concise, without sacrificing readability.
