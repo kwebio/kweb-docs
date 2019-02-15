@@ -25,10 +25,8 @@ web server.
 The fact that these two tightly coupled components are often written in different languages and must communicate
 with each other over a HTTP connection adds significant complexity to the overall system.
 
-This is the problem Kweb was designed to solve.
-
-It does by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web
-browser where server-browser communications are handled automatically.
+This is the problem Kweb was designed to solve.  We do this by moving as much of the logic to the server as possible,
+leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
 
 Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
