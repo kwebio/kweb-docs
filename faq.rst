@@ -16,9 +16,9 @@ Of all web frameworks we're aware of, `Vaadin <https://vaadin.com/>`_ is the clo
 In many ways Kweb is a philosophical descendant of Vaadin.  This makes Vaadin one of the most useful frameworks to compare
 Kweb to, as there are also very important differences.
 
-Kweb is *far* more lightweight than Vaadin.  At the time of writing, `kwebio/core <https://github.com/kwebio/core>`_ is
-about 4,351 lines of code, while `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines
-of code, almost a 100:1 ratio!
+The most obvious is that Kweb is *far* more lightweight than Vaadin.  At the time of writing,
+`kwebio/core <https://github.com/kwebio/core>`_ is about 4,351 lines of code, while
+`vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines of code, almost a 100:1 ratio!
 
 Vaadin doesn't have any equivalent feature to Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
 which has led to frequent `complaints <https://stackoverflow.com/a/22848521/16050>`_ of sluggishness from Vaadin users.
@@ -26,7 +26,8 @@ which has led to frequent `complaints <https://stackoverflow.com/a/22848521/1605
 Vaadin brought a more desktop-style of user interface to the web browser, but since then we've realized that
 users generally prefer their websites to look like websites.
 
-This is why Kweb's philosophy is to be a thin interface between server logic and the user's browser, leveraging existing tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/aesthetics.html>`_.
+This is why Kweb's philosophy is to be a thin interface between server logic and the user's browser, leveraging existing
+tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/aesthetics.html>`_.
 
 Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
 the flexible DSL-like syntax.  Because of this Kweb code can be a lot more concise, without sacrificing readability.
