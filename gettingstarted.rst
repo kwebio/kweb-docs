@@ -27,7 +27,7 @@ Then add Kweb to the dependencies block:
      compile 'com.github.kwebio:core:LATEST_VERSION'
    }
 
-You can find the LATEST_VERSION of Kweb on `JitPack <https://jitpack.io/#kwebio/core>`_.
+Replace LATEST_VERSION with the latest version of Kweb, which you can find on `JitPack <https://jitpack.io/#kwebio/core>`_.
 
 Hello world
 -----------
