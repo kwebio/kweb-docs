@@ -39,6 +39,7 @@ We can translate this to Kotlin fairly directly thanks to Kweb's HTML `DSL <http
 .. code-block:: kotlin
 
     import io.kweb.plugins.semanticUI.*
+    import io.kweb.dom.element.creation.tags.InputType.*
 
     fun main() {
         Kweb(port = 16097, plugins = listOf(semanticUIPlugin)) {
