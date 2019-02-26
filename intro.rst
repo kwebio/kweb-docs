@@ -32,8 +32,9 @@ Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wik
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, an excellent modern programming language that is rapidly growing in
-popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_,
-while also being popular for backend architectures (where it's often used as a drop-in replacement for Java).
+popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_.
+According to Github, Kotlin was the `fastest growing <https://octoverse.github.com/projects#languages>`_ programming language
+of 2018.
 
 How does it work?
 -----------------
