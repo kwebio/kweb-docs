@@ -34,7 +34,7 @@ for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_O
 Kweb runs on `Kotlin <https://kotlinlang.org/>`_, an excellent modern programming language that is rapidly growing in
 popularity.  Kotlin is now Google's recommended language for `Android development <https://developer.android.com/kotlin/>`_.
 According to Github, Kotlin was the `fastest growing <https://octoverse.github.com/projects#languages>`_ programming language
-of 2018. ***
+of 2018.
 
 How does it work?
 -----------------
