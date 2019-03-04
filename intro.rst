@@ -5,7 +5,7 @@ Introduction
 Motivation
 ----------
 
-Most websites consist of at least two tightly coupled components.  One runs in the browser, and the other runs on a
+Most websites consist of at least two tightly coupled process components.  One runs in the browser, and the other runs on a
 web server.
 
 * Client
@@ -13,17 +13,17 @@ web server.
     * Responsible for user interaction
     * Typically written in JavaScript
     * Untrusted execution environment
-    * Unreliable persistent local state
+    * Unreliable persistent local state***
 
 * Server
-    * Runs in a datacenter
+    * Runs in a data center
     * Responsible for business logic
     * May be written in a wide variety of languages
     * Trusted execution environment
-    * Reliable persistent global state
+    * Reliable persistent global state***
 
-The fact that these two tightly coupled components are often written in different languages and must communicate
-with each other over a HTTP connection adds significant complexity to the overall system.
+The fact that often these two tightly coupled processes are written in different languages and must communicate
+with each other over an HTTP connection adds significant complexity to the overall system.
 
 This is the problem Kweb was designed to solve.  We do this by moving as much of the logic to the server as possible,
 leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
@@ -39,38 +39,38 @@ of 2018.
 How does it work?
 -----------------
 
-Kweb is a self-contained Kotlin library that can be added easily to new or existing projects.  When Kweb receives
-a HTTP request it responds with a small HTML file including optimized instructions for building the page, and a
+Kweb is a self-contained Kotlin library that can be accessed easily for new or existing projects.  When Kweb receives
+an HTTP request it responds with a small HTML file, including optimized instructions for building the page and a
 client which connects back to the web server via a WebSocket.  The client then waits and listens for instructions
 from the server.
 
 To minimize latency, Kweb can `preload <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
 the browser to modify the DOM instantly in response to browser events, perhaps to disable a button or temporarily
-display a "spinner".  This allows Kweb to respond instantly to user behavior without a server round-trip.
+display a "spinner."  This allows Kweb to respond instantly to user behavior without data making its way to the server and back.
 
-Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
+Kweb is designed to be efficient.  All operations are handled asynchronously, and thread and memory usage are minimized.
 Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
 than Node.js.
 
 Kweb also takes an end-to-end approach to state.  You can bind the value of a DOM element to a field in your
-database, and have it update in realtime `automatically <https://docs.kweb.io/en/latest/state.html>`_.
+database, and have it update on the server in realtime `automatically <https://docs.kweb.io/en/latest/state.html>`_.
 
 Features
 --------
 
-* Free as in speech, licenced under `LGPL v3.0 <https://opensource.org/licenses/lgpl-3.0.html>`_
+* Free as in speech, licensed under `LGPL v3.0 <https://opensource.org/licenses/lgpl-3.0.html>`_
 
-* A unified codebase for your webapp, from database to DOM
+* Unifying codebase for your webapp, from database to DOM
 
 * End-to-end Kotlin (`Why Kotlin? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
-* Bind DOM values directly to a value in your database and have them update in realtime
+* Easy to update server in realtime, as DOM values bind directly to a value in your database
 
-* Statically typed HTML DSL - let your IDE catch bugs so you don't have to
+* Statically typed HTML DSL; IDE catches bugs so you don't have to
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
-* Ridiculously lightweight, Kweb is less than 5,000 lines of code
+* Ridiculously lightweight at less than 5,000 lines of code
 
 Relevant Links
 --------------
