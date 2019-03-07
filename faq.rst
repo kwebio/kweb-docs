@@ -41,12 +41,18 @@ Kweb to, as there are also very important differences:
 - In Vaadin's favor, it has been a commercial product since 2006, it is extremely mature and has a vast
   developer ecosystem, while Kweb is still pre-1.0.
 
-
 Is there a larger working example?
 ----------------------------------
 
 Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
 implementation which demonstrates many of Kweb's features.
+
+What about templates?
+---------------------
+
+Kweb replaces templates with something better - a typesafe HTML DSL embedded within a powerful programming language.  
+
+If you like you could separate out the code that interfaces directly to the DOM - this would be architecturally closer to a template-based approach, but we view it as a feature that this paradigm isn't forced on the programmer.
 
 I have a question not answered here
 -----------------------------------
