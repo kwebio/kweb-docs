@@ -5,8 +5,7 @@ Getting Started
 What you'll need
 ----------------
 
-Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is familiarity with
-`Gradle <https://gradle.org/>`_.  You should also have some familiarity with HTML.
+Familiarity with `Kotlin <https://kotlinlang.org/>`_ and `Gradle <https://gradle.org/>`_ is assumed, as is working knowledge of HTML.
 
 Adding Kweb to your project
 ---------------------------
@@ -27,9 +26,9 @@ Then add Kweb to the dependencies block:
      compile 'com.github.kwebio:core:LATEST_VERSION'
    }
 
-Replace LATEST_VERSION with the latest version of Kweb, which you can find on `JitPack <https://jitpack.io/#kwebio/core>`_.
+Replace "LATEST_VERSION" with the name of the latest version of Kweb, which you can find on `JitPack <https://jitpack.io/#kwebio/core>`_.
 
-Hello world
+Hello world!
 -----------
 
 Create a new Kotlin file and type this:
@@ -56,11 +55,7 @@ following HTML body:
     <h1>Hello World!</h1>
   </body>
 
-This simple example already illustrates some important features of Kweb:
-
-* Getting a kwebsite up and running is a breeze, no messing around with servlets, or third party webservers
-
-* Your Kweb code will loosely mirror the structure of the HTML it generates
+This simple example illustrates some important features of Kweb; including, 1) Kwebsites are a breeze to set up because there's no need to mess around with servlets or third party webservers, and 2) Kweb code will loosely mirror the structure of the HTML it generates.
 
 Hello world²
 ------------
@@ -69,8 +64,9 @@ One way to think of Kweb is as a
 `domain-specific language (DSL) <https://en.wikipedia.org/wiki/Domain-specific_language>`_ for building and manipulating
 a `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
-One of the great things about Kotlin is its ability to embed DSLs, so you can use the full power of Kotlin, including
-`control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for loops*:
+Kweb takes full advantage of Kotlin's ability to embed DSLs, allowing full use of
+`control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for* loops.
+
 
 Here is a simple example using a *for* loop:
 
@@ -91,7 +87,7 @@ Here is a simple example using a *for* loop:
     }
    }
 
-To produce...
+The above code will produce the following:
 
 .. code-block:: html
 
