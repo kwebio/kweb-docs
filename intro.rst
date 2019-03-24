@@ -79,6 +79,8 @@ Relevant Links
 
 * Source code: https://github.com/kwebio/core
 
+* Todo list Demo (running on a $50/mo EC2 instance): http://demo.kweb.io:7659/
+
 * Feedback: https://github.com/kwebio/core/issues
 
 * Help: https://gitter.im/kwebio/Lobby
