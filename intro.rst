@@ -79,7 +79,8 @@ Relevant Links
 
 * Source code: https://github.com/kwebio/core
 
-* Demo of `todo list example app <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_: http://demo.kweb.io:7659/ (note: running on slow $50/mo EC2 instance)
+* Demo of `todo list example app <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_: http://demo.kweb.io:7659/
+  (note: running on slow $50/mo EC2 instance)
 
 * Feedback: https://github.com/kwebio/core/issues
 
