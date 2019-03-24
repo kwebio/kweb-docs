@@ -47,10 +47,10 @@ Is there a larger working example?
 Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
 implementation which demonstrates many of Kweb's features.
 
-You can find a running example here: http://demo.kweb.io:7659/
+You can find a copy of this demo running here: http://demo.kweb.io:7659/
 
-This demo is running on a $50/month EC2 instance that may not always be up.  Try visiting the same list URL in two
-different browser windows and notice how they synchronize in realtime.
+It's running on a $50/month EC2 instance.  Try visiting the same list URL in two different browser windows and notice
+how they synchronize in realtime.
 
 What about templates?
 ---------------------
