@@ -49,8 +49,8 @@ implementation which demonstrates many of Kweb's features.
 
 You can find a running example here: http://demo.kweb.io:7659/
 
-This is running on a $50/month EC2 instance that may not always be up.  Try visiting the same list URL in two different
-browser windows and notice how they synchronize in realtime.
+This demo is running on a $50/month EC2 instance that may not always be up.  Try visiting the same list URL in two
+different browser windows and notice how they synchronize in realtime.
 
 What about templates?
 ---------------------
