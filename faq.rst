@@ -54,6 +54,11 @@ Kweb replaces templates with something better - a typesafe HTML DSL embedded wit
 
 If you like you could separate out the code that interfaces directly to the DOM - this would be architecturally closer to a template-based approach, but we view it as a feature that this paradigm isn't forced on the programmer.
 
+How is "Kweb" pronounced?
+-------------------------
+
+One syllable, like "queue" and "web" smashed together.
+
 I have a question not answered here
 -----------------------------------
 
