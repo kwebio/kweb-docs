@@ -47,6 +47,8 @@ Is there a larger working example?
 Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
 implementation which demonstrates many of Kweb's features.
 
+You can (often) find a running example here: http://demo.kweb.io:7659/
+
 What about templates?
 ---------------------
 
