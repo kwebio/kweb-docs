@@ -57,6 +57,24 @@ features to render parts of the DOM using this value.
 The key advantage here is that if the URL changes the page can be updated without a full page refresh, but
 rather only changing the parts of the DOM that need to change - this is much faster and more efficient.
 
+Handing 404s
+------------
+
+You can override the default 404 Page Not Found message in the event that none of the routes match, making it easy
+to integrate the 404 page with the style of your overall website:
+
+.. code-block:: kotlin
+
+    route {
+        path("/users/{userId}") { params ->
+            // ...
+        }
+        notFound {
+          h1().text("Page not found!")
+        }
+    }
+
+
 Modifying the URL
 -----------------
 
