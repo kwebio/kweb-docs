@@ -79,7 +79,7 @@ Relevant Links
 
 * Source code: https://github.com/kwebio/core
 
-* Demo of `todo list example <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_: http://demo.kweb.io:7659/
+* Demo: http://demo.kweb.io:7659/
 
 * Feedback: https://github.com/kwebio/core/issues
 
