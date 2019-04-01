@@ -42,4 +42,4 @@ previously described:
 Larger Example
 --------------
 
-For a more complete example see the `to do demo <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_.
+For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_.
