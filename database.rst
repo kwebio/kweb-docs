@@ -5,7 +5,7 @@ Database
 Shoebox
 -------
 
-Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value store that supports the
+Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a simple key-value store that supports the
 observer pattern, and a sister project to Kweb.  Shoebox has both in-memory and persistent (filesystem) engines.
 
 In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_
