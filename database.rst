@@ -2,8 +2,8 @@
 Database
 ========
 
-Shoebox
--------
+Overview
+--------
 
 Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value store that supports the
 observer pattern, and a sister project to Kweb.  Shoebox has both in-memory and persistent (filesystem) engines.
@@ -14,11 +14,10 @@ and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimite
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
 
-Example
--------
+Shoebox and State
+-----------------
 
-This example shows how *toVar* can be used to convert a value in a Shoebox to a KVar, and use it with the DOM as
-previously described:
+This example shows how *toVar* can be used to convert a value in a Shoebox to a `KVar </en/latest/state.html>`_:
 
 .. code-block:: kotlin
 
@@ -39,7 +38,7 @@ previously described:
         }
     }
 
-Larger Example
---------------
+Working Example
+---------------
 
 For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_.
