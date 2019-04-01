@@ -24,5 +24,6 @@ if you have questions.
    events
    state
    routing
+   database
    aesthetics
    faq
