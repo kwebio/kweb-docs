@@ -2,8 +2,8 @@
 DOM Basics
 ==========
 
-Modifying the DOM
------------------
+Creating DOM Elements
+---------------------
 
 The DOM is built starting with an element, typically the BodyElement which is obtained easily as follows:
 
