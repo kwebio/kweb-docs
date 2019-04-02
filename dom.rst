@@ -54,7 +54,7 @@ more complete list in the `API documentation <https://jitpack.io/com/github/kweb
 (scroll down to the *Functions* section).  This provides a nice statically-typed HTML DSL, fully integrated
 with the Kotlin language.
 
-If an tag doesn't have explicit support in Kweb that's not a problem.  For example, here is how you might use the
+If a tag doesn't have explicit support in Kweb that's not a problem.  For example, here is how you might use the
 infamous and now-obsolete <blink> tag:
 
 .. code-block:: kotlin
