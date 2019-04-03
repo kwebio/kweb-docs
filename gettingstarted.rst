@@ -38,6 +38,7 @@ Create a new Kotlin file and type this:
 
    import io.kweb.*
    import io.kweb.dom.element.*
+   import io.kweb.dom.element.creation.tags.*
 
    fun main() {
      Kweb(port = 16097) {
@@ -78,6 +79,7 @@ Here is a simple example using a *for* loop:
 
    import io.kweb.*
    import io.kweb.dom.element.*
+   import io.kweb.dom.element.creation.tags.*
 
    fun main() {
      Kweb(port = 16097) {
