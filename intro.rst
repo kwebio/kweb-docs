@@ -70,7 +70,7 @@ Features
 
 * Efficient server-side rendering, DOM caching, and instruction preloading
 
-* Ridiculously lightweight, Kweb is less than 5,000 lines of code
+* Very lightweight, Kweb is less than 5,000 lines of code
 
 Relevant Links
 --------------
