@@ -34,7 +34,7 @@ documentation:
       <i class="search icon"></i>
     </div>
 
-We can translate this to Kotlin fairly directly thanks to Kweb's HTML `DSL <https://en.wikipedia.org/wiki/Domain-specific_language>`_:
+Translates to the Kotlin:
 
 .. code-block:: kotlin
 
@@ -58,3 +58,8 @@ capabilities.
 
 The `Semantic UI plugin implementation <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/plugins/semanticUI>`_
 itself can serve as an example.
+
+Example and Demo
+----------------
+
+See a simple app built using Semantic UI and Kweb (with source): http://demo.kweb.io:7659/
