@@ -2,29 +2,29 @@
 Aesthetics
 ==========
 
-Kweb has out-of-the-box support for the excellent `Semantic UI <https://semantic-ui.com/>`_
+Kweb has out-of-the-box support for the excellent `Fomantic UI <https://fomantic-ui.com>`_
 framework, which helps create beautiful, responsive layouts using human-friendly HTML.
 
-Kweb's Semantic UI plugin provides a convenient DSL to use Semantic UI.
+Kweb's Fomantic UI plugin provides a convenient DSL to use Fomantic UI.
 
 Getting started
 ---------------
 
-First tell Kweb to use the Semantic UI plugin:
+First tell Kweb to use the fomantic UI plugin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.semanticUI.*
+    import io.kweb.plugins.fomanticUI.*
 
     fun main() {
-        Kweb(port = 16097, plugins = listOf(semanticUIPlugin)) {
+        Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)) {
             // ...
         }
     }
 
-Now the plugin will add the Semantic UI CSS and JavaScript code to your website automatically.
+Now the plugin will add the Fomantic UI CSS and JavaScript code to your website automatically.
 
-Now, let's look at one of the simple examples from the `Semantic UI <https://semantic-ui.com/elements/input.html>`_
+Now, let's look at one of the simple examples from the `Fomantic UI <https://Fomantic-ui.com/elements/input.html>`_
 documentation:
 
 .. code-block:: html
@@ -38,14 +38,14 @@ Translates to the Kotlin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.semanticUI.*
+    import io.kweb.plugins.FomanticUI.*
     import io.kweb.dom.element.creation.tags.InputType.*
 
     fun main() {
-        Kweb(port = 16097, plugins = listOf(semanticUIPlugin)) {
-            div(semantic.ui.icon.input).new {
+        Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)) {
+            div(fomantic.ui.icon.input).new {
                 input(type = text, placeholder = "Search...")
-                i(semantic.search.icon)
+                i(fomantic.search.icon)
             }
         }
     }
@@ -56,10 +56,10 @@ Other UI Frameworks
 It's easy to create Kweb plugins for many JavaScript tools and frameworks, taking full advantage of Kotlin's DSL
 capabilities.
 
-The `Semantic UI plugin implementation <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/plugins/semanticUI>`_
+The `Fomantic UI plugin implementation <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/plugins/fomanticUI>`_
 itself can serve as an example.
 
 Example and Demo
 ----------------
 
-See a simple app built using Semantic UI and Kweb (with source): http://demo.kweb.io:7659/
+See a simple app built using Fomantic UI and Kweb (with source): http://demo.kweb.io:7659/
