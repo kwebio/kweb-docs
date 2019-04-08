@@ -75,7 +75,7 @@ Features
 Relevant Links
 --------------
 
-* Website: http://kweb.io/
+* Website: https://kweb.io/
 
 * Source code: https://github.com/kwebio/core
 
