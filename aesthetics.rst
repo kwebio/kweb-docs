@@ -38,7 +38,7 @@ Translates to the Kotlin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.FomanticUI.*
+    import io.kweb.plugins.fomanticUI.*
     import io.kweb.dom.element.creation.tags.InputType.*
 
     fun main() {
