@@ -21,8 +21,8 @@ A simple example
 
     import io.kweb.Kweb
     import io.kweb.dom.element.new
+    import io.kweb.dom.element.creation.tags.h1
     import io.kweb.routing.route
-    import io.kweb.state.*
 
     fun main() {
         Kweb(port = 16097) {
