@@ -70,32 +70,24 @@ Adding support for new tags to Kweb is easy, take a look at `the source <https:/
 If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/core>`_, or just `ask us <https://github.com/kwebio/core/issues>`_
 and we'll do our best to add support.
 
-Reading the DOM
----------------
+Binding a KVar to an InputElement value
+---------------------------------------
 
-You can read values from the DOM too:
+For <INPUT> elements you can set the value to a KVar, note that this connection is bidirectional, so any changes
+to the KVar will be reflected in realtime in the browser, and similarly any changes in the browser by the user
+will be reflected immediately in the KVar:
 
 .. code-block:: kotlin
 
-    doc.body.new {
-        val label = h1().text("What is your name?")
-        val clickMe = input(type = text)
-        clickMe.setValue("Foo Bar")
-        GlobalScope.launch {
-            val v : String = clickMe.getValue().await()
-            label.text("Value: $v")
+    Kweb(port = 2395) {
+        doc.body.new {
+             p().text("What is your name?")
+            val clickMe = input(type = text)
+            val nameKVar = KVar("Peter Pan")
+            clickMe.value = nameKVar
+            p().text(nameKVar.map { n -> "Hi $n!" })
         }
     }
-
-Notice that *clickMe.getValue()* doesn't return a String, it returns a `CompletableFuture\<String\> <https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html>`_.
-This is because retrieving something from the DOM requires some communication with the browser and
-will take some time - and we don't want to block while we wait.
-
-This allows us to take advantage of Kotlin's `coroutines <https://kotlinlang.org/docs/reference/coroutines/basics.html>`_
-functionality to make this fairly seamless to the programmer (using `GlobalScope.launch and await <https://github.com/Kotlin/kotlinx.coroutines/blob/master/docs/basics.md>`_).
-
-Yes, this example is a little pointless since we're just setting the value and then immediately reading it, more
-realistic use cases will follow.
 
 Further Reading
 ---------------
