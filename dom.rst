@@ -70,25 +70,6 @@ Adding support for new tags to Kweb is easy, take a look at `the source <https:/
 If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/core>`_, or just `ask us <https://github.com/kwebio/core/issues>`_
 and we'll do our best to add support.
 
-Binding a KVar to an InputElement value
----------------------------------------
-
-For <INPUT> elements you can set the value to a KVar, note that this connection is bidirectional, so any changes
-to the KVar will be reflected in realtime in the browser, and similarly any changes in the browser by the user
-will be reflected immediately in the KVar:
-
-.. code-block:: kotlin
-
-    Kweb(port = 2395) {
-        doc.body.new {
-             p().text("What is your name?")
-            val clickMe = input(type = text)
-            val nameKVar = KVar("Peter Pan")
-            clickMe.value = nameKVar
-            p().text(nameKVar.map { n -> "Hi $n!" })
-        }
-    }
-
 Further Reading
 ---------------
 
