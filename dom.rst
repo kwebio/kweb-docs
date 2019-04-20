@@ -46,6 +46,43 @@ Or delete it:
 
     button.delete()
 
+Reading from the DOM
+--------------------
+
+Kweb can also read from the DOM, in this case the value of an <input> element:
+
+.. code-block:: kotlin
+
+    import io.kweb.Kweb
+    import io.kweb.dom.element.creation.tags.*
+    import io.kweb.dom.element.events.on
+    import io.kweb.dom.element.new
+    import io.kweb.state.KVar
+    import kotlinx.coroutines.GlobalScope
+    import kotlinx.coroutines.future.await
+    import kotlinx.coroutines.launch
+
+    fun main() {
+        Kweb(port = 2395) {
+            doc.body.new {
+                val input: InputElement = input()
+                input.on.submit {
+                    GlobalScope.launch {
+                        val value = input.getValue().await()
+                        println("Value: $value")
+                    }
+                }
+            }
+        }
+    }
+
+Note that input.getValue() returns a `CompletableFuture<String> <https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html>`_.
+This is because it can take up to several hundred milliseconds to retrieve from the browser, and we don't want the application
+to block if it can be avoided.  Here we use Kotlin's very powerful `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_
+features to avoid any unnecessary blocking.
+
+.. note:: We discuss a better way to do this in a `subsequent section <https://docs.kweb.io/en/latest/state.html#binding-a-kvar-to-an-input-element-s-value>`_.
+
 Supported HTML tags
 -------------------
 
@@ -69,6 +106,7 @@ Extending Kweb to support new HTML tags
 Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt>`_.
 If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/core>`_, or just `ask us <https://github.com/kwebio/core/issues>`_
 and we'll do our best to add support.
+
 
 Further Reading
 ---------------
