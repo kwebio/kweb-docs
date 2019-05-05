@@ -59,7 +59,7 @@ KVars and the DOM
 You can use a KVar (or KVal) to set the text of a DOM element:
 
 .. code-block:: kotlin
-q=
+
     val name = KVar("John")
     li().text(name)
 
