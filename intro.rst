@@ -5,11 +5,9 @@ Introduction
 Motivation
 ----------
 
-Most websites consist of at least two tightly coupled components.  One runs in the browser, and the other runs on a
-web server.
+Most websites consist of at least two tightly coupled components.  One runs in the browser, the other on the server:
 
-* Client
-    * Runs in the browser
+* Browser
     * Responsible for user interaction
     * Typically written in JavaScript
     * Untrusted execution environment
@@ -22,11 +20,12 @@ web server.
     * Trusted execution environment
     * Reliable persistent global state
 
-The fact that these two tightly coupled components are often written in different languages and must communicate
-with each other over a HTTP connection adds significant complexity to the overall system.
+These two tightly coupled components are often written in different languages and must communicate
+with each other over a HTTP connection.  This adds significant complexity to the overall system.
 
-This is the problem Kweb was designed to solve.  We do this by moving as much of the logic to the server as possible,
-leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
+Kweb is designed to solve this problem by departing from the "fat client" architecture.  We do this by moving as much
+of the logic to the server as possible, leaving a simple but powerful interface to the web browser where server-browser
+communications are handled automatically.
 
 Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
