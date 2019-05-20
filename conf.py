@@ -137,7 +137,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Kweb.tex', u'Kweb: The Easier Way to Website',
+    (master_doc, 'Kweb.tex', u'Kweb: Pleasant Kotlin web development',
      u'Ian Clarke', 'manual'),
 ]
 
@@ -147,7 +147,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'kweb', u'The Easier Way to Website',
+    (master_doc, 'kweb', u'Pleasant Kotlin web development',
      [author], 1)
 ]
 
@@ -158,8 +158,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Kweb', u'The Easier Way to Website',
-     author, 'Kweb', 'The Easier Way to Website',
+    (master_doc, 'Kweb', u'Pleasant Kotlin web development',
+     author, 'Kweb', 'Pleasant Kotlin web development',
      'Miscellaneous'),
 ]
 
