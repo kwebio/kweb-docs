@@ -6,7 +6,7 @@
 Kweb: Pleasant Kotlin web development
 =====================================
 
-Create beautiful, efficient, and powerful websites in Kotlin, quickly.
+A new way to create beautiful, efficient, and scalable websites in Kotlin, quickly.
 
 This documentation is a work-in-progress, feedback is very welcome.  Please
 `submit an issue <https://github.com/kwebio/docs/issues>`_, or `fork, improve,
