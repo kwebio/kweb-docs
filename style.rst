@@ -1,6 +1,6 @@
-==========
-Aesthetics
-==========
+===========
+CSS & Style
+===========
 
 Kweb has out-of-the-box support for the excellent `Fomantic UI <https://fomantic-ui.com>`_
 framework, which helps create beautiful, responsive layouts using human-friendly HTML.

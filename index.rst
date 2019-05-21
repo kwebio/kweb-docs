@@ -25,5 +25,5 @@ if you have questions.
    state
    routing
    database
-   aesthetics
+   style
    faq
