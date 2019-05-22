@@ -70,10 +70,10 @@ Numerous other functions on `Elements <https://jitpack.io/com/github/kwebio/core
 support KVars in a similar manner, including `innerHtml() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/inner-h-t-m-l.html>`_
 and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element/-element/set-attribute.html>`_.
 
-Binding a KVar to an <input> element's value
+Binding a KVar to an input element's value
 --------------------------------------------
 
-For <INPUT> elements you can set the value to a KVar, note that this connection is bidirectional, so any changes
+For <input> elements you can set the value to a KVar, note that this connection is bidirectional, so any changes
 to the KVar will be reflected in realtime in the browser, and similarly any changes in the browser by the user
 will be reflected immediately in the KVar:
 
@@ -89,6 +89,9 @@ will be reflected immediately in the KVar:
         }
     }
 
+This will also work for <option> and <textarea> elements which also have values.
+
+Source: `ValueElement.value <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L85>`_
 
 Rendering state to a DOM fragment
 ---------------------------------
