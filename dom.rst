@@ -29,15 +29,15 @@ supported by all Element types):
    fun main() {
      Kweb(port = 16097) {
         doc.body.new {
-            val button = button().text("Click Me!")
+            button().text("Click Me!")
         }
       }
     }
 
-As you can see, it's easy to set the text of an element, you can also modify its attributes:
+If you assign the button element to a val then you can also modify its attributes:
 
 .. code-block:: kotlin
-
+    val button = button().text("Click Me!")
     button.setAttribute("class", "bigbutton")
 
 Or delete it:
