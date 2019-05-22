@@ -5,12 +5,10 @@ CSS & Style
 Kweb has out-of-the-box support for the excellent `Fomantic UI <https://fomantic-ui.com>`_
 framework, which helps create beautiful, responsive layouts using human-friendly HTML.
 
-Kweb's Fomantic UI plugin provides a convenient DSL to use Fomantic UI.
-
 Getting started
 ---------------
 
-First tell Kweb to use the fomantic UI plugin:
+First tell Kweb to use the Fomantic UI plugin:
 
 .. code-block:: kotlin
 
@@ -22,9 +20,9 @@ First tell Kweb to use the fomantic UI plugin:
         }
     }
 
-Now the plugin will add the Fomantic UI CSS and JavaScript code to your website automatically.
+Now the plugin will add the Fomantic CSS and JavaScript code to your website automatically.
 
-Now, let's look at one of the simple examples from the `Fomantic UI <https://Fomantic-ui.com/elements/input.html>`_
+Let's look at one of the simple examples from the `Fomantic UI <https://Fomantic-ui.com/elements/input.html>`_
 documentation:
 
 .. code-block:: html
@@ -34,7 +32,7 @@ documentation:
       <i class="search icon"></i>
     </div>
 
-Translates to the Kotlin:
+This translates to the Kotlin:
 
 .. code-block:: kotlin
 
@@ -49,6 +47,8 @@ Translates to the Kotlin:
             }
         }
     }
+
+Take alook at the `Fomantic UI documentation <https://fomantic-ui.com>`_ to see everything else it can do.
 
 Other UI Frameworks
 -------------------
