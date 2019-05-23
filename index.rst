@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Kweb: Pleasant Kotlin web development
+Kweb: Pleasant web development, in Kotlin
 =====================================
 
 A new way to create beautiful, efficient, and scalable websites in Kotlin, quickly.
