@@ -5,9 +5,13 @@ Frequently Asked Questions
 Won't Kweb be slow relative to client-side web frameworks?
 ----------------------------------------------------------
 
-No, Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ allow you to avoid
-any server communication delay by responding immediately to DOM-modifying events.  This should address the majority
-of scenarios where a server-driven approach might otherwise be sluggish.
+No, Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ allows you to avoid
+any server communication delay by responding immediately to DOM-modifying events.
+
+Kweb is designed to be efficient by default, minimizing how much work the user's web browser must do, while also
+keeping things efficient server-side.
+
+If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/core/issues>`_.
 
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
