@@ -23,13 +23,16 @@ We can also read and modify the value of a KVar:
     println("Counter value ${counter.value}")
     counter.value = 1
     println("Counter value ${counter.value}")
+    counter.value++
+    println("Counter value ${counter.value}")
 
 Will print:
 
 .. code-block:: text
 
     Counter value 0
-    counter value 1
+    Counter value 1
+    Counter value 2
 
 KVars support powerful mapping semantics to create new KVars:
 

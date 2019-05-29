@@ -71,8 +71,7 @@ One way to think of Kweb is as a
 `domain-specific language (DSL) <https://en.wikipedia.org/wiki/Domain-specific_language>`_ for building and manipulating
 a `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
 
-One of the great things about Kotlin is its ability to embed DSLs, so you can use the full power of Kotlin, including
-`control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for loops*:
+But this DSL can also do anything Kotlin can do, including `control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for loops*:
 
 Here is a simple example using a *for* loop:
 
@@ -107,3 +106,25 @@ To produce...
         <li>Hello World 5!</li>
     <ul>
   </body>
+
+You can also break your code up using functions, to enable modularization and reuse:
+
+.. code-block:: kotlin
+
+    fun main() {
+        Kweb(port = 16097) {
+            doc.body.new {
+                ul().new {
+                    for (x in 1..5) {
+                        createMessage(x)
+                    }
+                }
+            }
+        }
+    }
+
+    private fun ElementCreator<ULElement>.createMessage(x: Int) {
+        li().text("Hello World $x!")
+    }
+
+
