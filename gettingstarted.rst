@@ -107,7 +107,7 @@ To produce...
     <ul>
   </body>
 
-You can also break your code up using functions, to enable modularization and reuse:
+You can use functions for modularization and reuse:
 
 .. code-block:: kotlin
 
@@ -126,5 +126,3 @@ You can also break your code up using functions, to enable modularization and re
     private fun ElementCreator<ULElement>.createMessage(x: Int) {
         li().text("Hello World $x!")
     }
-
-
