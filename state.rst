@@ -2,13 +2,21 @@
 Observer Pattern & State
 ========================
 
-Building Blocks
+Overview
+--------
+
+Kweb uses the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_ to manage state.
+
+A Kweb app can be viewed as a mapping function between state on the server and the DOM within the end-user's web
+browser.
+
+Once this mapping is defined, any modification to the state propagates *automatically* to user's browser.
+
+Building blocks
 ---------------
 
-Kweb makes use of the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, through the
-`KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class.
-
-A KVar contains a single typed object, which can change over time.  For example:
+A `KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class contains a
+single typed object, which can change over time.  For example:
 
 .. code-block:: kotlin
 
