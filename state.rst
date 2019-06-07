@@ -8,9 +8,8 @@ Overview
 Kweb uses the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_ to manage state.
 
 A Kweb app can be viewed as a mapping function between state on the server and the DOM within the end-user's web
-browser.
-
-Once this mapping is defined, any modification to the state propagates *automatically* to user's browser.
+browser.  Once this mapping is defined, simply modify this state and the change will propagate automatically
+to the browser.
 
 Building blocks
 ---------------
