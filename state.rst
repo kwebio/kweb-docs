@@ -1,6 +1,6 @@
-============================
-State & The Observer Pattern
-============================
+========================
+Observer Pattern & State
+========================
 
 Building Blocks
 ---------------
@@ -137,8 +137,8 @@ possible to be very selective about what parts of the DOM must be modified in re
     `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
     function is a powerful tool for manipulating KVals and KVars without unwrapping them.
 
-Reversible mappings
--------------------
+KVals & Reversible mapping
+--------------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.
 `KVal <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/index.html>`_'s values may not be
