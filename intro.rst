@@ -77,12 +77,12 @@ Relevant Links
 
 * Website: https://kweb.io/
 
-* Source code: https://github.com/kwebio/core
+* Source code: https://github.com/kwebio/kweb-core
 
 * Demo: http://demo.kweb.io:7659/
 
-* Feedback: https://github.com/kwebio/core/issues
+* Feedback: https://github.com/kwebio/kweb-core/issues
 
 * Help: https://gitter.im/kwebio/Lobby
 
-* API Docs: https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/
+* API Docs: https://javadoc.jitpack.io/com/github/kwebio/kweb-core/latest/javadoc/index.html
