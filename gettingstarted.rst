@@ -27,7 +27,7 @@ Then add Kweb to the dependencies block:
      compile 'com.github.kwebio:kweb-core:LATEST_VERSION'
    }
 
-Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/core <https://jitpack.io/#kwebio/core>`_,
+Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_,
 along with instructions for other dependency management tools like Maven and Ivy.
 
 Hello world
