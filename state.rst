@@ -14,7 +14,7 @@ to the browser.
 Building blocks
 ---------------
 
-A `KVar <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/index.html>`_ class contains a
+A `KVar <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/state/KVar.kt>`_ class contains a
 single typed object, which can change over time.  For example:
 
 .. code-block:: kotlin
