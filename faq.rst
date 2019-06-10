@@ -5,7 +5,7 @@ Frequently Asked Questions
 Won't Kweb be slow relative to client-side web frameworks?
 ----------------------------------------------------------
 
-No, Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ allows you to avoid
+No, Kweb's `immediate events <https://docs.kweb.io/en/latest/events.html#immediate-events>`_ allows you to avoid
 any server communication delay by responding immediately to DOM-modifying events.
 
 Kweb is designed to be efficient by default, minimizing how much work the user's web browser must do, while also
@@ -25,7 +25,7 @@ Kweb to, as there are also very important differences:
   `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines of code, almost a 100:1 ratio!
 
 
-- Vaadin doesn't have any equivalent feature to Kweb's `immediate events <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_,
+- Vaadin doesn't have any equivalent feature to Kweb's `immediate events <https://docs.kweb.io/en/latest/events.html#immediate-events>`_,
   which has led to frequent `complaints <https://stackoverflow.com/a/22848521/16050>`_ of sluggishness from Vaadin users
   because a server round-trip is required to update the DOM.
 
