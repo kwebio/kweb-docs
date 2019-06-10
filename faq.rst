@@ -11,7 +11,7 @@ any server communication delay by responding immediately to DOM-modifying events
 Kweb is designed to be efficient by default, minimizing how much work the user's web browser must do, while also
 keeping things efficient server-side.
 
-If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/core/issues>`_.
+If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/kweb-core/issues>`_.
 
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
@@ -21,7 +21,7 @@ In many ways Kweb is a philosophical descendant of Vaadin.  This makes Vaadin on
 Kweb to, as there are also very important differences:
 
 - Kweb is *far* more lightweight than Vaadin.  At the time of writing,
-  `kwebio/core <https://github.com/kwebio/core>`_ is about 4,351 lines of code, while
+  `kwebio/core <https://github.com/kwebio/kweb-core>`_ is about 4,351 lines of code, while
   `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines of code, almost a 100:1 ratio!
 
 
@@ -48,7 +48,7 @@ Kweb to, as there are also very important differences:
 Is there a larger working example?
 ----------------------------------
 
-Yes, here is a simple `todo list <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
+Yes, here is a simple `todo list <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_
 implementation which demonstrates many of Kweb's features.
 
 You can find a copy of this demo running here: http://demo.kweb.io:7659/

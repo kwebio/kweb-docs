@@ -41,4 +41,4 @@ This example shows how *toVar* can be used to convert a value in a Shoebox to a 
 Working Example
 ---------------
 
-For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_.
+For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/io/kweb/demos/todo>`_.
