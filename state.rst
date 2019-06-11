@@ -144,6 +144,20 @@ possible to be very selective about what parts of the DOM must be modified in re
     `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
     function is a powerful tool for manipulating KVals and KVars without unwrapping them.
 
+Extracting data class properties
+--------------------------------
+
+If your KVar contains a `data class <https://kotlinlang.org/docs/reference/data-classes.html>`_ then you can use
+Kvar.property() to create a KVar from one of its properties which will update the original KVar if changed:
+
+.. code-block:: kotlin
+
+    data class User(val name : String)
+    val user = KVar(User("Ian"))
+    val name = user.property(User::name)
+    name.value = "John"
+    println(user) // Will print: KVar(User(name = "John"))
+
 KVals & Reversible mapping
 --------------------------
 
@@ -177,17 +191,3 @@ Will print:
 
     counter: 5, doubled: 10
     counter: 6, doubled: 12
-
-Data classes
-------------
-
-If your KVar contains a `data class <https://kotlinlang.org/docs/reference/data-classes.html>`_ then you can use
-Kvar.property() to create a KVar from one of its properties which will update the original KVar if changed:
-
-.. code-block:: kotlin
-
-    data class User(val name : String)
-    val user = KVar(User("Ian"))
-    val name = user.property(User::name)
-    name.value = "John"
-    println(user) // Will print: KVar(User(name = "John"))
