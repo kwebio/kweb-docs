@@ -14,7 +14,7 @@ keeping things efficient server-side.
 If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/kweb-core/issues>`_.
 
 Why risk my project on a framework I just heard of?
-------------------------------------------------------------
+---------------------------------------------------
 
 Picking a framework is stressful.  Pick the wrong one and perhaps the company behind it goes out of business,
 meaning your entire app is now built on something obsolete.  We've been there.
