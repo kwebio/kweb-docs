@@ -28,7 +28,8 @@ company, reducing long-term risk significantly.
 Kweb also has the advantage of simplicity, and an amazingly small codebase as a result. This makes it much easier for
 people to contribute, and less code means fewer bugs.
 
-That said, Kweb is still pre-1.0, one of the implications being that we can and will make breaking API changes.
+That said, Kweb is still pre-1.0, one of the implications being that we can and will make breaking API changes, and
+new releases are quite frequent.
 
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
