@@ -2,8 +2,8 @@
 DOM Basics
 ==========
 
-Creating DOM Elements
----------------------
+Creating DOM Elements and Fragments
+-----------------------------------
 
 The DOM is built starting with an element, typically the BodyElement which is obtained easily as follows:
 
@@ -45,6 +45,10 @@ Or delete it:
 .. code-block:: kotlin
 
     button.delete()
+
+Of course elements can be nested:
+
+
 
 Reading from the DOM
 --------------------
