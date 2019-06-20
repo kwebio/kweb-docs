@@ -26,7 +26,7 @@ This may mean we lack the resource of salaried contributors, but we also avoid t
 company, reducing long-term risk significantly.
 
 Because of the powerful abstractions it's built on, Kweb also has the advantage of simplicity (<5k loc). This makes
-it easier for people to contribute, and of course, less code means fewer bugs.
+it easier for people to contribute, and less code means fewer bugs.
 
 That said, Kweb is still pre-1.0, one of the implications being that we can and will make breaking API changes, and
 new releases are quite frequent.
