@@ -46,9 +46,6 @@ Or delete it:
 
     button.delete()
 
-Of course elements can be nested:
-
-
 
 Reading from the DOM
 --------------------
