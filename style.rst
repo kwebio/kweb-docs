@@ -48,7 +48,7 @@ This translates to the Kotlin:
         }
     }
 
-Take alook at the `Fomantic UI documentation <https://fomantic-ui.com>`_ to see everything else it can do.
+Take a look at the `Fomantic UI documentation <https://fomantic-ui.com>`_ to see everything else it can do.
 
 Other UI Frameworks
 -------------------
