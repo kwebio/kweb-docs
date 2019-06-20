@@ -107,13 +107,13 @@ infamous and now-obsolete <blink> tag:
 Extending Kweb to support new HTML tags
 ---------------------------------------
 
-Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt>`_.
-If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/core>`_, or just `ask us <https://github.com/kwebio/core/issues>`_
+Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt>`_.
+If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/kweb-core>`_, or just `ask us <https://github.com/kwebio/kweb-core/issues>`_
 and we'll do our best to add support.
 
 
 Further Reading
 ---------------
 
-The `Element <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/Element.kt>`_ class
+The `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/Element.kt>`_ class
 provides many other useful ways to interact with DOM elements.

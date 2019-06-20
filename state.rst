@@ -101,7 +101,7 @@ will be reflected immediately in the KVar:
 
 This will also work for <option> and <textarea> elements which also have values.
 
-Source: `ValueElement.value <https://github.com/kwebio/core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L85>`_
+Source: `ValueElement.value <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L85>`_
 
 Rendering state to a DOM fragment
 ---------------------------------
