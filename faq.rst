@@ -8,8 +8,7 @@ Won't Kweb be slow relative to client-side web frameworks?
 No, Kweb's `immediate events <https://docs.kweb.io/en/latest/events.html#immediate-events>`_ allows you to avoid
 any server communication delay by responding immediately to DOM-modifying events.
 
-Kweb is designed to be efficient by default, minimizing how much work the user's web browser must do, while also
-keeping things efficient server-side.
+Kweb is designed to be efficient by default, minimizing both browser and server CPU/memory.
 
 If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/kweb-core/issues>`_.
 
