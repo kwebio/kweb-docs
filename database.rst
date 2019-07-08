@@ -38,6 +38,12 @@ This example shows how *toVar* can be used to convert a value in a Shoebox to a 
         }
     }
 
+Other Databases
+---------------
+
+Kweb doesn't require you to use Shoebox, you're free to use any database, either directly, or via a database
+abstraction layer of your choosing.
+
 Working Example
 ---------------
 

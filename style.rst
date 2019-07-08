@@ -40,7 +40,7 @@ This translates to the Kotlin:
     import io.kweb.dom.element.creation.tags.InputType.*
 
     fun main() {
-        Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)) {
+        Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)4) {
             div(fomantic.ui.icon.input).new {
                 input(type = text, placeholder = "Search...")
                 i(fomantic.search.icon)
