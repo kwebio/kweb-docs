@@ -173,7 +173,7 @@ The *KVar* class has a second
 `map() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-var/map.html>`_ function which takes
 a *ReversibleFunction* implementation.  This version of *map* will produce a KVar which can be modified, as follows:
 
-.. note:: Reversible mappings is an advanced feature that you only need if you want the mapped value to be a mutable
+.. note:: Reversible mappings are an advanced feature that you only need if you want the mapped value to be a mutable
     KVar rather than the read-only KVal created by the unidirectional `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
     function.
 
