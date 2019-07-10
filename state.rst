@@ -174,7 +174,8 @@ The *KVar* class has a second
 a *ReversibleFunction* implementation.  This version of *map* will produce a KVar which can be modified, as follows:
 
 .. note:: Reversible mappings is an advanced feature that you only need if you want the mapped value to be a mutable
-    KVar rather than a read-only KVal.
+    KVar rather than the read-only KVal created by a the `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
+    function.
 
 .. code-block:: kotlin
 
