@@ -193,5 +193,5 @@ Will print:
     counter: 6, doubled: 12
 
 .. note:: Reversible mappings are an advanced feature that you only need if you want the mapped value to be a mutable
-    KVar rather than the read-only KVal created by the unidirectional `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
-    function.
+    KVar.  Most of the time the simple `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
+    function will be what you need.
