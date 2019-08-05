@@ -39,7 +39,7 @@ If you assign the button element to a val then you can also modify its attribute
 .. code-block:: kotlin
 
     val button = button().text("Click Me!")
-    button.setAttribute("class", "bigbutton")
+    button.classes("bigbutton")
 
 Or delete it:
 
