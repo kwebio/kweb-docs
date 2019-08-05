@@ -37,6 +37,7 @@ supported by all Element types):
 If you assign the button element to a val then you can also modify its attributes:
 
 .. code-block:: kotlin
+
     val button = button().text("Click Me!")
     button.setAttribute("class", "bigbutton")
 
