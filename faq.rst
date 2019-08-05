@@ -12,24 +12,6 @@ Kweb is designed to be efficient by default, minimizing both browser and server 
 
 If you encounter a situation in which Kweb is slow please `submit a bug <https://github.com/kwebio/kweb-core/issues>`_.
 
-Why risk my project on a framework I just heard of?
----------------------------------------------------
-
-Picking a framework is stressful.  Pick the wrong one and perhaps the company behind it goes out of business,
-meaning your entire app is now built on something obsolete.  We've been there.
-
-Somewhat unusually for a framework, rather than being tied to a company with paid contributors, Kweb is an individual
-passion project, with a growing number of voluntary contributors.
-
-This may mean we lack the resource of salaried contributors, but we also avoid the dependence on the success of any one
-company, reducing long-term risk significantly.
-
-Because of the powerful abstractions it's built on, Kweb also has the advantage of simplicity (<5k loc). This makes
-it easier for people to contribute, and less code means fewer bugs.
-
-That said, Kweb is still pre-1.0, one of the implications being that we can and will make breaking API changes, and
-new releases are quite frequent.
-
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
@@ -80,10 +62,33 @@ Kweb replaces templates with something better - a typesafe HTML DSL embedded wit
 
 If you like you could separate out the code that interfaces directly to the DOM - this would be architecturally closer to a template-based approach, but we view it as a feature that this paradigm isn't forced on the programmer.
 
+Why risk my project on a framework I just heard of?
+---------------------------------------------------
+
+Picking a framework is stressful.  Pick the wrong one and perhaps the company behind it goes out of business,
+meaning your entire app is now built on something obsolete.  We've been there.
+
+Somewhat unusually for a framework, rather than being tied to a company with paid contributors, Kweb is an individual
+passion project, with a growing number of voluntary contributors.
+
+This may mean we lack the resource of salaried contributors, but we also avoid the dependence on the success of any one
+company, reducing long-term risk significantly.
+
+Because of the powerful abstractions it's built on, Kweb also has the advantage of simplicity (<5k loc). This makes
+it easier for people to contribute, and less code means fewer bugs.
+
+That said, Kweb is still pre-1.0, one of the implications being that we can and will make breaking API changes, and
+new releases are quite frequent.
+
 How is "Kweb" pronounced?
 -------------------------
 
 One syllable, like "queue" and "web" smashed together.
+
+I can't say "Kweb" to my boss!
+-------------------------------
+
+Find a new job.
 
 I have a question not answered here
 -----------------------------------
