@@ -129,5 +129,5 @@ You can use functions for modularization and reuse:
 
 As you can see this is an extension function, which allows you to use the Kweb DSL within the newly created function.
 
-Don't worry too much if this is confusing because you can use IntelliJ's `extract function <https://www.jetbrains.com/help/idea/extract-method.html>`_
-to create these functions automatically.
+Don't worry if this is a little confusing because you can use IntelliJ's `extract function <https://www.jetbrains.com/help/idea/extract-method.html>`_
+refactoring to create these functions automatically.
