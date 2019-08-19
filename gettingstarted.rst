@@ -104,7 +104,7 @@ To produce...
         <li>Hello World 3!</li>
         <li>Hello World 4!</li>
         <li>Hello World 5!</li>
-    <ul>
+    </ul>
   </body>
 
 You can use functions for modularization and reuse:
