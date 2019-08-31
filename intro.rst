@@ -81,8 +81,6 @@ Relevant Links
 
 * Demo: http://demo.kweb.io:7659/
 
-* Feedback: https://github.com/kwebio/kweb-core/issues
-
-* Help: https://gitter.im/kwebio/Lobby
+* Questions/Feedback/Bugs: https://github.com/kwebio/kweb-core/issues
 
 * API Docs: https://javadoc.jitpack.io/com/github/kwebio/kweb-core/latest/javadoc/index.html

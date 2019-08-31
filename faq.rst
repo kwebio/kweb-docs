@@ -93,5 +93,4 @@ Find a new job.
 I have a question not answered here
 -----------------------------------
 
-Please join us in our `Gitter chat room <https://gitter.im/kwebio/Lobby>`_ where we'll do our best to answer
-any questions you might have.
+Feel free to `ask us a question <https://github.com/kwebio/core/issues/new>`_ on Github Issues.
