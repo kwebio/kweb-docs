@@ -184,5 +184,5 @@ epub_exclude_files = ['search.html']
 # -- Hotjar
 
 def setup(app):
-    app.add_javascript('js/inspectlet.js')
-#    app.add_javascript('js/hotjar.js')
+#    app.add_javascript('js/inspectlet.js')
+    app.add_javascript('js/hotjar.js')
