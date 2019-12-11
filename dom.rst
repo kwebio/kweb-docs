@@ -95,7 +95,7 @@ This is because it can take up to several hundred milliseconds to retrieve from 
 to block if it can be avoided.  Here we use Kotlin's very powerful `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_
 features to avoid any unnecessary blocking.
 
-.. note:: We discuss an even better way to read <input> values in the :ref:`Observer Pattern & State` section.
+.. note:: We discuss an even better way to read <input> values in the :ref:`state` section.
 
 Supported HTML tags
 -------------------
