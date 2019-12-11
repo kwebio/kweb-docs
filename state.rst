@@ -101,7 +101,7 @@ Any changes to the KVar will be reflected in realtime in the browser, and simila
 
 This will also work for <option> and <textarea> elements which also have values.
 
-Source: `ValueElement.value <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L85>`_
+See also: `ValueElement.value <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L113>`_
 
 Rendering state to a DOM fragment
 ---------------------------------
