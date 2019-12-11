@@ -83,9 +83,9 @@ and `setAttribute() <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io
 Binding a KVar to an input element's value
 --------------------------------------------
 
-For <input> elements you can set the value to a KVar, note that this connection is bidirectional, so any changes
-to the KVar will be reflected in realtime in the browser, and similarly any changes in the browser by the user
-will be reflected immediately in the KVar:
+For <input> elements you can set the value to a KVar, which will connect them bidirectionally.
+
+Any changes to the KVar will be reflected in realtime in the browser, and similarly any changes in the browser by the user will be reflected immediately in the KVar, for example:
 
 .. code-block:: kotlin
 
