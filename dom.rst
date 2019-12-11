@@ -42,6 +42,16 @@ If you assign the button element to a val then you can also modify its attribute
     button.classes("bigbutton")
     button.setAttribute("autofocus", true)
 
+Or equivolently using Kotlin's apply `scope function <https://kotlinlang.org/docs/reference/scope-functions.html>`_:
+
+.. code-block:: kotlin
+
+    button().apply {
+      text("Click Me!")
+      classes("bigbutton")
+      setAttribute("autofocus", true)
+    }
+
 Or delete it:
 
 .. code-block:: kotlin
