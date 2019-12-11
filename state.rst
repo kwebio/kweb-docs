@@ -139,9 +139,10 @@ Then the relevant part of the DOM will be redrawn instantly.
 The simplicity of this mechanism may disguise how powerful it is, since render {} blocks can be nested, it's
 possible to be very selective about what parts of the DOM must be modified in response to changes in state.
 
-.. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes.  Because of this
-    it is most efficient to avoid "unwrapping" KVars with a *render()* or *.text()* call before you need to.  The
-    `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
+.. note:: Kweb will only re-render a DOM fragment if the value of the KVar actually changes so you should avoid 
+    "unwrapping" KVars with a *render()* or *.text()* call before you need to.  
+    
+    The `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
     function is a powerful tool for manipulating KVals and KVars without unwrapping them.
 
 Extracting data class properties
