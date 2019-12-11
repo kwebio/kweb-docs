@@ -69,11 +69,11 @@ Hello world²
 
 One way to think of Kweb is as a
 `domain-specific language (DSL) <https://en.wikipedia.org/wiki/Domain-specific_language>`_ for building and manipulating
-a `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
+a `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser, while also listening for and handing DOM events.
 
-But this DSL can also do anything Kotlin can do, including `control flow <https://kotlinlang.org/docs/reference/control-flow.html>`_ features such as *for loops*:
+Importantly, this DSL can also do anything Kotlin can do, including features like for loops, functions, coroutines, and classes.
 
-Here is a simple example using a *for* loop:
+Here is a simple example using an ordinary Kotlin *for loop*:
 
 .. code-block:: kotlin
 
