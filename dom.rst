@@ -38,7 +38,8 @@ If you assign the button element to a val then you can also modify its attribute
 
 .. code-block:: kotlin
 
-    val button = button().text("Click Me!")
+    val button = button()
+    button.text("Click Me!")
     button.classes("bigbutton")
     button.setAttribute("autofocus", true)
 
