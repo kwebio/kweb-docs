@@ -41,7 +41,7 @@ If you assign the button element to a val then you can also modify its attribute
     val button = button()
     button.text("Click Me!")
     button.classes("bigbutton")
-    button.setAttribute("autofocus", true)
+    button.setAttributeRaw("autofocus", true)
 
 Or equivalently using Kotlin's apply `scope function <https://kotlinlang.org/docs/reference/scope-functions.html>`_:
 
@@ -50,7 +50,7 @@ Or equivalently using Kotlin's apply `scope function <https://kotlinlang.org/doc
     button().apply {
       text("Click Me!")
       classes("bigbutton")
-      setAttribute("autofocus", true)
+      setAttributeRaw("autofocus", true)
     }
 
 Or delete it:
