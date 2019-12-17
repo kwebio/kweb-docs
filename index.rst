@@ -12,7 +12,7 @@ This documentation is a work-in-progress, feedback is very welcome.  If you have
 questions, suggestions, or if you encounter a problem then please `submit a Github issue
 <https://github.com/kwebio/kweb-docs/issues>`_ and we'll get back to you ASAP.
 
-We also welcome third-party contributions via `pull request <https://github.com/kwebio/kweb-core/pulls>`_.
+We also welcome contributions via `pull request <https://github.com/kwebio/kweb-core/pulls>`_.
 
 .. toctree::
    intro
