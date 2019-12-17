@@ -8,10 +8,12 @@ Kweb: Pleasant web development, in Kotlin
 
 A new way to create beautiful, efficient, and scalable websites in Kotlin, quickly.
 
-This documentation is a work-in-progress, feedback is very welcome.  Please
-`submit an issue <https://github.com/kwebio/kweb-docs/issues>`_, or `fork, improve,
-and create a pull request <https://github.com/kwebio/kweb-docs>`_ to contribute
-directly.
+This documentation is a work-in-progress, feedback is very welcome.  If you have
+questions or encounter a problem then please
+`submit a Github issue <https://github.com/kwebio/kweb-docs/issues>`_. 
+
+We also welcome contributions, please`fork, improve, and create a pull request 
+<https://github.com/kwebio/kweb-docs>`_ to contribute directly.
 
 And please join us to discuss all-things Kweb in our
 `Gitter channel <https://gitter.im/kwebio/Lobby>`_, where we'll be happy to help
