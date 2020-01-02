@@ -17,6 +17,7 @@ Kweb is distributed via JitPack, so add this to the repositories {block} in your
 
    repositories {
      maven { url 'https://jitpack.io' }
+     jcenter()
    }
 
 Then add Kweb to the dependencies block:
@@ -27,8 +28,7 @@ Then add Kweb to the dependencies block:
      compile 'com.github.kwebio:kweb-core:LATEST_VERSION'
    }
 
-Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_,
-along with instructions for other dependency management tools like Maven and Ivy.
+Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.
 
 Hello world
 -----------
