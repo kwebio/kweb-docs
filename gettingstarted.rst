@@ -27,7 +27,7 @@ Then add Kweb to the dependencies block:
    dependencies {
      compile 'com.github.kwebio:kweb-core:LATEST_VERSION'
      
-     // This (or another SLF4J binding) is required for Kweb to log errors
+     // This (or another SLF4J binding) is required for Kweb to report errors
      compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
    }
 
