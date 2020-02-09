@@ -55,6 +55,11 @@ You can find a copy of this demo running here: http://demo.kweb.io:7659/
 It's running on a $50/month EC2 instance.  Try visiting the same list URL in two different browser windows and notice
 how they synchronize in realtime.
 
+How do I enable HTTPS?
+----------------------
+
+Very easily, please see `this example <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/demos/https/HttpsApp.kt>`_.
+
 What about templates?
 ---------------------
 
