@@ -98,7 +98,7 @@ Find a new job.
 Can Kweb be embedded in an existing Ktor app?
 ---------------------------------------------
 
-Yes!  Please see [this example](https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/demos/feature/FeatureApp.kt).
+Yes!  Please see `this example <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/demos/feature/FeatureApp.kt>`_.
 
 I have a question not answered here
 -----------------------------------
