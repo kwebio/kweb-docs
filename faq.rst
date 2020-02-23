@@ -73,11 +73,7 @@ Why risk my project on a framework I just heard of?
 Picking a framework is stressful.  Pick the wrong one and perhaps the company behind it goes out of business,
 meaning your entire app is now built on something obsolete.  We've been there.
 
-Somewhat unusually for a framework, rather than being tied to a company with paid contributors, Kweb is an individual
-passion project, with a growing number of voluntary contributors.
-
-This may mean we lack the resource of salaried contributors, but we also avoid the dependence on the success of any one
-company, reducing long-term risk significantly.
+Kweb's development is driven by a community of volunteers.  We welcome contributions from anyone, but Kweb doesn't depend on any sponsoring company.
 
 Because of the powerful abstractions it's built on, Kweb also has the advantage of simplicity (<5k loc). This makes
 it easier for people to contribute, and less code means fewer bugs.
