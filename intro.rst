@@ -5,27 +5,11 @@ Introduction
 Motivation
 ----------
 
-Most websites consist of at least two tightly coupled components.  One runs in the browser, the other on the server:
+Modern websites consist of at least two `tightly coupled <https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`_ components, one runs in the browser, the other on the server.  These are often written in different languages and communicate with each other over a HTTP connection.
 
-* Browser
-    * Responsible for user interaction
-    * Typically written in JavaScript
-    * Untrusted execution environment
-    * Unreliable persistent local state
+Kweb makes your life easier by eliminating this server/browser separation. 
 
-* Server
-    * Runs in a datacenter
-    * Responsible for business logic
-    * May be written in a wide variety of languages
-    * Trusted execution environment
-    * Reliable persistent global state
-
-These two tightly coupled components are often written in different languages and must communicate
-with each other over a HTTP connection.  This adds significant complexity to the overall system.
-
-Kweb is designed to solve this problem by departing from the "fat client" architecture.  We do this by moving as much
-of the logic to the server as possible, leaving a simple but powerful interface to the web browser where server-browser
-communications are handled automatically.
+We do this by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
 
 Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
 for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
@@ -58,17 +42,15 @@ database, and have it update in realtime `automatically <https://docs.kweb.io/en
 Features
 --------
 
-* Free as in speech, licenced under `LGPL v3.0 <https://opensource.org/licenses/lgpl-3.0.html>`_
-
-* A unified codebase for your webapp, from database to DOM
+* Automatically manages communication between web browser and server
 
 * End-to-end Kotlin (`Why Kotlin? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
-* Bind DOM values directly to a value in your database and have them update in realtime
+* Changes to data in your database automatically update websites in realtime
 
-* Statically typed HTML DSL - let your IDE catch bugs so you don't have to
+* Server-side HTML rendering with `rehydration <https://developers.google.com/web/updates/2019/02/rendering-on-the-web>`_
 
-* Efficient server-side rendering, DOM caching, and instruction preloading
+* Efficient instruction preloading to avoid unnecessary server communication
 
 * Very lightweight, Kweb is less than 5,000 lines of code
 
