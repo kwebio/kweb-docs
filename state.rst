@@ -176,7 +176,7 @@ a *ReversibleFunction* implementation.  This version of *map* will produce a KVa
 
 .. code-block:: kotlin
 
-    val counterDoubled = counter.map(object : ReversableFunction<Int, Int>("doubledCounter") {
+    val counterDoubled = counter.map(object : ReversibleFunction<Int, Int>("doubledCounter") {
         override fun invoke(from: Int) = from * 2
         override fun reverse(original: Int, change: Int) = change / 2
     })
