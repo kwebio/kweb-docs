@@ -28,7 +28,7 @@ A common concern about this approach is that the user interface might feel slugg
 Kweb solves this problem by `preloading <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
 the browser to be executed immediately on browser events without a server round-trip.
 
-We've designed Kweb to be efficient. It's built on the popular `Ktor <https://ktor.io/>`_ framework, and makes effective use of Kotlin's concurrency features, particularly `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_.
+We've designed Kweb to be efficient in both the browser and server, and makes effective use of Kotlin's concurrency features, particularly `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_.
 
 Features
 --------
