@@ -24,29 +24,23 @@ How does it work?
 -----------------
 
 Kweb is a self-contained Kotlin library that can be added easily to new or existing projects.  When Kweb receives
-a HTTP request it responds with a small HTML file including optimized instructions for building the page, and a
-client which connects back to the web server via a WebSocket.  The client then waits and listens for instructions
-from the server.
+a HTTP request it responds with the initial HTML page, and some JavaScript that connects back to the web server via a WebSocket.  The page then waits and listens for instructions from the server, while notifying the server of relevant browser events.
 
-To minimize latency, Kweb can `preload <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
-the browser to modify the DOM instantly in response to browser events, perhaps to disable a button or temporarily
-display a "spinner".  This allows Kweb to respond instantly to user behavior without a server round-trip.
+A common concern about this approach is that the user interface might feel sluggish if it is server driven. 
 
-Kweb is designed to be efficient.  All operations are handled asynchronously, thread and memory usage are minimized.
-Kweb runs on the JVM, which is 5-10 times `faster <https://benchmarksgame-team.pages.debian.net/benchmarksgame/faster/javascript.html>`_
-than Node.js.
+Kweb solves this problem by `preloading <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
+the browser to be executed immediately on browser events without a server round-trip.
 
-Kweb also takes an end-to-end approach to state.  You can bind the value of a DOM element to a field in your
-database, and have it update in realtime `automatically <https://docs.kweb.io/en/latest/state.html>`_.
+We've designed Kweb to be efficient. It's built on the popular `Ktor <https://ktor.io/>_ framework, and makes effective use of Kotlin's concurrency features, particularly `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_.
 
 Features
 --------
 
-* Automatically manages communication between web browser and server
+* Allows the problem to determine your architecture, not the server/browser divide
 
 * End-to-end Kotlin (`Why Kotlin? <https://steve-yegge.blogspot.com/2017/05/why-kotlin-is-better-than-whatever-dumb.html?m=1>`_)
 
-* Changes to data in your database automatically update websites in realtime
+* Keep the web page in sync with your back-end data in realtime, Kweb does all the plumbing for you
 
 * Server-side HTML rendering with `rehydration <https://developers.google.com/web/updates/2019/02/rendering-on-the-web>`_
 
