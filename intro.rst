@@ -5,9 +5,9 @@ Introduction
 Motivation
 ----------
 
-Modern websites consist of at least two `tightly coupled <https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`_ components, one runs in the browser, the other on the server.  These may written in different languages and must communicate with each other over an HTTP connection.
+Modern websites consist of at least two `tightly coupled <https://en.wikipedia.org/wiki/Coupling_(computer_programming)>`_ components, one runs in the browser, the other on the server.  These are often written in different programming languages and must communicate with each other over an HTTP connection.
 
-Kweb eliminates this server/browser separation so that your webapp's architecture is determined by the problem you're solving, rather than the limitations of today's tools.
+Kweb's goal is to eliminate this server/browser separation so that your webapp's architecture is determined by the problem you're solving, rather than the limitations of today's tools.
 
 Kweb does this by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
 
