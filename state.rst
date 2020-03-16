@@ -14,7 +14,7 @@ to the browser.
 Building blocks
 ---------------
 
-A `KVar <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/state/KVar.kt>`_ class contains a
+A `KVar <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/state/KVar.kt>`_ class contains a
 single typed object, which can change over time.  For example:
 
 .. code-block:: kotlin
@@ -101,7 +101,7 @@ Any changes to the KVar will be reflected in realtime in the browser, and simila
 
 This will also work for <option> and <textarea> elements which also have values.
 
-See also: `ValueElement.value <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/form.kt#L113>`_
+See also: `ValueElement.value <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/creation/tags/form.kt#L113>`_
 
 Rendering state to a DOM fragment
 ---------------------------------

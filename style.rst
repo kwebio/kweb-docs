@@ -56,7 +56,7 @@ Other UI Frameworks
 It's easy to create Kweb plugins for many JavaScript tools and frameworks, taking full advantage of Kotlin's DSL
 capabilities.
 
-The `Fomantic UI plugin implementation <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/io/kweb/plugins/fomanticUI>`_
+The `Fomantic UI plugin implementation <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/kweb/plugins/fomanticUI>`_
 itself can serve as an example.
 
 Example and Demo

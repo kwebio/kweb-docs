@@ -5,7 +5,7 @@ DOM Basics
 Creating DOM Elements and Fragments
 -----------------------------------
 
-The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/Element.kt>`_, typically the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/Document.kt#L43>`_ which is obtained easily as follows:
+The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/Element.kt>`_, typically the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/Document.kt#L43>`_ which is obtained easily as follows:
 
 .. code-block:: kotlin
 
@@ -18,7 +18,7 @@ The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/
     }
    }
 
-Let's create a `ButtonElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt#L14>`_ as a child of the body element, we do this using the *.new* function (which is
+Let's create a `ButtonElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/creation/tags/other.kt#L14>`_ as a child of the body element, we do this using the *.new* function (which is
 supported by all Element types):
 
 .. code-block:: kotlin
@@ -117,7 +117,7 @@ infamous and now-obsolete <blink> tag:
 Extending Kweb to support new HTML tags
 ---------------------------------------
 
-Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/creation/tags/other.kt>`_.
+Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/creation/tags/other.kt>`_.
 If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/kweb-core>`_, or just `ask us <https://github.com/kwebio/kweb-core/issues>`_
 and we'll do our best to add support.
 
@@ -125,5 +125,5 @@ and we'll do our best to add support.
 Further Reading
 ---------------
 
-The `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/io/kweb/dom/element/Element.kt>`_ class
+The `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/Element.kt>`_ class
 provides many other useful ways to interact with DOM elements.
