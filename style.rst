@@ -12,7 +12,7 @@ First tell Kweb to use the Fomantic UI plugin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.fomanticUI.*
+    import kweb.plugins.fomanticUI.*
 
     fun main() {
         Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)) {
@@ -36,8 +36,8 @@ This translates to the Kotlin:
 
 .. code-block:: kotlin
 
-    import io.kweb.plugins.fomanticUI.*
-    import io.kweb.dom.element.creation.tags.InputType.*
+    import kweb.plugins.fomanticUI.*
+    import kweb.dom.element.creation.tags.InputType.*
 
     fun main() {
         Kweb(port = 16097, plugins = listOf(fomanticUIPlugin)4) {

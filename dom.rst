@@ -9,8 +9,8 @@ The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/
 
 .. code-block:: kotlin
 
-   import io.kweb.*
-   import io.kweb.dom.element.*
+   import kweb.*
+   import kweb.dom.element.*
 
    fun main() {
      Kweb(port = 16097) {
@@ -23,8 +23,8 @@ supported by all Element types):
 
 .. code-block:: kotlin
 
-   import io.kweb.*
-   import io.kweb.dom.element.*
+   import kweb.*
+   import kweb.dom.element.*
 
    fun main() {
      Kweb(port = 16097) {
@@ -67,11 +67,11 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
 
 .. code-block:: kotlin
 
-    import io.kweb.Kweb
-    import io.kweb.dom.element.creation.tags.*
-    import io.kweb.dom.element.events.on
-    import io.kweb.dom.element.new
-    import io.kweb.state.KVar
+    import kweb.Kweb
+    import kweb.dom.element.creation.tags.*
+    import kweb.dom.element.events.on
+    import kweb.dom.element.new
+    import kweb.state.KVar
     import kotlinx.coroutines.GlobalScope
     import kotlinx.coroutines.future.await
     import kotlinx.coroutines.launch

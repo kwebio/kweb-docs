@@ -35,7 +35,7 @@ Since the code to respond to events runs on the server, there may be a short lag
 event and any changes to the DOM caused by the event handler.  This was a common complaint about previous server-driven
 web frameworks like Vaadin, inhibiting their adoption.
 
-Fortunately, Kweb has a solution - `onImmediate <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element.events/on-immediate.html>`_:
+Fortunately, Kweb has a solution:
 
 .. code-block:: kotlin
 

@@ -19,10 +19,10 @@ A simple example
 
 .. code-block:: kotlin
 
-    import io.kweb.Kweb
-    import io.kweb.dom.element.new
-    import io.kweb.dom.element.creation.tags.h1
-    import io.kweb.routing.route
+    import kweb.Kweb
+    import kweb.dom.element.new
+    import kweb.dom.element.creation.tags.h1
+    import kweb.routing.route
 
     fun main() {
         Kweb(port = 16097) {
@@ -84,11 +84,11 @@ page URL:
 
 .. code-block:: kotlin
 
-    import io.kweb.Kweb
-    import io.kweb.dom.element.creation.tags.a
-    import io.kweb.dom.element.new
-    import io.kweb.routing.route
-    import io.kweb.state.*
+    import kweb.Kweb
+    import kweb.dom.element.creation.tags.a
+    import kweb.dom.element.new
+    import kweb.routing.route
+    import kweb.state.*
 
     fun main() {
         Kweb(port = 16097) {
