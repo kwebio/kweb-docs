@@ -5,11 +5,11 @@ Database
 Overview
 --------
 
-Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a key-value store that supports the
-observer pattern, and a sister project to Kweb.  Shoebox has both in-memory and persistent (filesystem) engines.
+Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a sister project to Kweb.
 
-In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_
-and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.
+Shoebox is a key-value store that supports the observer pattern. This means that changes in Shoebox will be shown *in realtime* in the browser.
+
+In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_ and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.
 
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
@@ -41,8 +41,7 @@ This example shows how *toVar* can be used to convert a value in a Shoebox to a 
 Other Databases
 ---------------
 
-Kweb doesn't require you to use Shoebox, you're free to use any database, either directly, or via a database
-abstraction layer of your choosing.
+Kweb doesn't require you to use Shoebox.  You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_.
 
 Working Example
 ---------------
