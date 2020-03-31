@@ -78,7 +78,7 @@ to integrate the 404 page with the style of your overall website:
 Modifying the URL
 -----------------
 
-You can obtain *and modify* the URL of the current page using [WebBrowser.url](https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/WebBrowser.kt#L98).
+You can obtain *and modify* the URL of the current page using `WebBrowser.url <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/WebBrowser.kt#L98>`_.
 
 
 This returns a *KVar<String>* which contains the URL relative to the origin - so for the page "http://foo/bar/z" the *url* would be */bar/z*.
