@@ -78,9 +78,12 @@ to integrate the 404 page with the style of your overall website:
 Modifying the URL
 -----------------
 
-You can obtain *and modify* the URL of the current page using *url(simpleUrlParser)* within the Kweb {block}.
-This returns a KVar<`URL <http://galimatias.mola.io/>`_ > which you can use to read and *modify* the
-page URL:
+You can obtain *and modify* the URL of the current page using [WebBrowser.url](https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/WebBrowser.kt#L98).
+
+
+This returns a *KVar<String>* which contains the URL relative to the origin - so for the page "http://foo/bar/z" the *url* would be */bar/z*.
+
+Here is a more realistic example:
 
 .. code-block:: kotlin
 
@@ -93,15 +96,14 @@ page URL:
     fun main() {
         Kweb(port = 16097) {
             doc.body.new {
-                val path = url(simpleUrlParser).path
                 route {
                     path("/") {
-                        path.value = "/number/1"
+                        url.value = "/number/1"
                     }
                     path("/number/{num}") { params ->
                         val num = params.getValue("num").toInt()
                         a().text(num.map {"Number $it"}).on.click {
-                            path.value = "/number/${num.value + 1}"
+                            url.value++
                         }
                     }
                 }
@@ -113,18 +115,4 @@ If you visit http://localhost:16097/ the URL will immediately update to http://l
 without a page refresh, and you'll see a hyperlink with text "Number 1".  If you click on this link
 you'll see that the number increments (both in the URL and in the link text), also without a page refresh.
 
-An even more elegant approach that would also work would be to replace:
 
-.. code-block:: kotlin
-
-    path.value = "/number/${num.value + 1}"
-
-...with...
-
-.. code-block:: kotlin
-
-    num.value++
-
-This would have the exact same effect because the KVars always work bidirectionally, so can be used both
-to read and modify that part of the page URL, resulting in an automatic re-render of the necessary DOM
-elements.
