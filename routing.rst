@@ -48,10 +48,10 @@ Now, if you visit http://localhost:16097/users/997, you will see:
     <h1>User id: 997</h1>
 
 You can have as many path()s as you need, each with it's own path definition.  The definition can
-contain parameters wrapped in {braces}.
+contain parameters wrapped in ``{braces}``.
 
 The value of these parameters can then be retrieved from the *params* map, but note that the values are
-wrapped in a *KVar<String>* object.  This means that you can use all of Kweb's `state management <https://docs.kweb.io/en/latest/state.html>`_
+wrapped in a ``KVar<String>`` object.  This means that you can use all of Kweb's `state management <https://docs.kweb.io/en/latest/state.html>`_
 features to render parts of the DOM using this value.
 
 The key advantage here is that if the URL changes the page can be updated without a full page refresh, but
@@ -81,7 +81,7 @@ Modifying the URL
 You can obtain *and modify* the URL of the current page using `WebBrowser.url <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/WebBrowser.kt#L98>`_.
 
 
-This returns a *KVar<String>* which contains the URL relative to the origin - so for the page "http://foo/bar/z" the *url* would be */bar/z*.
+This returns a ``KVar<String>`` which contains the URL relative to the origin - so for the page ``http://foo/bar/z`` the ``url`` would be ``/bar/z``.
 
 Here is a more realistic example:
 
@@ -111,10 +111,10 @@ Here is a more realistic example:
         }
     }
 
-If you visit http://localhost:16097/ the URL will immediately update to http://localhost:16097/number/1
-without a page refresh, and you'll see a hyperlink with text "Number 1".  If you click on this link
+If you visit ``http://localhost:16097/`` the URL will immediately update to ``http://localhost:16097/number/1``
+without a page refresh, and you'll see a hyperlink with text ``Number 1``.  If you click on this link
 you'll see that the number increments (both in the URL and in the link text), also without a page refresh.
 
-The line *num.value++* is worthy of additional attention.  *num* is a KVar<Int>, and so it can be  
-incremented via its *value* property.  This will cause the page URL to update, which will in-turn cause
+The line ``num.value++`` is worthy of additional attention.  ``num`` is a ``KVar<Int>``, and so it can be  
+incremented via its ``value`` property.  This will cause the page URL to update, which will in-turn cause
 the DOM to update to reflect the new URL.  All of this is handled for you by Kweb.
