@@ -77,7 +77,7 @@ to integrate the 404 page with the style of your overall website:
 
 Modifying the URL
 -----------------
-  For example:
+
 You can obtain *and modify* the URL of the current page using [WebBrowser.url](https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/WebBrowser.kt#L98).
 
 
