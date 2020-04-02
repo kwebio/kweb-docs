@@ -5,7 +5,7 @@ Database
 Overview
 --------
 
-`Shoebox <https://github.com/kwebio/shoebox>`_ is a simple key-value store that supports the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, it's a sister project to Kweb.
+`Shoebox <https://github.com/kwebio/shoebox>`_ is a simple key-value store that supports the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, and is a sister project to Kweb.
 
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
