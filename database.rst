@@ -5,11 +5,7 @@ Database
 Overview
 --------
 
-Kweb integrates nicely with `Shoebox <https://github.com/kwebio/shoebox>`_, a sister project to Kweb.
-
-Shoebox is a key-value store that supports the observer pattern. This means that changes in Shoebox will be shown *in realtime* in the browser.
-
-In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_ and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.
+`Shoebox <https://github.com/kwebio/shoebox>`_ is a simple key-value store that supports the `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_.  Shoebox is included with Kweb although you don't have to use it.
 
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
@@ -37,6 +33,11 @@ This example shows how *toVar* can be used to convert a value in a Shoebox to a 
             }
         }
     }
+
+Future Development
+------------------
+
+In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_ and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.  New storage backends can be added easily to Shoebox by implementing the `Store <https://github.com/kwebio/shoebox/blob/master/src/main/kotlin/kweb/shoebox/Store.kt>`_ interface.
 
 Other Databases
 ---------------
