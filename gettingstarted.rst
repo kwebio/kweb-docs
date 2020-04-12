@@ -41,8 +41,6 @@ Create a new Kotlin file and type this:
 .. code-block:: kotlin
 
    import kweb.*
-   import kweb.dom.element.*
-   import kweb.dom.element.creation.tags.*
 
    fun main() {
      Kweb(port = 16097) {
@@ -81,8 +79,6 @@ Here is a simple example using an ordinary Kotlin *for loop*:
 .. code-block:: kotlin
 
    import kweb.*
-   import kweb.dom.element.*
-   import kweb.dom.element.creation.tags.*
 
    fun main() {
      Kweb(port = 16097) {
