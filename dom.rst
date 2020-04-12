@@ -5,7 +5,7 @@ DOM Basics
 Creating DOM Elements and Fragments
 -----------------------------------
 
-The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Element.kt>`_, normally the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Document.kt#L43>`_, which is obtained easily as follows:
+The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Element.kt>`_, normally the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/html/BodyElement.kt>`_, which is obtained easily as follows:
 
 .. code-block:: kotlin
 
@@ -18,7 +18,7 @@ The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/
     }
    }
 
-Let's create a `ButtonElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/creation/tags/other.kt#L14>`_ as a child of the body element, we do this using the *.new* function (which is
+Let's create a <button> as a child of the <body>, we do this using the *.new* function (which is
 supported by all Element types):
 
 .. code-block:: kotlin
