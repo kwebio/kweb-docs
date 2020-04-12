@@ -5,7 +5,7 @@ DOM Basics
 Creating DOM Elements and Fragments
 -----------------------------------
 
-The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/Element.kt>`_, typically the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/Document.kt#L43>`_ which is obtained easily as follows:
+The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/Element.kt>`_, normally the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/Document.kt#L43>`_, which is obtained easily as follows:
 
 .. code-block:: kotlin
 
