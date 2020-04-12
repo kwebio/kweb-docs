@@ -101,7 +101,7 @@ Supported HTML tags
 -------------------
 
 Kweb supports a significant subset of HTML tags like *button()*, *p()*, *a()*, *table()*, and so on.  You can find a
-more complete list in the `API documentation <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.dom.element.creation.tags/index.html>`_
+more complete list in `prelude.kt <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/prelude.kt>`_
 (scroll down to the *Functions* section).  This provides a nice statically-typed HTML DSL, fully integrated
 with the Kotlin language.
 
@@ -114,16 +114,8 @@ infamous and now-obsolete <blink> tag:
         val blink = element("blink").text("I am annoying!")
     }
 
-Extending Kweb to support new HTML tags
----------------------------------------
-
-Adding support for new tags to Kweb is easy, take a look at `the source <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/creation/tags/other.kt>`_.
-If you add some useful functionality please submit a pull request `via Github <https://github.com/kwebio/kweb-core>`_, or just `ask us <https://github.com/kwebio/kweb-core/issues>`_
-and we'll do our best to add support.
-
-
 Further Reading
 ---------------
 
-The `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/dom/element/Element.kt>`_ class
+The `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Element.kt>`_ class
 provides many other useful ways to interact with DOM elements.
