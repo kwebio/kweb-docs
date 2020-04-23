@@ -60,6 +60,11 @@ How do I enable HTTPS?
 
 Very easily, please see `this example <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/demos/https/HttpsApp.kt>`_.
 
+Can I embed Kweb within an Android app?
+---------------------------------------
+
+Yes!  Please see [kweb-demos/tree/master/android](https://github.com/kwebio/kweb-demos/tree/master/android) for an example.
+
 What about templates?
 ---------------------
 
