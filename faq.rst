@@ -47,7 +47,7 @@ Kweb to, as there are also very important differences:
 Is there a larger working example?
 ----------------------------------
 
-Yes, here is a simple `todo list <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/kweb/demos/todo>`_
+Yes, here is a simple `todo list <https://github.com/kwebio/kweb-demos/tree/master/todoList>`_
 implementation which demonstrates many of Kweb's features.
 
 You can find a copy of this demo running here: http://demo.kweb.io:7659/
@@ -58,7 +58,7 @@ how they synchronize in realtime.
 How do I enable HTTPS?
 ----------------------
 
-Very easily, please see `this example <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/demos/https/HttpsApp.kt>`_.
+Very easily, please see `this example <https://github.com/kwebio/kweb-demos/blob/master/https/src/HttpsApp.kt>`_.
 
 Can I embed Kweb within an Android app?
 ---------------------------------------
@@ -99,7 +99,7 @@ Find a new job.
 Can Kweb be embedded in an existing Ktor app?
 ---------------------------------------------
 
-Yes!  Please see `this example <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/demos/feature/FeatureApp.kt>`_.
+Yes!  Please see `this example <https://github.com/kwebio/kweb-demos/blob/master/ktorFeature/src/FeatureApp.kt>`_.
 
 I have a question not answered here
 -----------------------------------

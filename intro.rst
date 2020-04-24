@@ -23,7 +23,7 @@ How does it work?
 Kweb is a self-contained Kotlin library that can be added easily to new or existing projects.  When Kweb receives
 a HTTP request it responds with the initial HTML page, and some JavaScript that connects back to the web server via a WebSocket.  The page then waits and listens for instructions from the server, while notifying the server of relevant browser events.
 
-A common concern about this approach is that the user interface might feel sluggish if it is server driven. Kweb solves this problem by `preloading <https://docs.kweb.io/en/latest/dom.html#immediate-events>`_ instructions to
+A common concern about this approach is that the user interface might feel sluggish if it is server driven. Kweb solves this problem by `preloading <https://docs.kweb.io/en/latest/events.html#immediate-events>`_ instructions to
 the browser to be executed immediately on browser events without a server round-trip.
 
 We've designed Kweb to be efficient in both the browser and server, and makes effective use of Kotlin's concurrency features, particularly `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_.

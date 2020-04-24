@@ -47,4 +47,4 @@ Kweb doesn't require you to use Shoebox.  You're free to use any database, eithe
 Working Example
 ---------------
 
-For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/kweb/demos/todo>`_.
+For a more complete example of using Shoebox for persistent storage see the `to do demo <https://github.com/kwebio/kweb-demos/tree/master/todoList>`_.
