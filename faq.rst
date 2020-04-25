@@ -63,7 +63,7 @@ Very easily, please see `this example <https://github.com/kwebio/kweb-demos/blob
 Can I embed Kweb within an Android app?
 ---------------------------------------
 
-Yes!  Please see [kweb-demos/tree/master/android](https://github.com/kwebio/kweb-demos/tree/master/android) for an example.
+Yes!  Please see `kweb-demos/tree/master/android <https://github.com/kwebio/kweb-demos/tree/master/android>`_ for an example.
 
 What about templates?
 ---------------------
