@@ -130,3 +130,8 @@ As you can see this is an extension function, which allows you to use the Kweb D
 
 Don't worry if you're unsure about this because you can use IntelliJ's `extract function <https://www.jetbrains.com/help/idea/extract-method.html>`_
 refactoring to create these functions automatically.
+
+Template Repository
+-------------------
+
+You can find a simple template Kweb project in `kwebio/kweb-template <https://github.com/kwebio/kweb-template>`_.
