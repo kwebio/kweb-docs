@@ -50,7 +50,9 @@ Relevant Links
 
 * Source code: https://github.com/kwebio/kweb-core
 
-* Demo: http://demo.kweb.io:7659/
+* Example projects: https://github.com/kwebio/kweb-demos
+
+* Live Demo: http://demo.kweb.io:7659/
 
 * Questions/Feedback/Bugs: https://github.com/kwebio/kweb-core/issues
 
