@@ -67,13 +67,10 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
 
 .. code-block:: kotlin
 
+   import kweb.*
    import kotlinx.coroutines.GlobalScope
    import kotlinx.coroutines.future.await
    import kotlinx.coroutines.launch
-   import kweb.InputElement
-   import kweb.Kweb
-   import kweb.input
-   import kweb.new
 
    fun main() {
        Kweb(port = 2395) {
