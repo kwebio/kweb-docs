@@ -55,7 +55,7 @@ You can find a copy of this demo running here: http://demo.kweb.io:7659/
 It's running on a $50/month EC2 instance.  Try visiting the same list URL in two different browser windows and notice
 how they synchronize in realtime.
 
-You can see another of other demo Kweb projects here: `kwebio/kweb-demos <https://github.com/kwebio/kweb-demos/tree/master/>`_
+You can see a number of other example Kweb projects here: `kwebio/kweb-demos <https://github.com/kwebio/kweb-demos/tree/master/>`_
 
 How do I enable HTTPS?
 ----------------------
