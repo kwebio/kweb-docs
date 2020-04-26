@@ -67,28 +67,27 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
 
 .. code-block:: kotlin
 
-    import kweb.Kweb
-    import kweb.dom.element.creation.tags.*
-    import kweb.dom.element.events.on
-    import kweb.dom.element.new
-    import kweb.state.KVar
-    import kotlinx.coroutines.GlobalScope
-    import kotlinx.coroutines.future.await
-    import kotlinx.coroutines.launch
+   import kotlinx.coroutines.GlobalScope
+   import kotlinx.coroutines.future.await
+   import kotlinx.coroutines.launch
+   import kweb.InputElement
+   import kweb.Kweb
+   import kweb.input
+   import kweb.new
 
-    fun main() {
-        Kweb(port = 2395) {
-            doc.body.new {
-                val input: InputElement = input()
-                input.on.submit {
-                    GlobalScope.launch {
-                        val value = input.getValue().await()
-                        println("Value: $value")
-                    }
-                }
-            }
-        }
-    }
+   fun main() {
+       Kweb(port = 2395) {
+           doc.body.new {
+               val input: InputElement = input()
+               input.on.submit {
+                   GlobalScope.launch {
+                       val value = input.getValue().await()
+                       println("Value: $value")
+                   }
+               }
+           }
+       }
+   }
 
 Note that input.getValue() returns a `CompletableFuture<String> <https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html>`_.
 This is because it can take up to several hundred milliseconds to retrieve from the browser, and we don't want the application
