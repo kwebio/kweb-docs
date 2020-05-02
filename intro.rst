@@ -9,14 +9,6 @@ Modern websites consist of at least two `tightly coupled <https://en.wikipedia.o
 
 Kweb's goal is to eliminate this server/browser separation so that your webapp's architecture is determined by the problem you're solving, rather than the limitations of today's tools.
 
-Kweb does this by moving as much of the logic to the server as possible, leaving a simple but powerful interface to the web browser where server-browser communications are handled automatically.
-
-Kweb includes a typesafe `domain-specific language <https://en.wikipedia.org/wiki/Domain-specific_language>`_
-for building and manipulating the `DOM <https://en.wikipedia.org/wiki/Document_Object_Model>`_ in a remote web browser.
-
-Kweb runs on `Kotlin <https://kotlinlang.org/>`_, an excellent modern programming language that is rapidly growing in
-popularity (eg. it's now Google's recommended language for Android development).
-
 How does it work?
 -----------------
 
