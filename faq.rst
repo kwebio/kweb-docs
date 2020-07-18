@@ -93,11 +93,6 @@ How is "Kweb" pronounced?
 
 One syllable, like "queue" and "web" smashed together.
 
-I can't say "Kweb" to my boss!
--------------------------------
-
-Find a new job.
-
 Can Kweb be embedded in an existing Ktor app?
 ---------------------------------------------
 
