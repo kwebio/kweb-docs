@@ -42,7 +42,7 @@ Relevant Links
 
 * Source code: https://github.com/kwebio/kweb-core
 
-* API documentation: http://dokka.kweb.io/kweb-core/index.html
+* API documentation: http://dokka.kweb.io/kweb-core/
 
 * Example projects: https://github.com/kwebio/kweb-demos
 
