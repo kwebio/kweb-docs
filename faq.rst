@@ -15,9 +15,8 @@ If you encounter a situation in which Kweb is slow please `submit a bug <https:/
 What's the difference between Kweb and Vaadin?
 ----------------------------------------------
 
-Of all web frameworks we're aware of, `Vaadin <https://vaadin.com/>`_ is the closest in design and philosophy to Kweb.
-In many ways Kweb is a philosophical descendant of Vaadin.  This makes Vaadin one of the most useful frameworks to compare
-Kweb to, as there are also very important differences:
+Of all web frameworks we're aware of, `Vaadin <https://vaadin.com/>`_ is the closest in design and philosophy to Kweb,
+but there are also important differences:
 
 - Kweb is *far* more lightweight than Vaadin.  At the time of writing,
   `kwebio/core <https://github.com/kwebio/kweb-core>`_ is about 4,351 lines of code, while
