@@ -34,7 +34,7 @@ Kweb to, as there are also very important differences:
 
 
 - This is why Kweb's philosophy is to be a thin interface between server logic and the user's browser, leveraging existing
-  tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/aesthetics.html>`_.
+  tools from the JavaScript ecosystem `when it makes sense <https://docs.kweb.io/en/latest/style.html>`_.
 
 
 - Kweb was built natively for Kotlin, and takes advantage of all of its language features like `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_ and
