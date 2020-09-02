@@ -19,7 +19,7 @@ Of all web frameworks we're aware of, `Vaadin <https://vaadin.com/>`_ is the clo
 but there are also important differences:
 
 - Kweb is *far* more lightweight than Vaadin.  At the time of writing,
-  `kwebio/core <https://github.com/kwebio/kweb-core>`_ is about 4,351 lines of code, while
+  `kweb-core <https://github.com/kwebio/kweb-core>`_ is about 4,351 lines of code, while
   `vaadin/framework <https://github.com/vaadin/framework>`_ is currently 502,398 lines of code, almost a 100:1 ratio!
 
 
