@@ -186,7 +186,7 @@ a *ReversibleFunction* implementation.  This version of *map* will produce a KVa
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
     // output: counter: 5, doubled: 10
 
-    counterDoubled.value = 12 // <--- This wouldn't have worked before
+    counterDoubled.value = 12 // <-- Couldn't do this with a KVal
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
     // output: counter: 6, doubled: 12
 
