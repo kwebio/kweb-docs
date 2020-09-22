@@ -167,7 +167,8 @@ If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rath
 modified directly, so this won't be permitted:
 
 .. code-block:: kotlin
-
+    val counter = KVar(0)
+    val counterDoubled = counter.map { it * 2 }
     counterDoubled.value = 20 // <--- This won't compile
 
 The *KVar* class has a second
