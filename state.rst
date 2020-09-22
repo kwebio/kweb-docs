@@ -184,16 +184,11 @@ a *ReversibleFunction* implementation.  This version of *map* will produce a KVa
     })
     counter.value = 5
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
+    // output: counter: 5, doubled: 10
 
     counterDoubled.value = 12 // <--- This wouldn't have worked before
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
-
-Will print:
-
-.. code-block:: text
-
-    counter: 5, doubled: 10
-    counter: 6, doubled: 12
+    // output: counter: 6, doubled: 12
 
 .. note:: Reversible mappings are an advanced feature that you only need if you want the mapped value to be a mutable
     KVar.  Most of the time the simple `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_
