@@ -159,8 +159,8 @@ Kvar.property() to create a KVar from one of its properties which will update th
     name.value = "John"
     println(user) // Will print: KVar(User(name = "John"))
 
-KVals & Reversible mapping
---------------------------
+Reversible mapping
+------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.
 `KVal <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/index.html>`_'s values may not be
