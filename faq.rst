@@ -90,7 +90,7 @@ new releases are quite frequent.
 How is "Kweb" pronounced?
 -------------------------
 
-One syllable, like "queue" and "web" smashed together.
+"Kay-web".
 
 Can Kweb be embedded in an existing Ktor app?
 ---------------------------------------------
