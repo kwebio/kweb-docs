@@ -100,4 +100,5 @@ Yes!  Please see `this example <https://github.com/kwebio/kweb-demos/blob/master
 I have a question not answered here
 -----------------------------------
 
-Feel free to `ask us a question <https://github.com/kwebio/core/issues/new>`_ on Github Issues.
+Feel free to `ask us a question <https://github.com/kwebio/core/issues/new>`_ on Github Issues, but please search first to see whether it has
+already been answered.
