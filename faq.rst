@@ -90,7 +90,7 @@ new releases are quite frequent.
 How is "Kweb" pronounced?
 -------------------------
 
-"Kay-web" (similar to "Ktor").
+"Kay-web".
 
 Can Kweb be embedded in an existing Ktor app?
 ---------------------------------------------
