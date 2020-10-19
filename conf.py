@@ -20,7 +20,7 @@ import os
 # -- Project information -----------------------------------------------------
 
 project = u'Kweb'
-copyright = u'2018, 2019, Ian Clarke, LGPL 3.0'
+copyright = u'2018-2020, Ian Clarke, LGPL 3.0'
 author = u'Ian Clarke'
 
 # The short X.Y version
