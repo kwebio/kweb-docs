@@ -9,7 +9,7 @@ You can attach event handlers to DOM elements:
 
 .. code-block:: kotlin
 
-    doc.body.new {
+    doc.body {
         val label = h1()
         label.text("Click Me")
         label.on.click {
@@ -21,7 +21,7 @@ Most if not all JavaScript event types are supported, and you can read event dat
 
 .. code-block:: kotlin
 
-    doc.body.new {
+    doc.body {
         val input = input(type = text)
         input.on.keypress { keypressEvent ->
             println("Key Pressed: ${keypressEvent.key}")
@@ -39,7 +39,7 @@ Fortunately, Kweb has a solution:
 
 .. code-block:: kotlin
 
-    doc.body.new {
+    doc.body {
         val label = h1()
         label.text("Click Me")
         label.onImmediate.click {
