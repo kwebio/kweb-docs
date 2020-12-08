@@ -90,7 +90,7 @@ Any changes to the KVar will be reflected in realtime in the browser, and simila
 .. code-block:: kotlin
 
     Kweb(port = 2395) {
-        doc.body.new {
+        doc.body {
              p().text("What is your name?")
             val clickMe = input(type = text)
             val nameKVar = KVar("Peter Pan")
@@ -117,9 +117,9 @@ function comes in:
     val list = KVar(listOf("one", "two", "three"))
 
     Kweb(port = 16097) {
-        doc.body.new {
+        doc.body {
             render(list) { rList ->
-                ul().new {
+                ul {
                     for (item in rList) {
                         li().text(item)
                     }
