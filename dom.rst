@@ -58,6 +58,28 @@ Or delete it:
 
     button.delete()
 
+Adding children to an existing element
+--------------------------------------
+
+The DSL syntax makes it very easy to create elements and their children together:
+
+.. code-block:: kotlin
+
+    ul {
+      li().text("One")
+      li().text("Two")
+    }
+
+However we can also use the `new {}` function on `Element`s to add children to a pre-existing element:
+
+.. code-block:: kotlin
+
+    val unorderedList :  = ul()
+    unorderedList.new {
+      li().text("One")
+      li().text("Two")
+    }
+
 
 Reading from the DOM
 --------------------
