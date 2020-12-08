@@ -18,8 +18,7 @@ The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/
     }
    }
 
-Let's create a <button> as a child of the <body>, we do this using the *.new* function (which is
-supported by all Element types):
+Let's create a <button> as a child of the <body>:
 
 .. code-block:: kotlin
 
@@ -28,7 +27,7 @@ supported by all Element types):
 
    fun main() {
      Kweb(port = 16097) {
-        doc.body.new {
+        doc.body {
             button().text("Click Me!")
         }
       }
@@ -74,7 +73,7 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
 
    fun main() {
        Kweb(port = 2395) {
-           doc.body.new {
+           doc.body {
                val input: InputElement = input()
                input.on.submit {
                    GlobalScope.launch {
@@ -106,7 +105,7 @@ infamous and now-obsolete <blink> tag:
 
 .. code-block:: kotlin
 
-    doc.body.new {
+    doc.body {
         val blink = element("blink").text("I am annoying!")
     }
 
