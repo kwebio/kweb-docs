@@ -44,7 +44,7 @@ Create a new Kotlin file and type this:
 
    fun main() {
      Kweb(port = 16097) {
-       doc.body.new {
+       doc.body {
          h1().text("Hello World!")
        }
     }
@@ -82,8 +82,8 @@ Here is a simple example using an ordinary Kotlin *for loop*:
 
    fun main() {
      Kweb(port = 16097) {
-       doc.body.new {
-         ul().new {
+       doc.body {
+         ul {
              for (x in 1..5) {
                 li().text("Hello World $x!")
              }
@@ -112,8 +112,8 @@ You can use functions for modularization and reuse:
 
     fun main() {
         Kweb(port = 16097) {
-            doc.body.new {
-                ul().new {
+            doc.body {
+                ul {
                     for (x in 1..5) {
                         createMessage(x)
                     }
