@@ -70,11 +70,11 @@ The DSL syntax makes it very easy to create elements and their children together
       li().text("Two")
     }
 
-However we can also use the `new {}` function on `Element`s to add children to a pre-existing element:
+However we can also use the `new {}` function on Elements to add children to a pre-existing Element:
 
 .. code-block:: kotlin
 
-    val unorderedList :  = ul()
+    val unorderedList : ULElement = ul()
     unorderedList.new {
       li().text("One")
       li().text("Two")
