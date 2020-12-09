@@ -5,19 +5,6 @@ DOM Basics
 Creating DOM Elements and Fragments
 -----------------------------------
 
-The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Element.kt>`_, normally the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/html/BodyElement.kt>`_, which is obtained easily as follows:
-
-.. code-block:: kotlin
-
-   import kweb.*
-   import kweb.dom.element.*
-
-   fun main() {
-     Kweb(port = 16097) {
-        val body : BodyElement = doc.body
-    }
-   }
-
 Let's create a <button> as a child of the <body>:
 
 .. code-block:: kotlin
