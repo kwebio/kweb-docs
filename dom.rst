@@ -20,6 +20,9 @@ Let's create a <button> as a child of the <body>:
       }
     }
 
+Element Attributes
+------------------
+
 If you assign the button element to a val then you can also modify its attributes:
 
 .. code-block:: kotlin
