@@ -53,7 +53,7 @@ The DSL syntax makes it very easy to create elements and their children together
       li().text("Two")
     }
 
-However we can also use the `new {}` function on Elements to add children to a pre-existing Element:
+Alternatively we can use the `new {}` function on Elements to add children to a pre-existing Element:
 
 .. code-block:: kotlin
 
