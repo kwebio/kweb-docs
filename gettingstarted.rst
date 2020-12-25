@@ -11,7 +11,7 @@ Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is fami
 Adding Kweb to your project
 ---------------------------
 
-Kweb is distributed via JitPack, so add this to the repositories {block} in your build.gradle:
+Kweb is distributed via JitPack, so add this to the repositories {block} in your `build.gradle` or `build.gradle.kt` files:
 
 Groovy DSL
 ~~~~~~~~~~~~~~~~~~~~~~
