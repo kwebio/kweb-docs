@@ -41,10 +41,10 @@ Groovy DSL
 .. code-block:: gradle
 
    dependencies {
-     compile 'com.github.kwebio:kweb-core:LATEST_VERSION'
+     implementation 'com.github.kwebio:kweb-core:LATEST_VERSION'
      
      // This (or another SLF4J binding) is required for Kweb to log errors
-     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
    }
 
 Kotlin DSL
@@ -53,10 +53,10 @@ Kotlin DSL
 .. code-block:: kotlin
 
    dependencies {
-     compile("com.github.kwebio:kweb-core:LATEST_VERSION")
+     implementation("com.github.kwebio:kweb-core:LATEST_VERSION")
      
      // This (or another SLF4J binding) is required for Kweb to log errors
-     compile("org.slf4j:slf4j-simple:1.7.30")
+     implementation("org.slf4j:slf4j-simple:1.7.30")
    }
 
 Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.  
