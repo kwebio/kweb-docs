@@ -23,9 +23,9 @@ This example shows how *toVar* can be used to convert a value in a Shoebox to a 
         users["aaa"] = User("Ian", "ian@ian.ian")
 
         Kweb(port = 16097) {
-            doc.body.new {
+            doc.body {
                 val user = toVar(users, "aaa")
-                ul().new {
+                ul {
                     li().text(user.map {"Name: ${it.name}"})
                     li().text(user.map {"Email: ${it.email}"})
 

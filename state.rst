@@ -90,7 +90,7 @@ Any changes to the KVar will be reflected in realtime in the browser, and simila
 .. code-block:: kotlin
 
     Kweb(port = 2395) {
-        doc.body.new {
+        doc.body {
              p().text("What is your name?")
             val clickMe = input(type = text)
             val nameKVar = KVar("Peter Pan")
@@ -117,9 +117,9 @@ function comes in:
     val list = KVar(listOf("one", "two", "three"))
 
     Kweb(port = 16097) {
-        doc.body.new {
+        doc.body {
             render(list) { rList ->
-                ul().new {
+                ul {
                     for (item in rList) {
                         li().text(item)
                     }
@@ -159,8 +159,8 @@ Kvar.property() to create a KVar from one of its properties which will update th
     name.value = "John"
     println(user) // Will print: KVar(User(name = "John"))
 
-KVals & Reversible mapping
---------------------------
+Reversible mapping
+------------------
 
 If you check the type of *counterDoubled*, you'll notice that it's a *KVal* rather than a *KVar*.
 `KVal <https://jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/index.html>`_'s values may not be
@@ -168,6 +168,8 @@ modified directly, so this won't be permitted:
 
 .. code-block:: kotlin
 
+    val counter = KVar(0)
+    val counterDoubled = counter.map { it * 2 }
     counterDoubled.value = 20 // <--- This won't compile
 
 The *KVar* class has a second
@@ -182,16 +184,11 @@ a *ReversibleFunction* implementation.  This version of *map* will produce a KVa
     })
     counter.value = 5
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
+    // output: counter: 5, doubled: 10
 
-    counterDoubled.value = 12 // <--- This wouldn't have worked before
+    counterDoubled.value = 12 // <-- Couldn't do this with a KVal
     println("counter: ${counter.value}, doubled: ${counterDoubled.value}")
-
-Will print:
-
-.. code-block:: text
-
-    counter: 5, doubled: 10
-    counter: 6, doubled: 12
+    // output: counter: 6, doubled: 12
 
 .. note:: Reversible mappings are an advanced feature that you only need if you want the mapped value to be a mutable
     KVar.  Most of the time the simple `KVal.map {} <https://javadoc.jitpack.io/com/github/kwebio/core/0.3.15/javadoc/io.kweb.state/-k-val/map.html>`_

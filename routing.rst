@@ -26,7 +26,7 @@ A simple example
 
     fun main() {
         Kweb(port = 16097) {
-            doc.body.new {
+            doc.body {
                 route {
                     path("/users/{userId}") { params ->
                         val userId = params.getValue("userId")
@@ -95,7 +95,7 @@ Here is a more realistic example:
 
     fun main() {
         Kweb(port = 16097) {
-            doc.body.new {
+            doc.body {
                 route {
                     path("/") {
                         url.value = "/number/1"

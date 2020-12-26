@@ -5,7 +5,7 @@ DOM Basics
 Creating DOM Elements and Fragments
 -----------------------------------
 
-The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/Element.kt>`_, normally the `BodyElement <https://github.com/kwebio/kweb-core/blob/master/src/main/kotlin/kweb/html/BodyElement.kt>`_, which is obtained easily as follows:
+Let's create a <button> as a child of the <body>:
 
 .. code-block:: kotlin
 
@@ -14,25 +14,14 @@ The DOM is built starting with an `Element <https://github.com/kwebio/kweb-core/
 
    fun main() {
      Kweb(port = 16097) {
-        val body : BodyElement = doc.body
-    }
-   }
-
-Let's create a <button> as a child of the <body>, we do this using the *.new* function (which is
-supported by all Element types):
-
-.. code-block:: kotlin
-
-   import kweb.*
-   import kweb.dom.element.*
-
-   fun main() {
-     Kweb(port = 16097) {
-        doc.body.new {
+        doc.body {
             button().text("Click Me!")
         }
       }
     }
+
+Element Attributes
+------------------
 
 If you assign the button element to a val then you can also modify its attributes:
 
@@ -43,21 +32,39 @@ If you assign the button element to a val then you can also modify its attribute
     button.classes("bigbutton")
     button.setAttributeRaw("autofocus", true)
 
-Or equivalently using Kotlin's apply `scope function <https://kotlinlang.org/docs/reference/scope-functions.html>`_:
+Attributes can also be specified in a Map when you create the element:
 
 .. code-block:: kotlin
 
-    button().apply {
-      text("Click Me!")
-      classes("bigbutton")
-      setAttributeRaw("autofocus", true)
-    }
+   button(mapOf("class" to "bigbutton", "autofocus" to true)).text("Click Me!")
 
 Or delete it:
 
 .. code-block:: kotlin
 
     button.delete()
+
+Adding children to an existing element
+--------------------------------------
+
+The DSL syntax makes it very easy to create elements and their children together:
+
+.. code-block:: kotlin
+
+    ul {
+      li().text("One")
+      li().text("Two")
+    }
+
+Alternatively we can use the `new {}` function on Elements to add children to a pre-existing Element:
+
+.. code-block:: kotlin
+
+    val unorderedList : ULElement = ul()
+    unorderedList.new {
+      li().text("One")
+      li().text("Two")
+    }
 
 
 Reading from the DOM
@@ -74,7 +81,7 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
 
    fun main() {
        Kweb(port = 2395) {
-           doc.body.new {
+           doc.body {
                val input: InputElement = input()
                input.on.submit {
                    GlobalScope.launch {
@@ -106,7 +113,7 @@ infamous and now-obsolete <blink> tag:
 
 .. code-block:: kotlin
 
-    doc.body.new {
+    doc.body {
         val blink = element("blink").text("I am annoying!")
     }
 

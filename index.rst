@@ -6,11 +6,7 @@
 Kweb - Pleasant web development, in Kotlin 🦆
 ============================================
 
-A new way to create beautiful, efficient, and scalable websites in Kotlin, quickly.
-
-If you have questions, suggestions, or if you encounter a problem then please `submit a Github 
-issue <https://github.com/kwebio/kweb-docs/issues>`_, we respond to most questions within
-a few hours.
+A lightweight Kotlin web framework for backend developers.
 
 .. toctree::
    intro
