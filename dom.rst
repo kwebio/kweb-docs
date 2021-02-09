@@ -10,7 +10,6 @@ Let's create a <button> as a child of the <body>:
 .. code-block:: kotlin
 
    import kweb.*
-   import kweb.dom.element.*
 
    fun main() {
      Kweb(port = 16097) {
