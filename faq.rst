@@ -66,7 +66,7 @@ Can I embed Kweb within an Android app?
 
 Yes!  Please see `kweb-demos/tree/master/android <https://github.com/kwebio/kweb-demos/tree/master/android>`_ for an example.
 
-I want to deploy a KWeb Application behind a load balancer. What do i need to consider?
+I want to deploy a KWeb Application behind a load balancer, what do i need to consider?
 ---------------------------------------------------------------------------------------
 
 Please make sure to enable session affinity so that repeated requests from the same client end up at the same kweb instance. Kweb does not share it's internal state between multiple instances, so it is important to make sure that each request from a single user ends up at always the same instance. 
