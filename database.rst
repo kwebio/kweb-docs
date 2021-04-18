@@ -8,8 +8,8 @@ Overview
 `Shoebox <https://github.com/kwebio/shoebox>`_ is a simple key-value store that supports the
 `observer pattern <https://en.wikipedia.org/wiki/Observer_pattern>`_, and is a sister project to Kweb. 
 It supports a number of 
-[back-end storage engines](https://github.com/kwebio/shoebox/tree/master/src/main/kotlin/kweb/shoebox/stores) 
-including in-memory (userful for testing), and [MapDB](https://mapdb.org/) (the best for production use).
+`back-end storage engines <https://github.com/kwebio/shoebox/tree/master/src/main/kotlin/kweb/shoebox/stores>`_ 
+including in-memory (userful for testing), and `MapDB <https://mapdb.org/>`_ (the best for production use).
 
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
@@ -46,7 +46,7 @@ In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Mes
 Other Databases
 ---------------
 
-Kweb doesn't require you to use Shoebox.  You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a [wide selection](https://kotlin.link/?q=database#libraries/frameworks-database) to choose from, as does [Java](https://java-lang.github.io/awesome-java/#database).
+Kweb doesn't require you to use Shoebox.  You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a `wide selection <https://kotlin.link/?q=database#libraries/frameworks-database>`_ to choose from, as does `Java <https://java-lang.github.io/awesome-java/#database>`_.
 
 Working Example
 ---------------
