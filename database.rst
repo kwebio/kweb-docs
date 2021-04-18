@@ -11,6 +11,10 @@ It supports a number of
 `back-end storage engines <https://github.com/kwebio/shoebox/tree/master/src/main/kotlin/kweb/shoebox/stores>`_ 
 including in-memory (userful for testing), and `MapDB <https://mapdb.org/>`_ (the best for production use).
 
+Kweb doesn't require you to use Shoebox. You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a `wide selection <https://kotlin.link/?q=database#libraries/frameworks-database>`_ to choose from, as does `Java <https://java-lang.github.io/awesome-java/#database>`_. 
+
+The main benefit of using Shoebox is its integration with Kweb's `state management <http://docs.kweb.io/en/latest/state.html>`_.
+
 We'll assume you've taken a minute or two to review `Shoebox <https://github.com/kwebio/shoebox>`_ and get the
 general idea of how it's used.
 
@@ -42,11 +46,6 @@ Future Development
 ------------------
 
 In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Messaging <https://aws.amazon.com/pub-sub-messaging/>`_ and `Dynamo DB <https://aws.amazon.com/dynamodb/>`_, which would enable unlimited scalability.  New storage backends can be added easily to Shoebox by implementing the `Store <https://github.com/kwebio/shoebox/blob/master/src/main/kotlin/kweb/shoebox/Store.kt>`_ interface.
-
-Other Databases
----------------
-
-Kweb doesn't require you to use Shoebox. You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a `wide selection <https://kotlin.link/?q=database#libraries/frameworks-database>`_ to choose from, as does `Java <https://java-lang.github.io/awesome-java/#database>`_. The main benefit of Shoebox is its integration with Kweb's `state management <http://docs.kweb.io/en/latest/state.html>`_.
 
 Working Example
 ---------------
