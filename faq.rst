@@ -110,4 +110,4 @@ I have a question not answered here
 -----------------------------------
 
 Feel free to `ask us a question <https://github.com/kwebio/core/issues/new>`_ on Github Issues, but please search first to see whether it has
-already been answered.
+already been answered. For a more realtime experience you can also chat with us on `Gitter <https://gitter.im/kwebio/Lobby>`_.
