@@ -46,7 +46,7 @@ In the future Shoebox will support back-end cloud services like `AWS Pub/Sub Mes
 Other Databases
 ---------------
 
-Kweb doesn't require you to use Shoebox.  You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a `wide selection <https://kotlin.link/?q=database#libraries/frameworks-database>`_ to choose from, as does `Java <https://java-lang.github.io/awesome-java/#database>`_.
+Kweb doesn't require you to use Shoebox. You're free to use any database, either directly, or via a database abstraction layer such as `Exposed <https://github.com/jetbrains/Exposed>`_. Kotlin has a `wide selection <https://kotlin.link/?q=database#libraries/frameworks-database>`_ to choose from, as does `Java <https://java-lang.github.io/awesome-java/#database>`_. The main benefit of Shoebox is its integration with Kweb's `state management <http://docs.kweb.io/en/latest/state.html>`_.
 
 Working Example
 ---------------
