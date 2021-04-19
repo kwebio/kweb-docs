@@ -11,7 +11,7 @@ Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is fami
 Adding Kweb to your project
 ---------------------------
 
-Kweb is distributed via JitPack, so add this to the end of the repositories {block} in your `build.gradle` or `build.gradle.kt` files:
+Kweb is distributed via JitPack, so add this to the end of the repositories {block} in your `build.gradle` or `build.gradle.kt` files. Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.  
 
 Groovy DSL
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -22,21 +22,6 @@ Groovy DSL
      maven { url 'https://jitpack.io' }
      jcenter()
    }
-
-Kotlin DSL
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: kotlin
-
-   repositories {
-     maven("https://jitpack.io")
-     jcenter()
-   }
-
-Then add Kweb to the dependencies block:
-
-Groovy DSL
-~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: gradle
 
@@ -52,14 +37,19 @@ Kotlin DSL
 
 .. code-block:: kotlin
 
+   repositories {
+     maven("https://jitpack.io")
+     jcenter()
+   }
+
+.. code-block:: kotlin
+
    dependencies {
      implementation("com.github.kwebio:kweb-core:LATEST_VERSION")
      
      // This (or another SLF4J binding) is required for Kweb to log errors
      implementation("org.slf4j:slf4j-simple:1.7.30")
    }
-
-Replace LATEST_VERSION with the latest version of Kweb, which you can find on `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.  
 
 Hello world
 -----------
