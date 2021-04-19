@@ -11,7 +11,7 @@ Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is fami
 Adding Kweb to your project
 ---------------------------
 
-Kweb is distributed via JitPack, so add this to the end of the repositories {block} in your `build.gradle` or `build.gradle.kt` files. 
+Add these to your repositories and dependencies {blocks} in your `build.gradle` or `build.gradle.kt` files. 
 
 *Replace LATEST_VERSION with the latest version of Kweb, which you can find on* `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.
 
