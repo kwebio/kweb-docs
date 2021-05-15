@@ -29,7 +29,7 @@ If you assign the button element to a val then you can also modify its attribute
     val button = button()
     button.text("Click Me!")
     button.classes("bigbutton")
-    button.setAttributeRaw("autofocus", true)
+    button.setAttributeRaw("autofocus", JsonPrimitive(true))
 
 Attributes can also be specified in a Map when you create the element:
 
