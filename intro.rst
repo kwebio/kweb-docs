@@ -34,7 +34,10 @@ Features
 
 * Very lightweight, Kweb is less than 5,000 lines of code
 
-Professional 
+Professional Services
+---------------------
+
+If you're interested in professional services related to Kweb from the people who built Kweb please email `services@kweb.io <mailto:services@kweb.io>`_.
 
 Relevant Links
 --------------
