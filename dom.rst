@@ -82,22 +82,18 @@ Kweb can also read from the DOM, in this case the value of an <input> element:
        Kweb(port = 2395) {
            doc.body {
                val input: InputElement = input()
-               input.on.submit {
-                   GlobalScope.launch {
-                       val value = input.getValue().await()
-                       println("Value: $value")
-                   }
+               input.on(retrieveJs = input.valueJsExpression).submit { event ->
+                    println("Value: ${event.retrieved}")
                }
            }
        }
    }
 
-Note that input.getValue() returns a `CompletableFuture<String> <https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html>`_.
-This is because it can take up to several hundred milliseconds to retrieve from the browser, and we don't want the application
-to block if it can be avoided.  Here we use Kotlin's very powerful `coroutines <https://kotlinlang.org/docs/reference/coroutines-overview.html>`_
-features to avoid any unnecessary blocking.
+Events can evaluate a JavaScript expression and send the result to the server, in this case we give it an
+expression that will retrieve the value of an InputElement, conveniently provided by valueJsExpression.
 
-.. note:: We discuss an even better way to read <input> values in the `Observer Pattern & State <https://docs.kweb.io/en/latest/state.html#binding-a-kvar-to-an-input-element-s-value>`_ section.
+.. note:: See the `Observer Pattern & State <https://docs.kweb.io/en/latest/state.html#binding-a-kvar-to-an-input-element-s-value>`_ section for
+another way to read input element values.
 
 Supported HTML tags
 -------------------
