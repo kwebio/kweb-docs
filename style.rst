@@ -53,11 +53,7 @@ Take a look at the `Fomantic UI documentation <https://fomantic-ui.com>`_ to see
 Other UI Frameworks
 -------------------
 
-It's easy to create Kweb plugins for many JavaScript tools and frameworks, taking full advantage of Kotlin's DSL
-capabilities.
-
-The `Fomantic UI plugin implementation <https://github.com/kwebio/kweb-core/tree/master/src/main/kotlin/kweb/plugins/fomanticUI>`_
-itself can serve as an example.
+Kweb is known to work well with a number of other CSS frameworks, such as `Tailwind <https://tailwindcss.com/>`_.
 
 Example and Demo
 ----------------
