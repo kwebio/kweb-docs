@@ -8,14 +8,14 @@ What you'll need
 Some familiarity with `Kotlin <https://kotlinlang.org/>`_ is assumed, as is familiarity with
 `Gradle <https://gradle.org/>`_.  You should also have some familiarity with HTML.
 
-Adding Kweb to your project
+Adding Kweb to your Gradle project
 ---------------------------
 
 Add these to your repositories and dependencies {blocks} in your `build.gradle` or `build.gradle.kt` files. 
 
 *Replace LATEST_VERSION with the latest version of Kweb, which you can find on* `https://jitpack.io/#kwebio/kweb-core <https://jitpack.io/#kwebio/kweb-core>`_.
 
-Groovy DSL
+Gradle (Groovy)
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: gradle
@@ -34,7 +34,7 @@ Groovy DSL
      implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
    }
 
-Kotlin DSL
+Gradle (Kotlin)
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: kotlin
