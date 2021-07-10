@@ -53,7 +53,7 @@ Take a look at the `Fomantic UI documentation <https://fomantic-ui.com>`_ to see
 Other UI Frameworks
 -------------------
 
-Kweb is known to work well with a number of other CSS frameworks, such as `Tailwind <https://tailwindcss.com/>`_.
+Kweb is known to work well with a number of other CSS frameworks - particularly those that work through pure HTML, such as `Tailwind <https://tailwindcss.com/>`_.
 
 Example and Demo
 ----------------
