@@ -53,3 +53,5 @@ Relevant Links
 * Live Demo: http://demo.kweb.io:7659/
 
 * Questions/Feedback/Bugs: https://github.com/kwebio/kweb-core/issues
+
+* Chat with us on [Matrix](https://matrix.to/#/#kweb:matrix.org)
