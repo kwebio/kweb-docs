@@ -20,7 +20,7 @@ A common concern about this approach is that the user interface might feel slugg
 Kweb is built on the excellent `Ktor <https://ktor.io/>`_ framework, which handles HTTP, HTTPS, and WebSocket transport.  You don't need to know Ktor to use Kweb, but if you've already got a Ktor app you can `embed Kweb as a Feature <https://github.com/kwebio/kweb-demos/blob/master/ktorFeature/src/FeatureApp.kt>`_.
 
 Features
---------
+--------https://matrix.to/#/#kweb:matrix.org
 
 * Allows the problem to determine your architecture, not the server/browser divide
 
@@ -54,4 +54,4 @@ Relevant Links
 
 * Questions/Feedback/Bugs: https://github.com/kwebio/kweb-core/issues
 
-* Chat with us on [Matrix](https://matrix.to/#/#kweb:matrix.org)
+* Chat with us on `Matrix <https://matrix.to/#/#kweb:matrix.org>`
