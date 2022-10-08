@@ -13,7 +13,7 @@ Adding Kweb to your Gradle project
 
 Add these to your repositories and dependencies {blocks} in your `build.gradle` or `build.gradle.kt` files. 
 
-**NOTE:** Replace LATEST_VERSION with the latest version of Kweb, which you can find `here <https://github.com/kwebio/kweb-core/packages/1663696>`_.
+**NOTE:** Replace `LATEST_VERSION` with the latest version of Kweb, which you can find `here <https://github.com/kwebio/kweb-core/packages/1663696>`_.
 
 Gradle (Groovy)
 ~~~~~~~~~~~~~~~~~~~~~~
